@@ -107,12 +107,12 @@ import com.cognizant.framework.IterationOptions;
 							.parseInt(endIteration));
 				}
 
-				/*String browser = runManagerAccess.getValue(currentTestInstance,"Browser");
+				String browser = runManagerAccess.getValue(currentTestInstance,"Browser");
 
 				if (!browser.equals("")) {
 					testParameters.setBrowser(Browser.valueOf(browser));
 
-				}*/
+				}
 				if(properties.getProperty("DefaultBrowser")!=null) {
 					testParameters.setBrowser(Browser.valueOf(properties
 							.getProperty("DefaultBrowser")));
