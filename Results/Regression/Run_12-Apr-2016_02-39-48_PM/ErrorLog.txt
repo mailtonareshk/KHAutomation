@@ -1,0 +1,37 @@
+Started ChromeDriver
+port=49065
+version=23.0.1240.0
+log=D:\naresh\KH Automation Bckup\KHWorkspace\Kjedehuset\chromedriver.log
+test\automation\proxy_launcher.cc(107): error: Value of:[0412/144037:ERROR:ipc_sync_channel.cc(378)] Canceling pending sends app_launched
+  Actual: 1
+Expected: AUTOMATION_SUCCESS
+Which is: 0
+Error while awaiting automation ping from browser process
+
+[0412/144037:ERROR:ipc_sync_channel.cc(378)] Canceling pending sends
+Exception in thread "pool-1-thread-1" org.openqa.selenium.WebDriverException: Unable to either launch or connect to Chrome. Please check that ChromeDriver is up-to-date. Using Chrome binary at: C:\Program Files\Google\Chrome\Application\chrome.exe (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 57.29 seconds
+Build info: version: '2.47.1', revision: '411b314', time: '2015-07-30 02:56:46'
+System info: host: 'PC275317', ip: '10.207.61.69', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_25'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:128)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:141)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:170)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:159)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:116)
+	at supportlibraries.WebDriverFactory.getDriver(WebDriverFactory.java:65)
+	at supportlibraries.DriverScript.initializeWebDriver(DriverScript.java:178)
+	at supportlibraries.DriverScript.driveTestExecution(DriverScript.java:92)
+	at allocator.ParallelRunner.invokeTestScript(ParallelRunner.java:59)
+	at allocator.ParallelRunner.run(ParallelRunner.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)

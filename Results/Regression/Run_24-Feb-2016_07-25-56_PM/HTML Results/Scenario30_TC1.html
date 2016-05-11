@@ -1,0 +1,482 @@
+<!DOCTYPE html> 
+<html> 
+	 <head> 
+		 <meta charset='UTF-8'> 
+		 <title>Kjedehuset - Scenario30_TC1 Automation Execution Results</title> 
+
+		 <style type='text/css'> 
+			 body { 
+				 background-color: #000000; 
+				 font-family: Verdana, Geneva, sans-serif; 
+				 text-align: center; 
+			 } 
+
+			 small { 
+				 font-size: 0.7em; 
+			 } 
+
+			 table { 
+				 border: 1px solid #4D7C7B; 
+				 border-collapse: collapse; 
+				 border-spacing: 0px; 
+				 width: 1000px; 
+				 margin-left: auto; 
+				 margin-right: auto; 
+			 } 
+
+			 tr.heading { 
+				 background-color: #4D7C7B; 
+				 color: #FFFF95; 
+				 font-size: 0.9em; 
+				 font-weight: bold; 
+			 } 
+
+			 tr.subheading { 
+				 background-color: #FFFF95; 
+				 color: #4D7C7B; 
+				 font-weight: bold; 
+				 font-size: 0.9em; 
+				 text-align: justify; 
+			 } 
+
+			 tr.section { 
+				 background-color: #89B6B5; 
+				 color: #333300; 
+				 cursor: pointer; 
+				 font-weight: bold; 
+				 font-size: 0.9em; 
+				 text-align: justify; 
+			 } 
+
+			 tr.subsection { 
+				 cursor: pointer; 
+			 } 
+
+			 tr.content { 
+				 background-color: #FAFAC5; 
+				 color: #000000; 
+				 font-size: 0.9em; 
+				 display: table-row; 
+			 } 
+
+			 td, th { 
+				 padding: 4px; 
+				 text-align: inherit\0/; 
+			 } 
+
+			 td.justified { 
+				 text-align: justify; 
+			 } 
+
+			 td.pass { 
+				 font-weight: bold; 
+				 color: green; 
+			 } 
+
+			 td.fail { 
+				 font-weight: bold; 
+				 color: red; 
+			 } 
+
+			 td.done, td.screenshot { 
+				 font-weight: bold; 
+				 color: black; 
+			 } 
+
+			 td.debug { 
+				 font-weight: bold; 
+				 color: blue; 
+			 } 
+
+			 td.warning { 
+				 font-weight: bold; 
+				 color: orange; 
+			 } 
+		 </style> 
+
+		 <script> 
+			 function toggleMenu(objID) { 
+				 if (!document.getElementById) return; 
+				 var ob = document.getElementById(objID).style; 
+				 if(ob.display === 'none') { 
+					 try { 
+						 ob.display='table-row-group'; 
+					 } catch(ex) { 
+						 ob.display='block'; 
+					 } 
+				 } 
+				 else { 
+					 ob.display='none'; 
+				 } 
+			 } 
+			 function toggleSubMenu(objId) { 
+				 for(i=1; i<10000; i++) { 
+					 var ob = document.getElementById(objId.concat(i)); 
+					 if(ob === null) { 
+						 break; 
+					 } 
+					 if(ob.style.display === 'none') { 
+						 try { 
+							 ob.style.display='table-row'; 
+						 } catch(ex) { 
+							 ob.style.display='block'; 
+						 } 
+					 } 
+					 else { 
+						 ob.style.display='none'; 
+					 } 
+				 } 
+			 } 
+		 </script> 
+	 </head> 
+
+	 <body> 
+		 <table id='header'> 
+			 <colgroup> 
+				 <col style='width: 25%' /> 
+				 <col style='width: 25%' /> 
+				 <col style='width: 25%' /> 
+				 <col style='width: 25%' /> 
+			 </colgroup> 
+
+			 <thead> 
+				 <tr class='heading'> 
+					 <th colspan='4' style='font-family:Copperplate Gothic Bold; font-size:1.4em;'> 
+						 Kjedehuset - Scenario30_TC1 Automation Execution Results 
+					 </th> 
+				 </tr> 
+				 <tr class='subheading'> 
+					 <th>&nbsp;Date&nbsp;&&nbsp;Time</th> 
+					 <th>&nbsp;:&nbsp;24-Feb-2016&nbsp;08:04:57&nbsp;PM</th> 
+					 <th>&nbsp;Iteration&nbsp;Mode</th> 
+					 <th>&nbsp;:&nbsp;RunOneIterationOnly</th> 
+				 </tr> 
+				 <tr class='subheading'> 
+					 <th>&nbsp;Start&nbsp;Iteration</th> 
+					 <th>&nbsp;:&nbsp;1</th> 
+					 <th>&nbsp;End&nbsp;Iteration</th> 
+					 <th>&nbsp;:&nbsp;1</th> 
+				 </tr> 
+				 <tr class='subheading'> 
+					 <th>&nbsp;Browser</th> 
+					 <th>&nbsp;:&nbsp;Firefox</th> 
+					 <th>&nbsp;Executed&nbsp;on</th> 
+					 <th>&nbsp;:&nbsp;Local&nbsp;Machine</th> 
+				 </tr> 
+			 </thead> 
+		 </table> 
+
+		 <table id='main'> 
+			 <colgroup> 
+				 <col style='width: 8%' /> 
+				 <col style='width: 12%' /> 
+				 <col style='width: 62%' /> 
+				 <col style='width: 8%' /> 
+				 <col style='width: 10%' /> 
+			 </colgroup> 
+
+			 <thead> 
+				 <tr class='heading'> 
+					 <th>Step_No</th> 
+					 <th>Step_Name</th> 
+					 <th>Description</th> 
+					 <th>Status</th> 
+					 <th>Step_Time</th> 
+				 </tr> 
+			 </thead> 
+
+			 <tbody> 
+				 <tr class='section'> 
+					 <td colspan='5' onclick="toggleMenu('Iteration1')">+ Iteration: 1</td> 
+				 </tr> 
+			 </tbody> 
+			 <tbody id='Iteration1' style='display:table-row-group'> 
+				 <tr class='subheading subsection'> 
+					 <td colspan='5' onclick="toggleSubMenu('Iteration1InvokeApplication')">&nbsp;+ InvokeApplication</td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1InvokeApplication1'> 
+					 <td>1</td> 
+					 <td class='justified'>Invoke Application</td> 
+					 <td class='justified'>Invoke the application under test @ https://mbizadminpreprod.kjedehuset.no</td> 
+					 <td class='done'>DONE</td> 
+					 <td><small>24-Feb-2016 08:05:01 PM</small></td> 
+				 </tr> 
+				 <tr class='subheading subsection'> 
+					 <td colspan='5' onclick="toggleSubMenu('Iteration1Login')">&nbsp;+ Login</td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1Login1'> 
+					 <td>2</td> 
+					 <td class='justified'>Value should be entered in <b>User Name</b> text box.</td> 
+					 <td class='justified'><b>herman</b> value entered in text box.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>24-Feb-2016 08:05:01 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1Login2'> 
+					 <td>3</td> 
+					 <td class='justified'>Should click <b>Login</b> button.</td> 
+					 <td class='justified'><b>Login</b> button clicked.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>24-Feb-2016 08:05:03 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1Login3'> 
+					 <td>4</td> 
+					 <td class='justified'>Value should be entered in <b>Password</b> text box.</td> 
+					 <td class='justified'><b>bennu123</b> value entered in text box.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>24-Feb-2016 08:05:03 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1Login4'> 
+					 <td>5</td> 
+					 <td class='justified'>Should click <b>Login</b> button.</td> 
+					 <td class='justified'><b>Login</b> button clicked.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>24-Feb-2016 08:05:09 PM</small></td> 
+				 </tr> 
+				 <tr class='subheading subsection'> 
+					 <td colspan='5' onclick="toggleSubMenu('Iteration1CreateAgent')">&nbsp;+ CreateAgent</td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateAgent1'> 
+					 <td>6</td> 
+					 <td class='justified'>Value should be entered in <b>AgentName</b> text box.</td> 
+					 <td class='justified'><b>NewAgent2016-02-24-20-05-14</b> value entered in text box.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>24-Feb-2016 08:05:16 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateAgent2'> 
+					 <td>7</td> 
+					 <td class='justified'>Should click <b>Save</b> button.</td> 
+					 <td class='justified'><b>Save</b> button clicked.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>24-Feb-2016 08:05:17 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateAgent3'> 
+					 <td>8</td> 
+					 <td class='justified'>Create Agent</td> 
+					 <td class='justified'>Successfully created agent in mBiz</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>24-Feb-2016 08:05:17 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateAgent4'> 
+					 <td>9</td> 
+					 <td class='justified'>Should click <b>EditAgent</b> button.</td> 
+					 <td class='justified'><b>EditAgent</b> button clicked.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>24-Feb-2016 08:05:18 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateAgent5'> 
+					 <td>10</td> 
+					 <td class='justified'>Value should be entered in <b>AgentName</b> text box.</td> 
+					 <td class='justified'><b>EditAgent2016-02-24-20-05-17</b> value entered in text box.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>24-Feb-2016 08:05:19 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateAgent6'> 
+					 <td>11</td> 
+					 <td class='justified'>Should click <b>Save</b> button.</td> 
+					 <td class='justified'><b>Save</b> button clicked.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>24-Feb-2016 08:05:20 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateAgent7'> 
+					 <td>12</td> 
+					 <td class='justified'>Should click <b>EditRange</b> button.</td> 
+					 <td class='justified'><b>EditRange</b> button clicked.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>24-Feb-2016 08:05:26 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateAgent8'> 
+					 <td>13</td> 
+					 <td class='justified'>Should click <b>Proceed</b> button.</td> 
+					 <td class='justified'><b>Proceed</b> button clicked.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>24-Feb-2016 08:05:28 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateAgent9'> 
+					 <td>14</td> 
+					 <td class='justified'>Should click <b>Proceed</b> button.</td> 
+					 <td class='justified'><b>Proceed</b> button clicked.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>24-Feb-2016 08:05:31 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateAgent10'> 
+					 <td>15</td> 
+					 <td class='justified'>Should click <b>Search</b> button.</td> 
+					 <td class='justified'><b>Search</b> button clicked.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>24-Feb-2016 08:06:04 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateAgent11'> 
+					 <td>16</td> 
+					 <td class='justified'>Should click <b>Proceed</b> button.</td> 
+					 <td class='justified'><b>Proceed</b> button clicked.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>24-Feb-2016 08:06:48 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateAgent12'> 
+					 <td>17</td> 
+					 <td class='justified'>Should click <b>Save</b> button.</td> 
+					 <td class='justified'><b>Save</b> button clicked.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>24-Feb-2016 08:06:51 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateAgent13'> 
+					 <td>18</td> 
+					 <td class='justified'>Should click <b>LeveringMeToOrder</b> button.</td> 
+					 <td class='justified'><b>LeveringMeToOrder</b> button clicked.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>24-Feb-2016 08:06:52 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateAgent14'> 
+					 <td>19</td> 
+					 <td class='justified'>Should check <b>Service Pack</b> checkBox.</td> 
+					 <td class='justified'><b>Service Pack</b> checkBox checked it on.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>24-Feb-2016 08:06:53 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateAgent15'> 
+					 <td>20</td> 
+					 <td class='justified'>Value should be entered in <b>Delivery Price</b> text box.</td> 
+					 <td class='justified'><b>50</b> value entered in text box.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>24-Feb-2016 08:06:56 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateAgent16'> 
+					 <td>21</td> 
+					 <td class='justified'>Should click <b>Save</b> button.</td> 
+					 <td class='justified'><b>Save</b> button clicked.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>24-Feb-2016 08:06:58 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateAgent17'> 
+					 <td>22</td> 
+					 <td class='justified'>Should click <b>EditAgentSubscription</b> button.</td> 
+					 <td class='justified'><b>EditAgentSubscription</b> button clicked.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>24-Feb-2016 08:07:01 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateAgent18'> 
+					 <td>23</td> 
+					 <td class='justified'>Should click <b>Proceed</b> button.</td> 
+					 <td class='justified'><b>Proceed</b> button clicked.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>24-Feb-2016 08:07:12 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateAgent19'> 
+					 <td>24</td> 
+					 <td class='justified'>Should click <b>Save</b> button.</td> 
+					 <td class='justified'><b>Save</b> button clicked.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>24-Feb-2016 08:07:13 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateAgent20'> 
+					 <td>25</td> 
+					 <td class='justified'>Should click <b>EditAgent</b> button.</td> 
+					 <td class='justified'><b>EditAgent</b> button clicked.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>24-Feb-2016 08:07:14 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateAgent21'> 
+					 <td>26</td> 
+					 <td class='justified'>Should click <b>Save</b> button.</td> 
+					 <td class='justified'><b>Save</b> button clicked.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>24-Feb-2016 08:07:16 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateAgent22'> 
+					 <td>27</td> 
+					 <td class='justified'>Should click <b>EditRange</b> button.</td> 
+					 <td class='justified'><b>EditRange</b> button clicked.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>24-Feb-2016 08:07:22 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateAgent23'> 
+					 <td>28</td> 
+					 <td class='justified'>Should click <b>Proceed</b> button.</td> 
+					 <td class='justified'><b>Proceed</b> button clicked.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>24-Feb-2016 08:07:24 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateAgent24'> 
+					 <td>29</td> 
+					 <td class='justified'>Should click <b>Proceed</b> button.</td> 
+					 <td class='justified'><b>Proceed</b> button clicked.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>24-Feb-2016 08:07:26 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateAgent25'> 
+					 <td>30</td> 
+					 <td class='justified'>Should click <b>Proceed</b> button.</td> 
+					 <td class='justified'><b>Proceed</b> button clicked.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>24-Feb-2016 08:07:58 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateAgent26'> 
+					 <td>31</td> 
+					 <td class='justified'>Should click <b>Save</b> button.</td> 
+					 <td class='justified'><b>Save</b> button clicked.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>24-Feb-2016 08:08:00 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateAgent27'> 
+					 <td>32</td> 
+					 <td class='justified'>Should click <b>LeveringMeToOrder</b> button.</td> 
+					 <td class='justified'><b>LeveringMeToOrder</b> button clicked.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>24-Feb-2016 08:08:01 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateAgent28'> 
+					 <td>33</td> 
+					 <td class='justified'>Should click <b>Save</b> button.</td> 
+					 <td class='justified'><b>Save</b> button clicked.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>24-Feb-2016 08:08:06 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateAgent29'> 
+					 <td>34</td> 
+					 <td class='justified'>Should click <b>Edit Subscription</b> button.</td> 
+					 <td class='justified'><b>Edit Subscription</b> button clicked.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>24-Feb-2016 08:08:08 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateAgent30'> 
+					 <td>35</td> 
+					 <td class='justified'>Agent Details Updation</td> 
+					 <td class='justified'>Successfully edited Agent Name, Sortiment, Delivery Methods & agent Subscription in mBiz</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>24-Feb-2016 08:08:08 PM</small></td> 
+				 </tr> 
+				 <tr class='subheading subsection'> 
+					 <td colspan='5' onclick="toggleSubMenu('Iteration1Logout')">&nbsp;+ Logout</td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1Logout1'> 
+					 <td>36</td> 
+					 <td class='justified'>Logout</td> 
+					 <td class='justified'>Click the Log Out link</td> 
+					 <td class='done'>DONE</td> 
+					 <td><small>24-Feb-2016 08:08:14 PM</small></td> 
+				 </tr> 
+			 </tbody> 
+		 </table> 
+
+		 <table id='footer'> 
+			 <colgroup> 
+				 <col style='width: 25%' /> 
+				 <col style='width: 25%' /> 
+				 <col style='width: 25%' /> 
+				 <col style='width: 25%' /> 
+			 </colgroup> 
+
+			 <tfoot> 
+				 <tr class='heading'> 
+					 <th colspan='4'>Execution Duration: 3 minute(s), 21 seconds</th> 
+				 </tr> 
+				 <tr class='subheading'> 
+					 <td class='pass'>&nbsp;Steps passed</td> 
+					 <td class='pass'>&nbsp;: 34</td> 
+					 <td class='fail'>&nbsp;Steps failed</td> 
+					 <td class='fail'>&nbsp;: 0</td> 
+				 </tr> 
+			 </tfoot> 
+		 </table> 
+	 </body> 
+</html>

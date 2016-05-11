@@ -1,0 +1,788 @@
+org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[@class='row error errorMessages']//div[@class='errorMessagesList']//p"}
+Command duration or timeout: 10 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.41.0', revision: '3192d8a', time: '2014-03-27 17:18:15'
+System info: host: 'CTSCE001372x', ip: '192.168.0.17', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0'
+Session ID: 9a5d6c0b-882b-414e-b13a-7d79251aa840
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=28.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:445)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:340)
+	at businesscomponents.FunctionalComponents.clickOnFinishOrder(FunctionalComponents.java:782)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at supportlibraries.DriverScript.invokeBusinessComponent(DriverScript.java:473)
+	at supportlibraries.DriverScript.executeTestcase(DriverScript.java:424)
+	at supportlibraries.DriverScript.executeTestIterations(DriverScript.java:378)
+	at supportlibraries.DriverScript.driveTestExecution(DriverScript.java:97)
+	at allocator.ParallelRunner.invokeTestScript(ParallelRunner.java:59)
+	at allocator.ParallelRunner.run(ParallelRunner.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {"method":"xpath","selector":"//div[@class='row error errorMessages']//div[@class='errorMessagesList']//p"}
+Build info: version: '2.41.0', revision: '3192d8a', time: '2014-03-27 17:18:15'
+System info: host: 'CTSCE001372x', ip: '192.168.0.17', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/admin/AppData/Local/Temp/anonymous5811152349157468047webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8905)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/admin/AppData/Local/Temp/anonymous5811152349157468047webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8914)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/admin/AppData/Local/Temp/anonymous5811152349157468047webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10884)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/admin/AppData/Local/Temp/anonymous5811152349157468047webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10889)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/admin/AppData/Local/Temp/anonymous5811152349157468047webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10831)
+org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[@class='row error errorMessages']//div[@class='errorMessagesList']//p"}
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.41.0', revision: '3192d8a', time: '2014-03-27 17:18:15'
+System info: host: 'CTSCE001372x', ip: '192.168.0.17', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0'
+Session ID: 1b01e60f-1447-4838-a72b-9ed79570eb50
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=28.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:445)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:340)
+	at businesscomponents.FunctionalComponents.clickOnFinishOrder(FunctionalComponents.java:782)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at supportlibraries.DriverScript.invokeBusinessComponent(DriverScript.java:473)
+	at supportlibraries.DriverScript.executeTestcase(DriverScript.java:424)
+	at supportlibraries.DriverScript.executeTestIterations(DriverScript.java:378)
+	at supportlibraries.DriverScript.driveTestExecution(DriverScript.java:97)
+	at allocator.ParallelRunner.invokeTestScript(ParallelRunner.java:59)
+	at allocator.ParallelRunner.run(ParallelRunner.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {"method":"xpath","selector":"//div[@class='row error errorMessages']//div[@class='errorMessagesList']//p"}
+Build info: version: '2.41.0', revision: '3192d8a', time: '2014-03-27 17:18:15'
+System info: host: 'CTSCE001372x', ip: '192.168.0.17', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/admin/AppData/Local/Temp/anonymous717417390319164902webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8905)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/admin/AppData/Local/Temp/anonymous717417390319164902webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8914)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/admin/AppData/Local/Temp/anonymous717417390319164902webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10884)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/admin/AppData/Local/Temp/anonymous717417390319164902webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10889)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/admin/AppData/Local/Temp/anonymous717417390319164902webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10831)
+com.cognizant.framework.FrameworkException: The specified column header "SharedUser" is not found in the sheet "General_Data"!
+	at com.cognizant.framework.ExcelDataAccess.getValue(ExcelDataAccess.java:331)
+	at com.cognizant.framework.CraftDataTable.getData(CraftDataTable.java:96)
+	at businesscomponents.VerificationComponents.verifyHomePageValidations(VerificationComponents.java:1759)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at supportlibraries.DriverScript.invokeBusinessComponent(DriverScript.java:473)
+	at supportlibraries.DriverScript.executeTestcase(DriverScript.java:424)
+	at supportlibraries.DriverScript.executeTestIterations(DriverScript.java:378)
+	at supportlibraries.DriverScript.driveTestExecution(DriverScript.java:97)
+	at allocator.ParallelRunner.invokeTestScript(ParallelRunner.java:59)
+	at allocator.ParallelRunner.run(ParallelRunner.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[@class='row error errorMessages']//div[@class='errorMessagesList']//p"}
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.41.0', revision: '3192d8a', time: '2014-03-27 17:18:15'
+System info: host: 'CTSCE001372x', ip: '192.168.0.17', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0'
+Session ID: 3269dcb8-38bf-4a4a-9c91-e49afcd6eda8
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=28.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:445)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:340)
+	at businesscomponents.FunctionalComponents.clickOnFinishOrder(FunctionalComponents.java:782)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at supportlibraries.DriverScript.invokeBusinessComponent(DriverScript.java:473)
+	at supportlibraries.DriverScript.executeTestcase(DriverScript.java:424)
+	at supportlibraries.DriverScript.executeTestIterations(DriverScript.java:378)
+	at supportlibraries.DriverScript.driveTestExecution(DriverScript.java:97)
+	at allocator.ParallelRunner.invokeTestScript(ParallelRunner.java:59)
+	at allocator.ParallelRunner.run(ParallelRunner.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {"method":"xpath","selector":"//div[@class='row error errorMessages']//div[@class='errorMessagesList']//p"}
+Build info: version: '2.41.0', revision: '3192d8a', time: '2014-03-27 17:18:15'
+System info: host: 'CTSCE001372x', ip: '192.168.0.17', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/admin/AppData/Local/Temp/anonymous2104318083708471776webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8905)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/admin/AppData/Local/Temp/anonymous2104318083708471776webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8914)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/admin/AppData/Local/Temp/anonymous2104318083708471776webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10884)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/admin/AppData/Local/Temp/anonymous2104318083708471776webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10889)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/admin/AppData/Local/Temp/anonymous2104318083708471776webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10831)
+com.cognizant.framework.FrameworkException: The specified column header "SharedUser" is not found in the sheet "General_Data"!
+	at com.cognizant.framework.ExcelDataAccess.getValue(ExcelDataAccess.java:331)
+	at com.cognizant.framework.CraftDataTable.getData(CraftDataTable.java:96)
+	at businesscomponents.VerificationComponents.verifyHomePageValidations(VerificationComponents.java:1759)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at supportlibraries.DriverScript.invokeBusinessComponent(DriverScript.java:473)
+	at supportlibraries.DriverScript.executeTestcase(DriverScript.java:424)
+	at supportlibraries.DriverScript.executeTestIterations(DriverScript.java:378)
+	at supportlibraries.DriverScript.driveTestExecution(DriverScript.java:97)
+	at allocator.ParallelRunner.invokeTestScript(ParallelRunner.java:59)
+	at allocator.ParallelRunner.run(ParallelRunner.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[@class='row error errorMessages']//div[@class='errorMessagesList']//p"}
+Command duration or timeout: 10 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.41.0', revision: '3192d8a', time: '2014-03-27 17:18:15'
+System info: host: 'CTSCE001372x', ip: '192.168.0.17', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0'
+Session ID: d008a3a8-3c0b-4bbc-8846-8405e7ef6165
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=28.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.GeneratedConstructorAccessor97.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:445)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:340)
+	at businesscomponents.FunctionalComponents.clickOnFinishOrder(FunctionalComponents.java:782)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at supportlibraries.DriverScript.invokeBusinessComponent(DriverScript.java:473)
+	at supportlibraries.DriverScript.executeTestcase(DriverScript.java:424)
+	at supportlibraries.DriverScript.executeTestIterations(DriverScript.java:378)
+	at supportlibraries.DriverScript.driveTestExecution(DriverScript.java:97)
+	at allocator.ParallelRunner.invokeTestScript(ParallelRunner.java:59)
+	at allocator.ParallelRunner.run(ParallelRunner.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {"method":"xpath","selector":"//div[@class='row error errorMessages']//div[@class='errorMessagesList']//p"}
+Build info: version: '2.41.0', revision: '3192d8a', time: '2014-03-27 17:18:15'
+System info: host: 'CTSCE001372x', ip: '192.168.0.17', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/admin/AppData/Local/Temp/anonymous4422916933089704173webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8905)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/admin/AppData/Local/Temp/anonymous4422916933089704173webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8914)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/admin/AppData/Local/Temp/anonymous4422916933089704173webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10884)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/admin/AppData/Local/Temp/anonymous4422916933089704173webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10889)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/admin/AppData/Local/Temp/anonymous4422916933089704173webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10831)
+com.cognizant.framework.FrameworkException: The specified column header "SharedUser" is not found in the sheet "General_Data"!
+	at com.cognizant.framework.ExcelDataAccess.getValue(ExcelDataAccess.java:331)
+	at com.cognizant.framework.CraftDataTable.getData(CraftDataTable.java:96)
+	at businesscomponents.VerificationComponents.verifyHomePageValidations(VerificationComponents.java:1759)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at supportlibraries.DriverScript.invokeBusinessComponent(DriverScript.java:473)
+	at supportlibraries.DriverScript.executeTestcase(DriverScript.java:424)
+	at supportlibraries.DriverScript.executeTestIterations(DriverScript.java:378)
+	at supportlibraries.DriverScript.driveTestExecution(DriverScript.java:97)
+	at allocator.ParallelRunner.invokeTestScript(ParallelRunner.java:59)
+	at allocator.ParallelRunner.run(ParallelRunner.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[@class='row error errorMessages']//div[@class='errorMessagesList']//p"}
+Command duration or timeout: 10 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.41.0', revision: '3192d8a', time: '2014-03-27 17:18:15'
+System info: host: 'CTSCE001372x', ip: '192.168.0.17', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0'
+Session ID: d9884893-275f-4441-a882-9954633018bd
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=28.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.GeneratedConstructorAccessor97.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:445)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:340)
+	at businesscomponents.FunctionalComponents.clickOnFinishOrder(FunctionalComponents.java:782)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at supportlibraries.DriverScript.invokeBusinessComponent(DriverScript.java:473)
+	at supportlibraries.DriverScript.executeTestcase(DriverScript.java:424)
+	at supportlibraries.DriverScript.executeTestIterations(DriverScript.java:378)
+	at supportlibraries.DriverScript.driveTestExecution(DriverScript.java:97)
+	at allocator.ParallelRunner.invokeTestScript(ParallelRunner.java:59)
+	at allocator.ParallelRunner.run(ParallelRunner.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {"method":"xpath","selector":"//div[@class='row error errorMessages']//div[@class='errorMessagesList']//p"}
+Build info: version: '2.41.0', revision: '3192d8a', time: '2014-03-27 17:18:15'
+System info: host: 'CTSCE001372x', ip: '192.168.0.17', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/admin/AppData/Local/Temp/anonymous477466417388934432webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8905)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/admin/AppData/Local/Temp/anonymous477466417388934432webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8914)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/admin/AppData/Local/Temp/anonymous477466417388934432webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10884)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/admin/AppData/Local/Temp/anonymous477466417388934432webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10889)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/admin/AppData/Local/Temp/anonymous477466417388934432webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10831)
+org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[@id='header']//a[@id='Body_LogOut']"}
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.41.0', revision: '3192d8a', time: '2014-03-27 17:18:15'
+System info: host: 'CTSCE001372x', ip: '192.168.0.17', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0'
+Session ID: 91bc0ff9-a89c-4cea-8a56-180c2b425a72
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=28.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.GeneratedConstructorAccessor97.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:445)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:340)
+	at businesscomponents.FunctionalComponents.logout(FunctionalComponents.java:1580)
+	at sun.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at supportlibraries.DriverScript.invokeBusinessComponent(DriverScript.java:473)
+	at supportlibraries.DriverScript.executeTestcase(DriverScript.java:424)
+	at supportlibraries.DriverScript.executeTestIterations(DriverScript.java:378)
+	at supportlibraries.DriverScript.driveTestExecution(DriverScript.java:97)
+	at allocator.ParallelRunner.invokeTestScript(ParallelRunner.java:59)
+	at allocator.ParallelRunner.run(ParallelRunner.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {"method":"xpath","selector":"//div[@id='header']//a[@id='Body_LogOut']"}
+Build info: version: '2.41.0', revision: '3192d8a', time: '2014-03-27 17:18:15'
+System info: host: 'CTSCE001372x', ip: '192.168.0.17', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/admin/AppData/Local/Temp/anonymous5163182502569162215webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8905)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/admin/AppData/Local/Temp/anonymous5163182502569162215webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8914)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/admin/AppData/Local/Temp/anonymous5163182502569162215webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10884)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/admin/AppData/Local/Temp/anonymous5163182502569162215webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10889)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/admin/AppData/Local/Temp/anonymous5163182502569162215webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10831)
+org.openqa.selenium.TimeoutException: Timed out after 120 seconds waiting for businesscomponents.VerificationComponents$2@62d4dcb5
+Build info: version: '2.41.0', revision: '3192d8a', time: '2014-03-27 17:18:15'
+System info: host: 'CTSCE001372x', ip: '192.168.0.17', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:259)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at businesscomponents.VerificationComponents.fluentwait(VerificationComponents.java:2586)
+	at businesscomponents.VerificationComponents.verifyTaskStatusOk(VerificationComponents.java:2460)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at supportlibraries.DriverScript.invokeBusinessComponent(DriverScript.java:473)
+	at supportlibraries.DriverScript.executeTestcase(DriverScript.java:424)
+	at supportlibraries.DriverScript.executeTestIterations(DriverScript.java:378)
+	at supportlibraries.DriverScript.driveTestExecution(DriverScript.java:97)
+	at allocator.ParallelRunner.invokeTestScript(ParallelRunner.java:59)
+	at allocator.ParallelRunner.run(ParallelRunner.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[@id='completedOrderFilter']//form//div[@class='form']//fieldset[@class='container']//img[@style='display: none;']"}
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.41.0', revision: '3192d8a', time: '2014-03-27 17:18:15'
+System info: host: 'CTSCE001372x', ip: '192.168.0.17', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0'
+Session ID: ae90db6f-2924-4c80-86f0-52ea9dfb81bb
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=28.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.GeneratedConstructorAccessor97.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:445)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:340)
+	at businesscomponents.VerificationComponents$2.apply(VerificationComponents.java:2588)
+	at businesscomponents.VerificationComponents$2.apply(VerificationComponents.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 15 more
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {"method":"xpath","selector":"//div[@id='completedOrderFilter']//form//div[@class='form']//fieldset[@class='container']//img[@style='display: none;']"}
+Build info: version: '2.41.0', revision: '3192d8a', time: '2014-03-27 17:18:15'
+System info: host: 'CTSCE001372x', ip: '192.168.0.17', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/admin/AppData/Local/Temp/anonymous1053269342726302399webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8905)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/admin/AppData/Local/Temp/anonymous1053269342726302399webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8914)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/admin/AppData/Local/Temp/anonymous1053269342726302399webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10884)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/admin/AppData/Local/Temp/anonymous1053269342726302399webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10889)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/admin/AppData/Local/Temp/anonymous1053269342726302399webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10831)
+org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[@id='mainmenu']//li[@class='section']//a[@class='sub' and contains(text(),'Bruker')]"}
+Command duration or timeout: 8 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.41.0', revision: '3192d8a', time: '2014-03-27 17:18:15'
+System info: host: 'CTSCE001372x', ip: '192.168.0.17', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0'
+Session ID: 29e1ad5d-02c5-4ef4-a593-5e7e38c0f185
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=28.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.GeneratedConstructorAccessor97.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:445)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:340)
+	at businesscomponents.FunctionalComponents.createUser(FunctionalComponents.java:1914)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at supportlibraries.DriverScript.invokeBusinessComponent(DriverScript.java:473)
+	at supportlibraries.DriverScript.executeTestcase(DriverScript.java:424)
+	at supportlibraries.DriverScript.executeTestIterations(DriverScript.java:378)
+	at supportlibraries.DriverScript.driveTestExecution(DriverScript.java:97)
+	at allocator.ParallelRunner.invokeTestScript(ParallelRunner.java:59)
+	at allocator.ParallelRunner.run(ParallelRunner.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {"method":"xpath","selector":"//div[@id='mainmenu']//li[@class='section']//a[@class='sub' and contains(text(),'Bruker')]"}
+Build info: version: '2.41.0', revision: '3192d8a', time: '2014-03-27 17:18:15'
+System info: host: 'CTSCE001372x', ip: '192.168.0.17', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/admin/AppData/Local/Temp/anonymous3794447284450552519webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8905)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/admin/AppData/Local/Temp/anonymous3794447284450552519webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8914)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/admin/AppData/Local/Temp/anonymous3794447284450552519webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10884)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/admin/AppData/Local/Temp/anonymous3794447284450552519webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10889)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/admin/AppData/Local/Temp/anonymous3794447284450552519webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10831)
+Exception in thread "pool-1-thread-1" java.lang.ClassCastException: java.lang.UnsatisfiedLinkError cannot be cast to java.lang.Exception
+	at supportlibraries.DriverScript.executeTestIterations(DriverScript.java:382)
+	at supportlibraries.DriverScript.driveTestExecution(DriverScript.java:97)
+	at allocator.ParallelRunner.invokeTestScript(ParallelRunner.java:59)
+	at allocator.ParallelRunner.run(ParallelRunner.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[@id='mainmenu']//ul//li[@class='section']//a[@class='sub' and contains(text(),'Admin')]"}
+Command duration or timeout: 11 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.41.0', revision: '3192d8a', time: '2014-03-27 17:18:15'
+System info: host: 'CTSCE001372x', ip: '192.168.0.17', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0'
+Session ID: 91269778-4568-497b-a6dc-c2650909c17d
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=28.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.GeneratedConstructorAccessor97.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:445)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:340)
+	at businesscomponents.FunctionalComponents.addingCategories(FunctionalComponents.java:2335)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at supportlibraries.DriverScript.invokeBusinessComponent(DriverScript.java:473)
+	at supportlibraries.DriverScript.executeTestcase(DriverScript.java:424)
+	at supportlibraries.DriverScript.executeTestIterations(DriverScript.java:378)
+	at supportlibraries.DriverScript.driveTestExecution(DriverScript.java:97)
+	at allocator.ParallelRunner.invokeTestScript(ParallelRunner.java:59)
+	at allocator.ParallelRunner.run(ParallelRunner.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {"method":"xpath","selector":"//div[@id='mainmenu']//ul//li[@class='section']//a[@class='sub' and contains(text(),'Admin')]"}
+Build info: version: '2.41.0', revision: '3192d8a', time: '2014-03-27 17:18:15'
+System info: host: 'CTSCE001372x', ip: '192.168.0.17', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/admin/AppData/Local/Temp/anonymous8477242780844778553webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8905)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/admin/AppData/Local/Temp/anonymous8477242780844778553webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8914)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/admin/AppData/Local/Temp/anonymous8477242780844778553webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10884)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/admin/AppData/Local/Temp/anonymous8477242780844778553webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10889)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/admin/AppData/Local/Temp/anonymous8477242780844778553webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10831)
+org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[@id='mainmenu']//ul//li[@class='section']//a[@class='sub' and contains(text(),'Produkt')]"}
+Command duration or timeout: 44 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.41.0', revision: '3192d8a', time: '2014-03-27 17:18:15'
+System info: host: 'CTSCE001372x', ip: '192.168.0.17', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0'
+Session ID: 91269778-4568-497b-a6dc-c2650909c17d
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=28.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.GeneratedConstructorAccessor97.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:445)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:340)
+	at businesscomponents.FunctionalComponents.addingCategories(FunctionalComponents.java:2366)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at supportlibraries.DriverScript.invokeBusinessComponent(DriverScript.java:473)
+	at supportlibraries.DriverScript.executeTestcase(DriverScript.java:424)
+	at supportlibraries.DriverScript.executeTestIterations(DriverScript.java:378)
+	at supportlibraries.DriverScript.driveTestExecution(DriverScript.java:97)
+	at allocator.ParallelRunner.invokeTestScript(ParallelRunner.java:59)
+	at allocator.ParallelRunner.run(ParallelRunner.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {"method":"xpath","selector":"//div[@id='mainmenu']//ul//li[@class='section']//a[@class='sub' and contains(text(),'Produkt')]"}
+Build info: version: '2.41.0', revision: '3192d8a', time: '2014-03-27 17:18:15'
+System info: host: 'CTSCE001372x', ip: '192.168.0.17', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/admin/AppData/Local/Temp/anonymous8477242780844778553webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8905)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/admin/AppData/Local/Temp/anonymous8477242780844778553webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8914)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/admin/AppData/Local/Temp/anonymous8477242780844778553webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10884)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/admin/AppData/Local/Temp/anonymous8477242780844778553webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10889)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/admin/AppData/Local/Temp/anonymous8477242780844778553webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10831)
+org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[@id='mainmenu']//ul//li[@class='section']//a[@class='sub' and contains(text(),'Admin')]"}
+Command duration or timeout: 6 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.41.0', revision: '3192d8a', time: '2014-03-27 17:18:15'
+System info: host: 'CTSCE001372x', ip: '192.168.0.17', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0'
+Session ID: 91269778-4568-497b-a6dc-c2650909c17d
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=28.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.GeneratedConstructorAccessor97.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:445)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:340)
+	at businesscomponents.FunctionalComponents.addingCategories(FunctionalComponents.java:2472)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at supportlibraries.DriverScript.invokeBusinessComponent(DriverScript.java:473)
+	at supportlibraries.DriverScript.executeTestcase(DriverScript.java:424)
+	at supportlibraries.DriverScript.executeTestIterations(DriverScript.java:378)
+	at supportlibraries.DriverScript.driveTestExecution(DriverScript.java:97)
+	at allocator.ParallelRunner.invokeTestScript(ParallelRunner.java:59)
+	at allocator.ParallelRunner.run(ParallelRunner.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {"method":"xpath","selector":"//div[@id='mainmenu']//ul//li[@class='section']//a[@class='sub' and contains(text(),'Admin')]"}
+Build info: version: '2.41.0', revision: '3192d8a', time: '2014-03-27 17:18:15'
+System info: host: 'CTSCE001372x', ip: '192.168.0.17', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/admin/AppData/Local/Temp/anonymous8477242780844778553webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8905)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/admin/AppData/Local/Temp/anonymous8477242780844778553webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8914)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/admin/AppData/Local/Temp/anonymous8477242780844778553webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10884)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/admin/AppData/Local/Temp/anonymous8477242780844778553webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10889)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/admin/AppData/Local/Temp/anonymous8477242780844778553webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10831)
+org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[@id='mainmenu']//ul//li[@class='section']//a[@class='sub' and contains(text(),'Produkt')]"}
+Command duration or timeout: 8 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.41.0', revision: '3192d8a', time: '2014-03-27 17:18:15'
+System info: host: 'CTSCE001372x', ip: '192.168.0.17', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0'
+Session ID: a6f02de2-1444-45df-a82d-16e985ba76b3
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=28.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.GeneratedConstructorAccessor97.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:445)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:340)
+	at businesscomponents.FunctionalComponents.updateProductCatalog(FunctionalComponents.java:2861)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at supportlibraries.DriverScript.invokeBusinessComponent(DriverScript.java:473)
+	at supportlibraries.DriverScript.executeTestcase(DriverScript.java:424)
+	at supportlibraries.DriverScript.executeTestIterations(DriverScript.java:378)
+	at supportlibraries.DriverScript.driveTestExecution(DriverScript.java:97)
+	at allocator.ParallelRunner.invokeTestScript(ParallelRunner.java:59)
+	at allocator.ParallelRunner.run(ParallelRunner.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {"method":"xpath","selector":"//div[@id='mainmenu']//ul//li[@class='section']//a[@class='sub' and contains(text(),'Produkt')]"}
+Build info: version: '2.41.0', revision: '3192d8a', time: '2014-03-27 17:18:15'
+System info: host: 'CTSCE001372x', ip: '192.168.0.17', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/admin/AppData/Local/Temp/anonymous7698201951836532124webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8905)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/admin/AppData/Local/Temp/anonymous7698201951836532124webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8914)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/admin/AppData/Local/Temp/anonymous7698201951836532124webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10884)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/admin/AppData/Local/Temp/anonymous7698201951836532124webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10889)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/admin/AppData/Local/Temp/anonymous7698201951836532124webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10831)
+org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[@id='mainmenu']//ul//li[@class='section']//a[@class='sub' and  contains(text(),'Agent')]"}
+Command duration or timeout: 10 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.41.0', revision: '3192d8a', time: '2014-03-27 17:18:15'
+System info: host: 'CTSCE001372x', ip: '192.168.0.17', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0'
+Session ID: 0834e0aa-4833-4019-a3eb-daf4448b786c
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=28.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.GeneratedConstructorAccessor97.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:445)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:340)
+	at businesscomponents.FunctionalComponents.createAgent(FunctionalComponents.java:1078)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at supportlibraries.DriverScript.invokeBusinessComponent(DriverScript.java:473)
+	at supportlibraries.DriverScript.executeTestcase(DriverScript.java:424)
+	at supportlibraries.DriverScript.executeTestIterations(DriverScript.java:378)
+	at supportlibraries.DriverScript.driveTestExecution(DriverScript.java:97)
+	at allocator.ParallelRunner.invokeTestScript(ParallelRunner.java:59)
+	at allocator.ParallelRunner.run(ParallelRunner.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {"method":"xpath","selector":"//div[@id='mainmenu']//ul//li[@class='section']//a[@class='sub' and  contains(text(),'Agent')]"}
+Build info: version: '2.41.0', revision: '3192d8a', time: '2014-03-27 17:18:15'
+System info: host: 'CTSCE001372x', ip: '192.168.0.17', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/admin/AppData/Local/Temp/anonymous4139364773396238913webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8905)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/admin/AppData/Local/Temp/anonymous4139364773396238913webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8914)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/admin/AppData/Local/Temp/anonymous4139364773396238913webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10884)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/admin/AppData/Local/Temp/anonymous4139364773396238913webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10889)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/admin/AppData/Local/Temp/anonymous4139364773396238913webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10831)
+org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[@id='mainmenu']//ul//li[@class='section']//a[@class='sub' and  contains(text(),'Forhandler')]"}
+Command duration or timeout: 8 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.41.0', revision: '3192d8a', time: '2014-03-27 17:18:15'
+System info: host: 'CTSCE001372x', ip: '192.168.0.17', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0'
+Session ID: a2634a89-ba39-41fc-988b-5d4898a72be1
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=28.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.GeneratedConstructorAccessor97.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:445)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:340)
+	at businesscomponents.FunctionalComponents.createNewStore(FunctionalComponents.java:3177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at supportlibraries.DriverScript.invokeBusinessComponent(DriverScript.java:473)
+	at supportlibraries.DriverScript.executeTestcase(DriverScript.java:424)
+	at supportlibraries.DriverScript.executeTestIterations(DriverScript.java:378)
+	at supportlibraries.DriverScript.driveTestExecution(DriverScript.java:97)
+	at allocator.ParallelRunner.invokeTestScript(ParallelRunner.java:59)
+	at allocator.ParallelRunner.run(ParallelRunner.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {"method":"xpath","selector":"//div[@id='mainmenu']//ul//li[@class='section']//a[@class='sub' and  contains(text(),'Forhandler')]"}
+Build info: version: '2.41.0', revision: '3192d8a', time: '2014-03-27 17:18:15'
+System info: host: 'CTSCE001372x', ip: '192.168.0.17', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/admin/AppData/Local/Temp/anonymous4778806025792116530webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8905)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/admin/AppData/Local/Temp/anonymous4778806025792116530webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8914)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/admin/AppData/Local/Temp/anonymous4778806025792116530webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10884)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/admin/AppData/Local/Temp/anonymous4778806025792116530webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10889)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/admin/AppData/Local/Temp/anonymous4778806025792116530webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10831)
+org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[@class='container']//div[@style='margin-left:20px']//input[1]"}
+Command duration or timeout: 7 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.41.0', revision: '3192d8a', time: '2014-03-27 17:18:15'
+System info: host: 'CTSCE001372x', ip: '192.168.0.17', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0'
+Session ID: a2634a89-ba39-41fc-988b-5d4898a72be1
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=28.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.GeneratedConstructorAccessor97.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:445)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:340)
+	at webdriverhelper.WebElementVerificationUtils.verifyAndCheckCheckbox(WebElementVerificationUtils.java:256)
+	at businesscomponents.FunctionalComponents.createNewStore(FunctionalComponents.java:3222)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at supportlibraries.DriverScript.invokeBusinessComponent(DriverScript.java:473)
+	at supportlibraries.DriverScript.executeTestcase(DriverScript.java:424)
+	at supportlibraries.DriverScript.executeTestIterations(DriverScript.java:378)
+	at supportlibraries.DriverScript.driveTestExecution(DriverScript.java:97)
+	at allocator.ParallelRunner.invokeTestScript(ParallelRunner.java:59)
+	at allocator.ParallelRunner.run(ParallelRunner.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {"method":"xpath","selector":"//div[@class='container']//div[@style='margin-left:20px']//input[1]"}
+Build info: version: '2.41.0', revision: '3192d8a', time: '2014-03-27 17:18:15'
+System info: host: 'CTSCE001372x', ip: '192.168.0.17', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/admin/AppData/Local/Temp/anonymous4778806025792116530webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8905)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/admin/AppData/Local/Temp/anonymous4778806025792116530webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8914)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/admin/AppData/Local/Temp/anonymous4778806025792116530webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10884)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/admin/AppData/Local/Temp/anonymous4778806025792116530webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10889)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/admin/AppData/Local/Temp/anonymous4778806025792116530webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10831)
+org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[@class='container']//div[@style='margin-left:20px']//input[1]"}
+Command duration or timeout: 12 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.41.0', revision: '3192d8a', time: '2014-03-27 17:18:15'
+System info: host: 'CTSCE001372x', ip: '192.168.0.17', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0'
+Session ID: a2634a89-ba39-41fc-988b-5d4898a72be1
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=28.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.GeneratedConstructorAccessor97.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:445)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:340)
+	at webdriverhelper.WebElementVerificationUtils.verifyAndCheckCheckbox(WebElementVerificationUtils.java:256)
+	at businesscomponents.FunctionalComponents.createNewStore(FunctionalComponents.java:3229)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at supportlibraries.DriverScript.invokeBusinessComponent(DriverScript.java:473)
+	at supportlibraries.DriverScript.executeTestcase(DriverScript.java:424)
+	at supportlibraries.DriverScript.executeTestIterations(DriverScript.java:378)
+	at supportlibraries.DriverScript.driveTestExecution(DriverScript.java:97)
+	at allocator.ParallelRunner.invokeTestScript(ParallelRunner.java:59)
+	at allocator.ParallelRunner.run(ParallelRunner.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {"method":"xpath","selector":"//div[@class='container']//div[@style='margin-left:20px']//input[1]"}
+Build info: version: '2.41.0', revision: '3192d8a', time: '2014-03-27 17:18:15'
+System info: host: 'CTSCE001372x', ip: '192.168.0.17', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/admin/AppData/Local/Temp/anonymous4778806025792116530webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8905)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/admin/AppData/Local/Temp/anonymous4778806025792116530webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8914)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/admin/AppData/Local/Temp/anonymous4778806025792116530webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10884)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/admin/AppData/Local/Temp/anonymous4778806025792116530webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10889)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/admin/AppData/Local/Temp/anonymous4778806025792116530webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10831)
+org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[@class='row error errorMessages']//div[@class='errorMessagesList']//p"}
+Command duration or timeout: 10 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.41.0', revision: '3192d8a', time: '2014-03-27 17:18:15'
+System info: host: 'CTSCE001372x', ip: '192.168.0.17', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0'
+Session ID: cbb9a8ba-3f8a-46c1-87b5-1c1eb5350f9d
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=28.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.GeneratedConstructorAccessor97.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:445)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:340)
+	at businesscomponents.FunctionalComponents.clickOnFinishOrder(FunctionalComponents.java:782)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at supportlibraries.DriverScript.invokeBusinessComponent(DriverScript.java:473)
+	at supportlibraries.DriverScript.executeTestcase(DriverScript.java:424)
+	at supportlibraries.DriverScript.executeTestIterations(DriverScript.java:378)
+	at supportlibraries.DriverScript.driveTestExecution(DriverScript.java:97)
+	at allocator.ParallelRunner.invokeTestScript(ParallelRunner.java:59)
+	at allocator.ParallelRunner.run(ParallelRunner.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {"method":"xpath","selector":"//div[@class='row error errorMessages']//div[@class='errorMessagesList']//p"}
+Build info: version: '2.41.0', revision: '3192d8a', time: '2014-03-27 17:18:15'
+System info: host: 'CTSCE001372x', ip: '192.168.0.17', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/admin/AppData/Local/Temp/anonymous1766917046664960141webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8905)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/admin/AppData/Local/Temp/anonymous1766917046664960141webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8914)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/admin/AppData/Local/Temp/anonymous1766917046664960141webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10884)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/admin/AppData/Local/Temp/anonymous1766917046664960141webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10889)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/admin/AppData/Local/Temp/anonymous1766917046664960141webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10831)
+com.cognizant.framework.FrameworkException: The specified column header "SharedUser" is not found in the sheet "General_Data"!
+	at com.cognizant.framework.ExcelDataAccess.getValue(ExcelDataAccess.java:331)
+	at com.cognizant.framework.CraftDataTable.getData(CraftDataTable.java:96)
+	at businesscomponents.VerificationComponents.verifyHomePageValidations(VerificationComponents.java:1759)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at supportlibraries.DriverScript.invokeBusinessComponent(DriverScript.java:473)
+	at supportlibraries.DriverScript.executeTestcase(DriverScript.java:424)
+	at supportlibraries.DriverScript.executeTestIterations(DriverScript.java:378)
+	at supportlibraries.DriverScript.driveTestExecution(DriverScript.java:97)
+	at allocator.ParallelRunner.invokeTestScript(ParallelRunner.java:59)
+	at allocator.ParallelRunner.run(ParallelRunner.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)

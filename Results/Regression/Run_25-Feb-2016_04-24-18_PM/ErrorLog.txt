@@ -1,0 +1,41 @@
+org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: Offset within element cannot be scrolled into view: (175, 130): [object HTMLUListElement]
+Command duration or timeout: 24 milliseconds
+Build info: version: '2.47.1', revision: '411b314', time: '2015-07-30 02:56:46'
+System info: host: 'PC275317', ip: '10.207.61.69', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_25'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=39.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 31702bbb-3855-45ad-a956-58778b5d3edd
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteExecuteMethod.execute(RemoteExecuteMethod.java:35)
+	at org.openqa.selenium.remote.RemoteMouse.mouseMove(RemoteMouse.java:89)
+	at org.openqa.selenium.interactions.MoveMouseAction.perform(MoveMouseAction.java:39)
+	at org.openqa.selenium.interactions.CompositeAction.perform(CompositeAction.java:50)
+	at businesscomponents.FunctionalComponents.dragandDropFiles(FunctionalComponents.java:4561)
+	at businesscomponents.FunctionalComponents.newUtvalgCreation(FunctionalComponents.java:3912)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at supportlibraries.DriverScript.invokeBusinessComponent(DriverScript.java:473)
+	at supportlibraries.DriverScript.executeTestcase(DriverScript.java:424)
+	at supportlibraries.DriverScript.executeTestIterations(DriverScript.java:378)
+	at supportlibraries.DriverScript.driveTestExecution(DriverScript.java:97)
+	at allocator.ParallelRunner.invokeTestScript(ParallelRunner.java:59)
+	at allocator.ParallelRunner.run(ParallelRunner.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: Offset within element cannot be scrolled into view: (175, 130): [object HTMLUListElement]
+Build info: version: '2.47.1', revision: '411b314', time: '2015-07-30 02:56:46'
+System info: host: 'PC275317', ip: '10.207.61.69', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_25'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.mouseMoveTo(file:///C:/Users/248292/AppData/Local/Temp/anonymous5590946952815732421webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10978)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/248292/AppData/Local/Temp/anonymous5590946952815732421webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12643)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/248292/AppData/Local/Temp/anonymous5590946952815732421webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12648)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/248292/AppData/Local/Temp/anonymous5590946952815732421webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12590)

@@ -1,0 +1,18 @@
+java.io.FileNotFoundException: Source 'D:\KHWorkspace\Kjedehuset\Datatables\Scenario36.xls' does not exist
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:1004)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:968)
+	at supportlibraries.DriverScript.initializeDatatable(DriverScript.java:304)
+	at supportlibraries.DriverScript.driveTestExecution(DriverScript.java:94)
+	at allocator.ParallelRunner.invokeTestScript(ParallelRunner.java:59)
+	at allocator.ParallelRunner.run(ParallelRunner.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Exception in thread "pool-1-thread-1" com.cognizant.framework.FrameworkException: Error in creating run-time datatable: Copying the datatable failed...
+	at supportlibraries.DriverScript.initializeDatatable(DriverScript.java:307)
+	at supportlibraries.DriverScript.driveTestExecution(DriverScript.java:94)
+	at allocator.ParallelRunner.invokeTestScript(ParallelRunner.java:59)
+	at allocator.ParallelRunner.run(ParallelRunner.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)

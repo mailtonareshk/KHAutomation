@@ -1,0 +1,122 @@
+org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+d} installed in app-global
+1458226309064	addons.xpi-utils	DEBUG	Make addon app-global:{972ce4c6-7e08-4474-a285-3208198ce6fd} visible
+1458226309064	DeferredSave.extensions.json	DEBUG	Save changes
+1458226309064	DeferredSave.extensions.json	DEBUG	Save changes
+1458226309064	addons.xpi	DEBUG	Updating XPIState for {"id":"{972ce4c6-7e08-4474-a285-3208198ce6fd}","syncGUID":"FsjwWARsEd7K","location":"app-global","version":"39.0.3","type":"theme","internalName":"classic/1.0","updateURL":null,"updateKey":null,"optionsURL":null,"optionsType":null,"aboutURL":null,"iconURL":null,"icon64URL":null,"defaultLocale":{"name":"Default","description":"The default theme.","creator":"Mozilla","homepageURL":null,"contributors":["Mozilla Contributors"]},"visible":true,"active":true,"userDisabled":false,"appDisabled":false,"descriptor":"C:\\Program Files\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}","installDate":1439284603452,"updateDate":1439284603452,"applyBackgroundUpdates":1,"skinnable":true,"size":3175,"sourceURI":null,"releaseNotesURI":null,"softDisabled":false,"foreignInstall":false,"hasBinaryComponents":false,"strictCompatibility":true,"locales":[],"targetApplications":[{"id":"{ec8030f7-c20a-464f-9b0e-13a3a9e97384}","minVersion":"39.0.3","maxVersion":"39.0.3"}],"targetPlatforms":[]}
+1458226309064	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1458226309065	addons.xpi	DEBUG	New add-on {D19CA586-DD6C-4a0a-96F8-14644F340D60} installed in winreg-app-global
+1458226309098	addons.xpi	WARN	Disabling foreign installed add-on {D19CA586-DD6C-4a0a-96F8-14644F340D60} in winreg-app-global
+1458226309098	addons.xpi-utils	DEBUG	Make addon winreg-app-global:{D19CA586-DD6C-4a0a-96F8-14644F340D60} visible
+1458226309098	DeferredSave.extensions.json	DEBUG	Save changes
+1458226309098	DeferredSave.extensions.json	DEBUG	Save changes
+1458226309098	addons.xpi	DEBUG	Updating XPIState for {"id":"{D19CA586-DD6C-4a0a-96F8-14644F340D60}","syncGUID":"5dU4QJagWGfN","location":"winreg-app-global","version":"15.1.0","type":"extension","internalName":null,"updateURL":null,"updateKey":null,"optionsURL":null,"optionsType":null,"aboutURL":null,"iconURL":"chrome://vscore/content/ScriptFF.gif","icon64URL":null,"defaultLocale":{"name":"McAfee ScriptScan for Firefox","description":null,"creator":"McAfee, Inc.","homepageURL":null},"visible":true,"active":false,"userDisabled":true,"appDisabled":false,"descriptor":"C:\\Program Files\\Common Files\\McAfee\\SystemCore","installDate":1458178901638,"updateDate":1458178901638,"applyBackgroundUpdates":1,"bootstrap":false,"size":6881584,"sourceURI":null,"releaseNotesURI":null,"softDisabled":false,"foreignInstall":true,"hasBinaryComponents":false,"strictCompatibility":false,"locales":[],"targetApplications":[{"id":"{ec8030f7-c20a-464f-9b0e-13a3a9e97384}","minVersion":"1.5","maxVersion":"9.9"}],"targetPlatforms":[],"multiprocessCompatible":false}
+1458226309098	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1458226309098	addons.xpi-utils	DEBUG	Updating add-on states
+1458226309099	addons.xpi-utils	DEBUG	Writing add-ons list
+1458226309170	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1458226309171	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1458226309171	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1458226309171	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1458226309171	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1458226309171	addons.manager	DEBUG	Starting provider: GMPProvider
+1458226309177	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1458226309177	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1458226309177	addons.manager	DEBUG	Starting provider: PluginProvider
+1458226309177	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1458226309178	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1458226309178	addons.manager	DEBUG	Completed startup sequence
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:122)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:276)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:116)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:223)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:212)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
+	at supportlibraries.WebDriverFactory.getDriver(WebDriverFactory.java:73)
+	at supportlibraries.DriverScript.initializeWebDriver(DriverScript.java:178)
+	at supportlibraries.DriverScript.driveTestExecution(DriverScript.java:92)
+	at allocator.ParallelRunner.invokeTestScript(ParallelRunner.java:59)
+	at allocator.ParallelRunner.run(ParallelRunner.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Exception in thread "pool-1-thread-1" org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+d} installed in app-global
+1458226309064	addons.xpi-utils	DEBUG	Make addon app-global:{972ce4c6-7e08-4474-a285-3208198ce6fd} visible
+1458226309064	DeferredSave.extensions.json	DEBUG	Save changes
+1458226309064	DeferredSave.extensions.json	DEBUG	Save changes
+1458226309064	addons.xpi	DEBUG	Updating XPIState for {"id":"{972ce4c6-7e08-4474-a285-3208198ce6fd}","syncGUID":"FsjwWARsEd7K","location":"app-global","version":"39.0.3","type":"theme","internalName":"classic/1.0","updateURL":null,"updateKey":null,"optionsURL":null,"optionsType":null,"aboutURL":null,"iconURL":null,"icon64URL":null,"defaultLocale":{"name":"Default","description":"The default theme.","creator":"Mozilla","homepageURL":null,"contributors":["Mozilla Contributors"]},"visible":true,"active":true,"userDisabled":false,"appDisabled":false,"descriptor":"C:\\Program Files\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}","installDate":1439284603452,"updateDate":1439284603452,"applyBackgroundUpdates":1,"skinnable":true,"size":3175,"sourceURI":null,"releaseNotesURI":null,"softDisabled":false,"foreignInstall":false,"hasBinaryComponents":false,"strictCompatibility":true,"locales":[],"targetApplications":[{"id":"{ec8030f7-c20a-464f-9b0e-13a3a9e97384}","minVersion":"39.0.3","maxVersion":"39.0.3"}],"targetPlatforms":[]}
+1458226309064	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1458226309065	addons.xpi	DEBUG	New add-on {D19CA586-DD6C-4a0a-96F8-14644F340D60} installed in winreg-app-global
+1458226309098	addons.xpi	WARN	Disabling foreign installed add-on {D19CA586-DD6C-4a0a-96F8-14644F340D60} in winreg-app-global
+1458226309098	addons.xpi-utils	DEBUG	Make addon winreg-app-global:{D19CA586-DD6C-4a0a-96F8-14644F340D60} visible
+1458226309098	DeferredSave.extensions.json	DEBUG	Save changes
+1458226309098	DeferredSave.extensions.json	DEBUG	Save changes
+1458226309098	addons.xpi	DEBUG	Updating XPIState for {"id":"{D19CA586-DD6C-4a0a-96F8-14644F340D60}","syncGUID":"5dU4QJagWGfN","location":"winreg-app-global","version":"15.1.0","type":"extension","internalName":null,"updateURL":null,"updateKey":null,"optionsURL":null,"optionsType":null,"aboutURL":null,"iconURL":"chrome://vscore/content/ScriptFF.gif","icon64URL":null,"defaultLocale":{"name":"McAfee ScriptScan for Firefox","description":null,"creator":"McAfee, Inc.","homepageURL":null},"visible":true,"active":false,"userDisabled":true,"appDisabled":false,"descriptor":"C:\\Program Files\\Common Files\\McAfee\\SystemCore","installDate":1458178901638,"updateDate":1458178901638,"applyBackgroundUpdates":1,"bootstrap":false,"size":6881584,"sourceURI":null,"releaseNotesURI":null,"softDisabled":false,"foreignInstall":true,"hasBinaryComponents":false,"strictCompatibility":false,"locales":[],"targetApplications":[{"id":"{ec8030f7-c20a-464f-9b0e-13a3a9e97384}","minVersion":"1.5","maxVersion":"9.9"}],"targetPlatforms":[],"multiprocessCompatible":false}
+1458226309098	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1458226309098	addons.xpi-utils	DEBUG	Updating add-on states
+1458226309099	addons.xpi-utils	DEBUG	Writing add-ons list
+1458226309170	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1458226309171	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1458226309171	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1458226309171	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1458226309171	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1458226309171	addons.manager	DEBUG	Starting provider: GMPProvider
+1458226309177	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1458226309177	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1458226309177	addons.manager	DEBUG	Starting provider: PluginProvider
+1458226309177	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1458226309178	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1458226309178	addons.manager	DEBUG	Completed startup sequence
+
+Build info: version: '2.47.1', revision: '411b314', time: '2015-07-30 02:56:46'
+System info: host: 'PC275317', ip: '10.207.61.69', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_25'
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:134)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:276)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:116)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:223)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:212)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
+	at supportlibraries.WebDriverFactory.getDriver(WebDriverFactory.java:73)
+	at supportlibraries.DriverScript.initializeWebDriver(DriverScript.java:178)
+	at supportlibraries.DriverScript.driveTestExecution(DriverScript.java:92)
+	at allocator.ParallelRunner.invokeTestScript(ParallelRunner.java:59)
+	at allocator.ParallelRunner.run(ParallelRunner.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+d} installed in app-global
+1458226309064	addons.xpi-utils	DEBUG	Make addon app-global:{972ce4c6-7e08-4474-a285-3208198ce6fd} visible
+1458226309064	DeferredSave.extensions.json	DEBUG	Save changes
+1458226309064	DeferredSave.extensions.json	DEBUG	Save changes
+1458226309064	addons.xpi	DEBUG	Updating XPIState for {"id":"{972ce4c6-7e08-4474-a285-3208198ce6fd}","syncGUID":"FsjwWARsEd7K","location":"app-global","version":"39.0.3","type":"theme","internalName":"classic/1.0","updateURL":null,"updateKey":null,"optionsURL":null,"optionsType":null,"aboutURL":null,"iconURL":null,"icon64URL":null,"defaultLocale":{"name":"Default","description":"The default theme.","creator":"Mozilla","homepageURL":null,"contributors":["Mozilla Contributors"]},"visible":true,"active":true,"userDisabled":false,"appDisabled":false,"descriptor":"C:\\Program Files\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}","installDate":1439284603452,"updateDate":1439284603452,"applyBackgroundUpdates":1,"skinnable":true,"size":3175,"sourceURI":null,"releaseNotesURI":null,"softDisabled":false,"foreignInstall":false,"hasBinaryComponents":false,"strictCompatibility":true,"locales":[],"targetApplications":[{"id":"{ec8030f7-c20a-464f-9b0e-13a3a9e97384}","minVersion":"39.0.3","maxVersion":"39.0.3"}],"targetPlatforms":[]}
+1458226309064	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1458226309065	addons.xpi	DEBUG	New add-on {D19CA586-DD6C-4a0a-96F8-14644F340D60} installed in winreg-app-global
+1458226309098	addons.xpi	WARN	Disabling foreign installed add-on {D19CA586-DD6C-4a0a-96F8-14644F340D60} in winreg-app-global
+1458226309098	addons.xpi-utils	DEBUG	Make addon winreg-app-global:{D19CA586-DD6C-4a0a-96F8-14644F340D60} visible
+1458226309098	DeferredSave.extensions.json	DEBUG	Save changes
+1458226309098	DeferredSave.extensions.json	DEBUG	Save changes
+1458226309098	addons.xpi	DEBUG	Updating XPIState for {"id":"{D19CA586-DD6C-4a0a-96F8-14644F340D60}","syncGUID":"5dU4QJagWGfN","location":"winreg-app-global","version":"15.1.0","type":"extension","internalName":null,"updateURL":null,"updateKey":null,"optionsURL":null,"optionsType":null,"aboutURL":null,"iconURL":"chrome://vscore/content/ScriptFF.gif","icon64URL":null,"defaultLocale":{"name":"McAfee ScriptScan for Firefox","description":null,"creator":"McAfee, Inc.","homepageURL":null},"visible":true,"active":false,"userDisabled":true,"appDisabled":false,"descriptor":"C:\\Program Files\\Common Files\\McAfee\\SystemCore","installDate":1458178901638,"updateDate":1458178901638,"applyBackgroundUpdates":1,"bootstrap":false,"size":6881584,"sourceURI":null,"releaseNotesURI":null,"softDisabled":false,"foreignInstall":true,"hasBinaryComponents":false,"strictCompatibility":false,"locales":[],"targetApplications":[{"id":"{ec8030f7-c20a-464f-9b0e-13a3a9e97384}","minVersion":"1.5","maxVersion":"9.9"}],"targetPlatforms":[],"multiprocessCompatible":false}
+1458226309098	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1458226309098	addons.xpi-utils	DEBUG	Updating add-on states
+1458226309099	addons.xpi-utils	DEBUG	Writing add-ons list
+1458226309170	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1458226309171	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1458226309171	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1458226309171	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1458226309171	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1458226309171	addons.manager	DEBUG	Starting provider: GMPProvider
+1458226309177	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1458226309177	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1458226309177	addons.manager	DEBUG	Starting provider: PluginProvider
+1458226309177	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1458226309178	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1458226309178	addons.manager	DEBUG	Completed startup sequence
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:122)
+	... 14 more

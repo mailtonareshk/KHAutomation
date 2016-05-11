@@ -1,0 +1,584 @@
+<!DOCTYPE html> 
+<html> 
+	 <head> 
+		 <meta charset='UTF-8'> 
+		 <title>Kjedehuset - Scenario25_TC1 Automation Execution Results</title> 
+
+		 <style type='text/css'> 
+			 body { 
+				 background-color: #000000; 
+				 font-family: Verdana, Geneva, sans-serif; 
+				 text-align: center; 
+			 } 
+
+			 small { 
+				 font-size: 0.7em; 
+			 } 
+
+			 table { 
+				 border: 1px solid #4D7C7B; 
+				 border-collapse: collapse; 
+				 border-spacing: 0px; 
+				 width: 1000px; 
+				 margin-left: auto; 
+				 margin-right: auto; 
+			 } 
+
+			 tr.heading { 
+				 background-color: #4D7C7B; 
+				 color: #FFFF95; 
+				 font-size: 0.9em; 
+				 font-weight: bold; 
+			 } 
+
+			 tr.subheading { 
+				 background-color: #FFFF95; 
+				 color: #4D7C7B; 
+				 font-weight: bold; 
+				 font-size: 0.9em; 
+				 text-align: justify; 
+			 } 
+
+			 tr.section { 
+				 background-color: #89B6B5; 
+				 color: #333300; 
+				 cursor: pointer; 
+				 font-weight: bold; 
+				 font-size: 0.9em; 
+				 text-align: justify; 
+			 } 
+
+			 tr.subsection { 
+				 cursor: pointer; 
+			 } 
+
+			 tr.content { 
+				 background-color: #FAFAC5; 
+				 color: #000000; 
+				 font-size: 0.9em; 
+				 display: table-row; 
+			 } 
+
+			 td, th { 
+				 padding: 4px; 
+				 text-align: inherit\0/; 
+			 } 
+
+			 td.justified { 
+				 text-align: justify; 
+			 } 
+
+			 td.pass { 
+				 font-weight: bold; 
+				 color: green; 
+			 } 
+
+			 td.fail { 
+				 font-weight: bold; 
+				 color: red; 
+			 } 
+
+			 td.done, td.screenshot { 
+				 font-weight: bold; 
+				 color: black; 
+			 } 
+
+			 td.debug { 
+				 font-weight: bold; 
+				 color: blue; 
+			 } 
+
+			 td.warning { 
+				 font-weight: bold; 
+				 color: orange; 
+			 } 
+		 </style> 
+
+		 <script> 
+			 function toggleMenu(objID) { 
+				 if (!document.getElementById) return; 
+				 var ob = document.getElementById(objID).style; 
+				 if(ob.display === 'none') { 
+					 try { 
+						 ob.display='table-row-group'; 
+					 } catch(ex) { 
+						 ob.display='block'; 
+					 } 
+				 } 
+				 else { 
+					 ob.display='none'; 
+				 } 
+			 } 
+			 function toggleSubMenu(objId) { 
+				 for(i=1; i<10000; i++) { 
+					 var ob = document.getElementById(objId.concat(i)); 
+					 if(ob === null) { 
+						 break; 
+					 } 
+					 if(ob.style.display === 'none') { 
+						 try { 
+							 ob.style.display='table-row'; 
+						 } catch(ex) { 
+							 ob.style.display='block'; 
+						 } 
+					 } 
+					 else { 
+						 ob.style.display='none'; 
+					 } 
+				 } 
+			 } 
+		 </script> 
+	 </head> 
+
+	 <body> 
+		 <table id='header'> 
+			 <colgroup> 
+				 <col style='width: 25%' /> 
+				 <col style='width: 25%' /> 
+				 <col style='width: 25%' /> 
+				 <col style='width: 25%' /> 
+			 </colgroup> 
+
+			 <thead> 
+				 <tr class='heading'> 
+					 <th colspan='4' style='font-family:Copperplate Gothic Bold; font-size:1.4em;'> 
+						 Kjedehuset - Scenario25_TC1 Automation Execution Results 
+					 </th> 
+				 </tr> 
+				 <tr class='subheading'> 
+					 <th>&nbsp;Date&nbsp;&&nbsp;Time</th> 
+					 <th>&nbsp;:&nbsp;25-Feb-2016&nbsp;03:48:38&nbsp;PM</th> 
+					 <th>&nbsp;Iteration&nbsp;Mode</th> 
+					 <th>&nbsp;:&nbsp;RunOneIterationOnly</th> 
+				 </tr> 
+				 <tr class='subheading'> 
+					 <th>&nbsp;Start&nbsp;Iteration</th> 
+					 <th>&nbsp;:&nbsp;1</th> 
+					 <th>&nbsp;End&nbsp;Iteration</th> 
+					 <th>&nbsp;:&nbsp;1</th> 
+				 </tr> 
+				 <tr class='subheading'> 
+					 <th>&nbsp;Browser</th> 
+					 <th>&nbsp;:&nbsp;Firefox</th> 
+					 <th>&nbsp;Executed&nbsp;on</th> 
+					 <th>&nbsp;:&nbsp;Local&nbsp;Machine</th> 
+				 </tr> 
+			 </thead> 
+		 </table> 
+
+		 <table id='main'> 
+			 <colgroup> 
+				 <col style='width: 8%' /> 
+				 <col style='width: 12%' /> 
+				 <col style='width: 62%' /> 
+				 <col style='width: 8%' /> 
+				 <col style='width: 10%' /> 
+			 </colgroup> 
+
+			 <thead> 
+				 <tr class='heading'> 
+					 <th>Step_No</th> 
+					 <th>Step_Name</th> 
+					 <th>Description</th> 
+					 <th>Status</th> 
+					 <th>Step_Time</th> 
+				 </tr> 
+			 </thead> 
+
+			 <tbody> 
+				 <tr class='section'> 
+					 <td colspan='5' onclick="toggleMenu('Iteration1')">+ Iteration: 1</td> 
+				 </tr> 
+			 </tbody> 
+			 <tbody id='Iteration1' style='display:table-row-group'> 
+				 <tr class='subheading subsection'> 
+					 <td colspan='5' onclick="toggleSubMenu('Iteration1InvokeApplication')">&nbsp;+ InvokeApplication</td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1InvokeApplication1'> 
+					 <td>1</td> 
+					 <td class='justified'>Invoke Application</td> 
+					 <td class='justified'>Invoke the application under test @ https://mbizadminpreprod.kjedehuset.no</td> 
+					 <td class='done'>DONE</td> 
+					 <td><small>25-Feb-2016 03:48:44 PM</small></td> 
+				 </tr> 
+				 <tr class='subheading subsection'> 
+					 <td colspan='5' onclick="toggleSubMenu('Iteration1Login')">&nbsp;+ Login</td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1Login1'> 
+					 <td>2</td> 
+					 <td class='justified'>Value should be entered in <b>User Name</b> text box.</td> 
+					 <td class='justified'><b>herman</b> value entered in text box.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>25-Feb-2016 03:48:44 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1Login2'> 
+					 <td>3</td> 
+					 <td class='justified'>Should click <b>Login</b> button.</td> 
+					 <td class='justified'><b>Login</b> button clicked.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>25-Feb-2016 03:48:46 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1Login3'> 
+					 <td>4</td> 
+					 <td class='justified'>Value should be entered in <b>Password</b> text box.</td> 
+					 <td class='justified'><b>bennu123</b> value entered in text box.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>25-Feb-2016 03:48:46 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1Login4'> 
+					 <td>5</td> 
+					 <td class='justified'>Should click <b>Login</b> button.</td> 
+					 <td class='justified'><b>Login</b> button clicked.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>25-Feb-2016 03:48:53 PM</small></td> 
+				 </tr> 
+				 <tr class='subheading subsection'> 
+					 <td colspan='5' onclick="toggleSubMenu('Iteration1CreateNewForhandler')">&nbsp;+ CreateNewForhandler</td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateNewForhandler1'> 
+					 <td>6</td> 
+					 <td class='justified'>Error in clicking the link:links_lnkAgentMenu</td> 
+					 <td class='justified'></td> 
+					 <td class='warning'>WARNING</td> 
+					 <td><small>25-Feb-2016 03:49:00 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateNewForhandler2'> 
+					 <td>7</td> 
+					 <td class='justified'>Should click <b>See Agent</b> button.</td> 
+					 <td class='justified'><b>See Agent</b> button clicked.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>25-Feb-2016 03:49:03 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateNewForhandler3'> 
+					 <td>8</td> 
+					 <td class='justified'>Should click <b>ForHandler</b> button.</td> 
+					 <td class='justified'><b>ForHandler</b> button clicked.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>25-Feb-2016 03:49:05 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateNewForhandler4'> 
+					 <td>9</td> 
+					 <td class='justified'>Should click <b>Forhandler Status</b> button.</td> 
+					 <td class='justified'><b>Forhandler Status</b> button clicked.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>25-Feb-2016 03:49:05 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateNewForhandler5'> 
+					 <td>10</td> 
+					 <td class='justified'>Value should be entered in <b>Company Name</b> text box.</td> 
+					 <td class='justified'><b>TestCompanyName2016-02-25-15-48-58</b> value entered in text box.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>25-Feb-2016 03:49:06 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateNewForhandler6'> 
+					 <td>11</td> 
+					 <td class='justified'>Value should be entered in <b>Company Market</b> text box.</td> 
+					 <td class='justified'><b>TestCompanyMarketName2016-02-25-15-48-58</b> value entered in text box.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>25-Feb-2016 03:49:06 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateNewForhandler7'> 
+					 <td>12</td> 
+					 <td class='justified'>Value should be entered in <b>Organization Number</b> text box.</td> 
+					 <td class='justified'><b>936869335</b> value entered in text box.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>25-Feb-2016 03:49:06 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateNewForhandler8'> 
+					 <td>13</td> 
+					 <td class='justified'>Value should be entered in <b>AddressLine1</b> text box.</td> 
+					 <td class='justified'><b>Jayanagar</b> value entered in text box.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>25-Feb-2016 03:49:06 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateNewForhandler9'> 
+					 <td>14</td> 
+					 <td class='justified'>Value should be entered in <b>Postal Code</b> text box.</td> 
+					 <td class='justified'><b>560078</b> value entered in text box.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>25-Feb-2016 03:49:06 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateNewForhandler10'> 
+					 <td>15</td> 
+					 <td class='justified'>Value should be entered in <b>PostalCode Name</b> text box.</td> 
+					 <td class='justified'><b>123456</b> value entered in text box.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>25-Feb-2016 03:49:06 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateNewForhandler11'> 
+					 <td>16</td> 
+					 <td class='justified'>Value should be entered in <b>Postal Number</b> text box.</td> 
+					 <td class='justified'><b>8065713306</b> value entered in text box.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>25-Feb-2016 03:49:06 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateNewForhandler12'> 
+					 <td>17</td> 
+					 <td class='justified'>Value should be entered in <b>FaxNumber</b> text box.</td> 
+					 <td class='justified'><b>123456789</b> value entered in text box.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>25-Feb-2016 03:49:07 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateNewForhandler13'> 
+					 <td>18</td> 
+					 <td class='justified'>Value should be entered in <b>MainPhoneNumber</b> text box.</td> 
+					 <td class='justified'><b>0806574490</b> value entered in text box.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>25-Feb-2016 03:49:07 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateNewForhandler14'> 
+					 <td>19</td> 
+					 <td class='justified'>Value should be entered in <b>ChiefExecutiveOfficer</b> text box.</td> 
+					 <td class='justified'><b>TestCEO</b> value entered in text box.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>25-Feb-2016 03:49:07 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateNewForhandler15'> 
+					 <td>20</td> 
+					 <td class='justified'>Value should be entered in <b>BankAccountNumber</b> text box.</td> 
+					 <td class='justified'><b>12345678</b> value entered in text box.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>25-Feb-2016 03:49:07 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateNewForhandler16'> 
+					 <td>21</td> 
+					 <td class='justified'>Should click <b>Proceed</b> button.</td> 
+					 <td class='justified'><b>Proceed</b> button clicked.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>25-Feb-2016 03:49:09 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateNewForhandler17'> 
+					 <td>22</td> 
+					 <td class='justified'>Value should be entered in <b>NavisionCompanyId</b> text box.</td> 
+					 <td class='justified'><b>18396</b> value entered in text box.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>25-Feb-2016 03:49:09 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateNewForhandler18'> 
+					 <td>23</td> 
+					 <td class='justified'>Should click <b>KhBillingCustomerId</b> link.</td> 
+					 <td class='justified'><b>KhBillingCustomerId</b> link clicked.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>25-Feb-2016 03:49:09 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateNewForhandler19'> 
+					 <td>24</td> 
+					 <td class='justified'>Input Data for KhBillingCustomerId text box is empty/blank. </td> 
+					 <td class='justified'>Test data not provided in the test data sheet.</td> 
+					 <td class='done'>DONE</td> 
+					 <td><small>25-Feb-2016 03:49:09 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateNewForhandler20'> 
+					 <td>25</td> 
+					 <td class='justified'>Input Data for CrmId text box is empty/blank. </td> 
+					 <td class='justified'>Test data not provided in the test data sheet.</td> 
+					 <td class='done'>DONE</td> 
+					 <td><small>25-Feb-2016 03:49:09 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateNewForhandler21'> 
+					 <td>26</td> 
+					 <td class='justified'>Value should be entered in <b>TelecomputingCompanyId</b> text box.</td> 
+					 <td class='justified'><b>123</b> value entered in text box.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>25-Feb-2016 03:49:09 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateNewForhandler22'> 
+					 <td>27</td> 
+					 <td class='justified'>Value should be entered in <b>PaymentAccountNumber</b> text box.</td> 
+					 <td class='justified'><b>12345678</b> value entered in text box.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>25-Feb-2016 03:49:10 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateNewForhandler23'> 
+					 <td>28</td> 
+					 <td class='justified'>Value should be entered in <b>PaymentEncryptionKey</b> text box.</td> 
+					 <td class='justified'><b>12345678901234567890</b> value entered in text box.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>25-Feb-2016 03:49:10 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateNewForhandler24'> 
+					 <td>29</td> 
+					 <td class='justified'>Value should be entered in <b>TelenorNettforhandlerDealerId</b> text box.</td> 
+					 <td class='justified'><b>4056</b> value entered in text box.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>25-Feb-2016 03:49:10 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateNewForhandler25'> 
+					 <td>30</td> 
+					 <td class='justified'>Value should be entered in <b>TelenorNettforhandlerDealerLocalId</b> text box.</td> 
+					 <td class='justified'><b>0896758</b> value entered in text box.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>25-Feb-2016 03:49:10 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateNewForhandler26'> 
+					 <td>31</td> 
+					 <td class='justified'>Input Data for Credit Score text box is empty/blank. </td> 
+					 <td class='justified'>Test data not provided in the test data sheet.</td> 
+					 <td class='done'>DONE</td> 
+					 <td><small>25-Feb-2016 03:49:10 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateNewForhandler27'> 
+					 <td>32</td> 
+					 <td class='justified'>Input Data for Turnover text box is empty/blank. </td> 
+					 <td class='justified'>Test data not provided in the test data sheet.</td> 
+					 <td class='done'>DONE</td> 
+					 <td><small>25-Feb-2016 03:49:10 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateNewForhandler28'> 
+					 <td>33</td> 
+					 <td class='justified'>Input Data for ProfitBeforeTax text box is empty/blank. </td> 
+					 <td class='justified'>Test data not provided in the test data sheet.</td> 
+					 <td class='done'>DONE</td> 
+					 <td><small>25-Feb-2016 03:49:10 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateNewForhandler29'> 
+					 <td>34</td> 
+					 <td class='justified'>Value should be entered in <b>LiquidityRatio</b> text box.</td> 
+					 <td class='justified'><b>0</b> value entered in text box.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>25-Feb-2016 03:49:10 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateNewForhandler30'> 
+					 <td>35</td> 
+					 <td class='justified'>Value should be entered in <b>Equity</b> text box.</td> 
+					 <td class='justified'><b>0</b> value entered in text box.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>25-Feb-2016 03:49:10 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateNewForhandler31'> 
+					 <td>36</td> 
+					 <td class='justified'>Value should be entered in <b>ResultRatio</b> text box.</td> 
+					 <td class='justified'><b>0</b> value entered in text box.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>25-Feb-2016 03:49:11 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateNewForhandler32'> 
+					 <td>37</td> 
+					 <td class='justified'>Input Data for CreditCheckPerformedBy text box is empty/blank. </td> 
+					 <td class='justified'>Test data not provided in the test data sheet.</td> 
+					 <td class='done'>DONE</td> 
+					 <td><small>25-Feb-2016 03:49:11 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateNewForhandler33'> 
+					 <td>38</td> 
+					 <td class='justified'>Input Data for CreditLimitLimit text box is empty/blank. </td> 
+					 <td class='justified'>Test data not provided in the test data sheet.</td> 
+					 <td class='done'>DONE</td> 
+					 <td><small>25-Feb-2016 03:49:11 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateNewForhandler34'> 
+					 <td>39</td> 
+					 <td class='justified'>Should click <b>Proceed</b> button.</td> 
+					 <td class='justified'><b>Proceed</b> button clicked.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>25-Feb-2016 03:49:19 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateNewForhandler35'> 
+					 <td>40</td> 
+					 <td class='justified'>Should click <b>Proceed</b> button.</td> 
+					 <td class='justified'><b>Proceed</b> button clicked.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>25-Feb-2016 03:49:24 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateNewForhandler36'> 
+					 <td>41</td> 
+					 <td class='justified'>Should click <b>Proceed</b> button.</td> 
+					 <td class='justified'><b>Proceed</b> button clicked.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>25-Feb-2016 03:49:29 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateNewForhandler37'> 
+					 <td>42</td> 
+					 <td class='justified'>Value should be entered in <b>company Market</b> text box.</td> 
+					 <td class='justified'><b>TestCompanyMarketName2016-02-25-15-48-58</b> value entered in text box.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>25-Feb-2016 03:49:29 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateNewForhandler38'> 
+					 <td>43</td> 
+					 <td class='justified'>Value should be entered in <b>ShopAddressLine</b> text box.</td> 
+					 <td class='justified'><b>Gjerdrums</b> value entered in text box.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>25-Feb-2016 03:49:29 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateNewForhandler39'> 
+					 <td>44</td> 
+					 <td class='justified'>Value should be entered in <b>ShopAddressPostalCode</b> text box.</td> 
+					 <td class='justified'><b>560078</b> value entered in text box.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>25-Feb-2016 03:49:29 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateNewForhandler40'> 
+					 <td>45</td> 
+					 <td class='justified'>Value should be entered in <b>ShopAddressPostalCodeName</b> text box.</td> 
+					 <td class='justified'><b>Oslo</b> value entered in text box.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>25-Feb-2016 03:49:29 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateNewForhandler41'> 
+					 <td>46</td> 
+					 <td class='justified'>Value should be entered in <b>GeoLocation</b> text box.</td> 
+					 <td class='justified'><b>Norway</b> value entered in text box.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>25-Feb-2016 03:49:29 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateNewForhandler42'> 
+					 <td>47</td> 
+					 <td class='justified'>Value should be entered in <b>About</b> text box.</td> 
+					 <td class='justified'><b>Test</b> value entered in text box.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>25-Feb-2016 03:49:30 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateNewForhandler43'> 
+					 <td>48</td> 
+					 <td class='justified'>Should click <b>Save</b> button.</td> 
+					 <td class='justified'><b>Save</b> button clicked.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>25-Feb-2016 03:49:34 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateNewForhandler44'> 
+					 <td>49</td> 
+					 <td class='justified'>Should click <b>Agent</b> link.</td> 
+					 <td class='justified'><b>Agent</b> link clicked.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>25-Feb-2016 03:49:35 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateNewForhandler45'> 
+					 <td>50</td> 
+					 <td class='justified'>Should click <b>See Agent</b> button.</td> 
+					 <td class='justified'><b>See Agent</b> button clicked.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>25-Feb-2016 03:49:39 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1CreateNewForhandler46'> 
+					 <td>51</td> 
+					 <td class='justified'>Distrubutor Creation</td> 
+					 <td class='justified'>New distributor is created for the corresponding Agent successfully</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>25-Feb-2016 03:49:39 PM</small></td> 
+				 </tr> 
+			 </tbody> 
+		 </table> 
+
+		 <table id='footer'> 
+			 <colgroup> 
+				 <col style='width: 25%' /> 
+				 <col style='width: 25%' /> 
+				 <col style='width: 25%' /> 
+				 <col style='width: 25%' /> 
+			 </colgroup> 
+
+			 <tfoot> 
+				 <tr class='heading'> 
+					 <th colspan='4'>Execution Duration: 1 minute(s), 6 seconds</th> 
+				 </tr> 
+				 <tr class='subheading'> 
+					 <td class='pass'>&nbsp;Steps passed</td> 
+					 <td class='pass'>&nbsp;: 42</td> 
+					 <td class='fail'>&nbsp;Steps failed</td> 
+					 <td class='fail'>&nbsp;: 0</td> 
+				 </tr> 
+			 </tfoot> 
+		 </table> 
+	 </body> 
+</html>

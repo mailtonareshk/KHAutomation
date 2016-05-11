@@ -1,0 +1,724 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--  
+    Document	: UImappings.xml	
+    Created 	: December 2013
+    Created By	: CTS Automation Team
+    Description	: This Document is useful for Object mapping for UI components.
+-->
+
+<uimappings>
+
+<!-- @author CTS Team - Dec 2013 --> 
+<login>
+<username findby="Xpath" Xpath="//form//p[1]//input[@id='username']" />
+<password findby="Xpath" Xpath="//form//p[2]//input[@id='password']" />
+<signin findby="Xpath" Xpath="//div[@class='content']//div[@id='content']//form//input[@type='submit']" />
+</login>
+
+<!-- @author CTS Team -Dec 2013 -->
+<textboxes>
+<txtInitialer1 findby="Xpath" Xpath="//div[@id='deliveryAddressWrapper']//div[@class='deliveryFrame']//input[@id='Body_MainContent_MainContent_DeliveryPaymentControl_DeliveryAddress_deliveryReference']" />
+<txtMobilnummer findby="Xpath" Xpath="//div[@id='billingAddressWrapper']//div[@class='deliveryFrame']//input[@id='Body_MainContent_MainContent_DeliveryPaymentControl_BillingAddress_deliveryReference']" />
+<txtApproveorder findby="Xpath" Xpath="//textarea[@id='Body_MainContent_ctl00_OrderCommentTextBox']"/>
+<txtOTPUser findby="Xpath" Xpath="//div[@id='content']//input[@id='Body_ReplaceMainContent_MainContent_SearchTextBox']"/>
+<txtWordDisplay2 findby="Xpath" Xpath="//div[@id='content']//div[@class='message-sucess']//h2"/>
+<txtWordDisplay3 findby="Xpath" Xpath="//div[@id='content']//div[@class='message-error']//h2"/>
+<txtWithoutSubscription findby="Xpath"  id="" name="" Xpath="//div[@class='product-overview']//div[@id='step-number2']//div[@class='product-overview-content']//h2//span[@class='defaultSubscription']" />
+<txtMobilePrice findby="Xpath" Xpath="//div[@class='product-overview']//div[@id='step-number3']//div[@class='product-overview-content']//div[@id='pricebox']//h2//strong//span"/>
+<txtProductPrice findby="Xpath" Xpath="//div[@class='group']//tr[contains(@class,'productgroup')]//td[@class='pricecart'][2]//strong" />
+<txtProductPrice2 findby="Xpath" Xpath="//div[@class='group']//tr[@class='productgroup']//td[@class='pricecart'][1]//strong" />
+<txtProductPrice3 findby="Xpath" Xpath="//div[@class='group']//tr[@class='productgroup ']//td[@class='pricecart'][2]//strong" />
+<txtMonthlyPrice findby="Xpath" Xpath="//div[@class='group']//tr[@class='productgroup']//td[@class='pricecart'][1]//span//strong" />
+<txtShippingPrice findby="Xpath" Xpath="//div[@class='group']//tr[@class='shipping']//td[@class='pricecart']//strong" />
+<txtTotalPrice findby="Xpath" Xpath="//div[@class='group']//tr[@class='productgroup']//td[@class='pricecart'][3]//strong" />
+<txtPayingPrice findby="Xpath" Xpath="//div[@class='group']//tr[@class='footer']//td[@class='pricecart']//strong" />
+<txtPayingPrice2 findby="Xpath" Xpath="//div[@class='row step3']//table//tr[@class='footer']//td[@class='pricecart']//strong" />
+<txtFirstName findby="Xpath" Xpath="//div[@class='tab_container']//div[@class='field-medium']//p//input[@id='Body_MainContent_MainContent_PersonaliaControl_Firstname']" />
+<txtLastName findby="Xpath" Xpath="//div[@class='tab_container']//input[@id='Body_MainContent_MainContent_PersonaliaControl_Lastname']" />
+<txtEmail findby="Xpath" Xpath="//div[@class='tab_container']//input[@id='Body_MainContent_MainContent_PersonaliaControl_Email']" />
+<txtAddress findby="Xpath" Xpath="//div[@class='tab_container']//input[@id='Body_MainContent_MainContent_PersonaliaControl_AddressLine1']" /> 
+<txtPostalCode findby="Xpath" Xpath="//div[@class='tab_container']//input[@id='Body_MainContent_MainContent_PersonaliaControl_PostalCode']" /> 
+<txtPostalPlace findby="Xpath" Xpath="//div[@class='tab_container']//input[@id='Body_MainContent_MainContent_PersonaliaControl_PostalPlace']" /> 
+<txtProductName findby="Xpath" Xpath="//div[@class='row step3']//tr[@class='productgroup']//td[@class='headcart formatpricecart']//p//strong" /> 
+<txtShippingPrice2 findby="Xpath" Xpath="//div[@class='row step3']//tr[@class='shipping']//td[@class='pricecart']//strong" />
+<txtTotalPrice2 findby="Xpath" Xpath="//div[@class='row step3']//tr[@class='footer']//td[@class='pricecart']//strong" /> 
+<txtPrice findby="Xpath" Xpath="//div[@class='row step3']//tr[@class='productgroup']//td[@class='pricecart formatpricecart'][2]//strong" />	
+<txtPrice2 findby="Xpath" Xpath="//div[@class='row step3']//tr[@class='productgroup']//td[@class='pricecart formatpricecart'][3]//strong" />
+<txtCreditCardNumber findby="Xpath" Xpath="//div[@id='payment']//fieldset//div[@class='row text']//input[@id='ctl00_BodyContentPlaceHolder_PaymentControl_txtCardNumber']" />
+<txtCardHolderName findby="Xpath" Xpath="//div[@id='payment']//fieldset//div[@class='row text']//input[@id='ctl00_BodyContentPlaceHolder_PaymentControl_txtCardHolderName']" />
+<txtCVCCode findby="Xpath" Xpath="//div[@id='payment']//fieldset//div[@class='row text cvc']//input[@id='ctl00_BodyContentPlaceHolder_PaymentControl_txtCVCCode']" />
+<txtOrderStatus findby="Xpath" Xpath="//div[@id='content']//div[@class='row']//p[@id='status']//span//strong//span[contains(@id,'Body_MainContent_ReceiptControl')]" />
+<txtOrderId findby="Xpath" Xpath="//div[@id='content']//div[@class='row'][2]//h3//span[contains(@id,'Body_MainContent_ReceiptControl')]" />
+<txtOrderId1 findby="Xpath" Xpath="//form[@id='form1']//div[3]//table[2]//tbody//tr[15]//td[2]" />
+<txtFailedErrorMessage findby="Xpath" Xpath="//div[@id='body']//div[@id='content']//div[@class='row error errorMessages']" />
+<txtBillingAddress findby="Xpath" Xpath="//div[@class='row container']//div[@class='c1 adressconfirm']//ul//li" />
+<txtShippingDetails findby="Xpath" Xpath="//div[@class='row container']//div[@class='c1 infoconfirm']//ul//li" />
+<txtOrderNumberId findby="Xpath" Xpath="//div[@id='page']//div//input[@id='Body_ReplaceMainContent_txtShowOrder']" />
+<txtFakeOrder findby="Xpath" Xpath="//div[@class='displayFieldset']//fieldset[2]//p[1]//input[@type='submit']" />
+<txtProcessOrder findby="Xpath" Xpath="//div[@id='page']//div[@class='displayFieldset']//fieldset//p//input[@type='submit'][1]"/> 
+<txtidentityNumber findby="Xpath" Xpath="//div[@class='tab_container']//div[@class='row']//div[@id='Body_MainContent_MainContent_PersonaliaControl_ssnInput']//div[@class='field-short']//p//input[@id='Body_MainContent_MainContent_PersonaliaControl_SSN']" />
+<txtPhoneNumber findby="Xpath" Xpath="//div[@class='row']//div[@class='row rowcontainer subscriberselection'][@1@]//div[@class='group']//div[@class='choosenumber']//table//tr[1]//td[3]//div[@class='field-short']//input" />
+<txtIHelpOrderStatus findby="Xpath" Xpath="//div[@id='page']//div//table[@id='Body_ReplaceMainContent_gvShowOrderLines']//tbody//tr[2]//td[3]" />
+<txtIHelpOrderToAppear findby="Xpath" Xpath="//div[@id='page']//div[2]//fieldset//p//input[@type='submit'][1]"/>
+<txtAgentName findby="Xpath" Xpath="//div[@class='main-content']//div[@class='form']//p//input[@id='Name']" />
+<txtAgentSave findby="Xpath" Xpath="//div[@class='wizard']//div[@class='next-page']//input[@id='wizardSave']" />
+<txtEditAgent findby="Xpath" Xpath="//div[@class='wizard']//div[@class='next-page-top']//form//input[@name='Rediger']" />
+<txtEditRange findby="Xpath" Xpath="//div[@class='wizard']//div[@class='next-page-top']//form//input[@value='Rediger sortiment']" />
+<txtValues findby="Xpath" Xpath="//div[@class='form']//input[@id='Value']" />
+<txtProductSearch findby="Xpath" Xpath="//div[@class='filter']//div[@id='show-search']//input[@id='SearchText']" />
+<txtSearch findby="Xpath" Xpath="//div[@class='filter']//div[@id='show-search']//input[@id='Search']" />
+<txtProductList findby="Xpath" Xpath="//div[@class='list-products']//div[@class='product']//div[@class='listcontent']//h3" />
+<txtAdminOrderStatus findby="Xpath" Xpath="//div[@class='text-preview']//table[@class='list-orders infoHead']//tbody//tr//td[5]//p[contains(text(),'Ordren er ok')]" />
+<txtAccessoriesList findby="Xpath" Xpath="//div[@class='group']//div[@class='basket-accessories basket-accessories--opened']//ul[@class='basket-accessories_list']//li[@class='basket-accessory']" />
+<txtAccessory findby="Xpath" Xpath="//div[@class='group']//div[@class='basket-accessories basket-accessories--opened']//ul[@class='basket-accessories_list']//li[@class='basket-accessory'][1]" />
+<txtReference findby="Xpath" Xpath="//div[@class='deliveryFrame']//table[@class='addressTable referenceTable']//input[@class='enforceMaxLength']" />
+<txtQuantity findby="Xpath" Xpath="//div[@class='group']//tr[@class='productgroup']//td[@class='pricecart']//input[@class='quantitySelector']" />
+<txtSearchOrder findby="Xpath" Xpath="//div[@class='actionfield']//div[@class='form']//fieldset[@class='container']//fieldset[@class='floatLeft']//input[@name='completedsearchString']" />
+<txtMobilePrice2 findby="Xpath" Xpath="//div[@class='productDetails']//table[@id='subscription-table']//tbody//tr[@class='@1@']//td[2]//div//strong" />
+<txtSubscriptionCount findby="Xpath" Xpath="//div[@class='productDetails']//table[@id='subscription-table']//tbody//tr[@class='selectablerow ChosenSubscription  selected']" />
+<txtNordialogMobilePrice findby="Xpath" Xpath="//div[@class='productDetails']//table[@id='subscription-table']//tbody//tr[@class='@1@']//td//strong" />
+<txtMobilePriceWithoutSubscription findby="Xpath" Xpath="//div[@class='productDetails']//table[@id='subscription-table']//tbody//tr[@class='selectablerow ChosenSubscription hiddenSubscription selected']//td[2]//div//strong" />
+<txtSubscriptionName findby="Xpath" Xpath="//div[@class='productDetails']//table[@id='subscription-table']//tbody//tr[@class='@1@']//td//div//div//label" />
+<txtNordialogSubscriptionName findby="Xpath" Xpath="//div[@class='productDetails']//table[@id='subscription-table']//tbody//tr[@class='@1@']//td//label" />
+<txtWithoutSubscriptionName findby="Xpath" Xpath="//div[@class='productDetails']//table[@id='subscription-table']//tbody//tr[@class='selectablerow ChosenSubscription hiddenSubscription selected']//td//div//div//label" />
+<txtTotalMobilePrice findby="Xpath" Xpath="//div[@class='productDetails']//table[@id='subscription-table']//tbody//tr[@class='@1@']//td[3]" />
+<txtTotalMobilePriceWithoutSubscription findby="Xpath" Xpath="//div[@class='productDetails']//table[@id='subscription-table']//tbody//tr[@class='selectablerow ChosenSubscription hiddenSubscription selected']//td[3]" />
+<txtTotalMobilePrice2 findby="Xpath" Xpath="//div[@class='product-overview-content']//div[@id='pricebox']//li//strong//span[@class='totalPrice priceFormat']" />
+<txtMannedSPris findby="Xpath" Xpath="//div[@class='productDetails']//table[@id='subscription-table']//tbody//tr[@class='@1@']//td[4]" />
+<txtMannedSPrisWithoutSubscription findby="Xpath" Xpath="//div[@class='productDetails']//table[@id='subscription-table']//tbody//tr[@class='selectablerow ChosenSubscription hiddenSubscription selected']//td[4]" />
+<txtMannedSPris2 findby="Xpath" Xpath="//div[@class='subscr-summary']//div[1]" />
+<txtMinutesPris findby="Xpath" Xpath="//div[@class='productDetails']//table[@id='subscription-table']//tbody//tr[@class='@1@']//td[5]//div[@class='info-icon-container']" />
+<txtMinutesPris2 findby="Xpath" Xpath="//div[@class='subscr-summary']//div[2]//strong" />
+<txtDataRatePris findby="Xpath" Xpath="//div[@class='productDetails']//table[@id='subscription-table']//tbody//tr[@class='@1@']//td[7]//div[@class='info-icon-container']" />
+<txtDataRatePris2 findby="Xpath" Xpath="//div[@class='subscr-summary']//div[@id='includedData']//strong" />
+<txtSmsMms findby="Xpath" Xpath="//div[@class='productDetails']//table[@id='subscription-table']//tbody//tr[@class='@1@']//td[6]" />
+<txtSMS findby="Xpath" Xpath="//div[@class='subscr-summary']//div[@id='smsPrice']//strong" />
+<txtMMS findby="Xpath" Xpath="//div[@class='subscr-summary']//div[@id='mmsPrice']//strong" />
+<txtDisplayText findby="Xpath" Xpath="//div[@id='content']//div[@class='head hide']//h1[contains(text(),'Nettbutikk')]" />
+<txtProductTotalCount findby="Xpath" Xpath="//div[@class='group brand']//ul//li//h4//span[@class='number']//span[@id='Body_MainContent_productList_totalCount']" />
+<txtProductResultCount findby="Xpath" Xpath="//div[@class='facet']//h2//span[@id='resultCount']" />
+<txtWordDisplay findby="Xpath" Xpath="//div[@class='facet']//h2"/>
+<txtBillingHeading1 findby="Xpath" Xpath="//div[@class='tab_container']//div[@class='field-medium'][1]//label//span"/>
+<txtBillingHeading2 findby="Xpath" Xpath="//div[@class='tab_container']//div[@class='field-medium'][2]//label//span"/>
+<txtBillingHeading3 findby="Xpath" Xpath="//div[@class='tab_container']//div[@class='field-medium'][3]//label//span"/>
+<txtBillingHeading4 findby="Xpath" Xpath="//div[@class='tab_container']//div[@class='field-short']//label//span" />
+<txtBillingHeading5 findby="Xpath" Xpath="//div[@class='tab_container']//div[@class='field-medium']//label//span[contains(text(),'Adresse')]" />
+<txtBillingHeading6 findby="Xpath" Xpath="//div[@class='tab_container']//label//span[contains(text(),'Postnr')]" />
+<txtBillingHeading7 findby="Xpath" Xpath="//div[@class='tab_container']//span[@class='field-medium']//label//span[contains(text(),'Poststed')]" />
+<txtMobileCost findby="Xpath" Xpath="//div[@id='Body_RightHandColumnWrap_RightHandColumn_MiniBasketControl_PanelBasket']//ul//li//div[2]//em" />
+<txtShippingCost findby="Xpath" Xpath="//div[@id='Body_RightHandColumnWrap_RightHandColumn_MiniBasketControl_PanelBasket']//div[@class='footer']/div[2]//em" />
+<txtTotalCost findby="Xpath" Xpath="//div[@id='Body_RightHandColumnWrap_RightHandColumn_MiniBasketControl_PanelBasket']//div[@class='footer']//div[5]//strong" />
+<txtShippingcharges findby="Xpath" Xpath="//div[@class='body choice c1']//table[@id='shippingtable']//tr[@class='selected']//td[@class='']//h3//span" />
+<txtServicePack findby="Xpath" Xpath="//div[@class='body choice c1']//table[@id='shippingtable']//tr[@class='selected']//td[2]//p" />
+<txtCreditDetails findby="Xpath" Xpath="//div[@class='body choice c1']//table[@id='paymenttable']//tr[@class='selected']//td[2]//p//strong" />
+<txtNameDetails findby="Xpath" Xpath="//div[@class='c1 adressconfirm']//ul//li//span[1]" />
+<txtEmailDetails findby="Xpath" Xpath="//div[@class='c1 adressconfirm']//ul//li//span[5]" />
+<txtBillingPaymentDetails findby="Xpath" Xpath="//div[@class='c1 infoconfirm']//ul[@class='usp']" />
+<txtMobileName findby="Xpath" Xpath="//div[@id='tabs-1']//div[@class='orderList'][1]//fieldset[@class='orderLines'][1]//table//tbody[1]//tr//td[1]" />
+<txtSubscriptionType findby="Xpath" Xpath="//div[@id='tabs-1']//div[@class='orderList'][1]//fieldset[@class='orderLines'][1]//table//tbody[2]//tr//td[1]" />
+<txtMobileNo findby="Xpath" Xpath="//div[@id='tabs-1']//div[@class='orderList'][1]//fieldset[@class='orderLines'][1]//table//tbody[2]//tr//td[4]" />
+<txtMobileNumber findby="Xpath" Xpath="//div[@class='row step3']//table//tbody//tr[@class='productgroup']//td[@class='headcart formatpricecart']//span" />
+<txtNordialogNumber findby="Xpath" Xpath="//div[@class='row step3']//table//tbody//tr[@class='productgroup']//td[@class='headcart formatpricecart']//p[2]" />
+<txtBannerShippingPrice findby="Xpath" Xpath="//div[@id='Body_RightHandColumnWrap_RightHandColumn_MiniBasketControl_PanelBasket']//div[@class='footer']//div[2]//em" />
+<txtBannerShippingPrice1 findby="Xpath" Xpath="//div[@class='mini-basket']//div[@class='mini-basket_body']//div[@class='mini-basket_shipping']//div[2]" />
+<txtBannerProductPrice findby="Xpath" Xpath="//div[@id='Body_RightHandColumnWrap_RightHandColumn_MiniBasketControl_PanelBasket']//ul//li//div//em" />
+<txtBannerProductPrice1 findby="Xpath" Xpath="//div[@class='mini-basket_items']//div[@class='mini-basket_items_price']" />
+<txtTotalProductCost findby="Xpath" Xpath="//div[@class='text-preview']//table[@class='list-orders infoHead']//tbody//tr//td[5]//p[2]" />
+<txtName1 findby="Xpath" Xpath="//div[@id='tabs-2']//div[@class='orderList']//fieldset//tbody//tr[2]//td[2]" />
+<txtAddress1 findby="Xpath" Xpath="//div[@id='tabs-2']//div[@class='orderList']//fieldset//tbody//tr[3]//td[2]" />
+<txtPostalCode1 findby="Xpath" Xpath="//div[@id='tabs-2']//div[@class='orderList']//fieldset//tbody//tr[4]//td[2]" />
+<txtPostalAddress1 findby="Xpath" Xpath="//div[@id='tabs-2']//div[@class='orderList']//fieldset//tbody//tr[5]//td[2]" />
+<txtName2 findby="Xpath" Xpath="//div[@id='tabs-2']//div[@class='orderList']//fieldset//tbody//tr[2]//td[4]" />
+<txtbiilingfirm findby="Xpath" Xpath="//div[@id='tabs-2']//div[@class='orderList']//fieldset//tbody//tr[1]//td[2]" />
+<txtdeliveryfirm findby="Xpath" Xpath="//div[@id='tabs-2']//div[@class='orderList']//fieldset//tbody//tr[1]//td[4]" />
+<txtAddress2 findby="Xpath" Xpath="//div[@id='tabs-2']//div[@class='orderList']//fieldset//tbody//tr[3]//td[4]" />
+<txtPostalCode2 findby="Xpath" Xpath="//div[@id='tabs-2']//div[@class='orderList']//fieldset//tbody//tr[4]//td[4]" />
+<txtPostalAddress2 findby="Xpath" Xpath="//div[@id='tabs-2']//div[@class='orderList']//fieldset//tbody//tr[5]//td[4]" />
+<txtPostalAddress3 findby="Xpath" Xpath="//div[@class='c1 adressconfirm']//ul//li//span[2]" />
+<txtPostalCity findby="Xpath" Xpath="//div[@class='c1 adressconfirm']//ul//li//span[3]" />
+<txtPaymentMethod findby="Xpath" Xpath="//div[@id='tabs-3']//div[@class='orderList']//fieldset//tbody//td[1]" />
+<txtInvoiceNumber findby="Xpath" Xpath="//div[@id='tabs-3']//div[@class='orderList']//fieldset//tbody//td[2]" />
+<txtInvoiceStatus findby="Xpath" Xpath="//div[@id='tabs-3']//div[@class='orderList']//fieldset//tbody//td[3]" />
+<txtButtik findby="Xpath" Xpath="//div[@class='filter-smaller']//div[@id='show-search']//input[@id='filter_SearchText']" />
+<txtSupplierLabel findby="Xpath" Xpath="//div[@class='product']//div[@class='listcontent']//span[@class='supplierlabel']"/>
+<txtAttributes1 findby="Xpath" Xpath="//div[@class='product']//div[@class='listcontent']//div[@class='attributes-highlight']//p//span[7]" />
+<txtAttributes2 findby="Xpath" Xpath="//div[@class='product']//div[@class='listcontent']//div[@class='attributes-highlight']//p//span[6]" />
+<txtFromDate findby="Xpath" Xpath="//div[@id='page']//div//input[@id='Body_ReplaceMainContent_tbExternalChangedFrom']" />
+<txtToDate findby="Xpath" Xpath="//div[@id='page']//div//input[@id='Body_ReplaceMainContent_tbExternalChangedTo']" />
+<txtAllTasks findby="Xpath" Xpath="//div[@id='taskOverview']//tbody//tr" />
+<txtStatusOk findby="Xpath" Xpath="//div[@id='taskOverview']//tbody//tr//td[contains(text(),'OK')]" />
+<txtCNETBox findby="Xpath" Xpath="//div[@id='failedOrderFilter']//form[@id='SearchForm']//div//fieldset[@class='container']//input[@id='cnetid']" />
+<txtCNETList findby="Xpath" Xpath="//div[@id='searchResult']//div[@class='row']//div//a[@class='cnet']//div" />
+<txtTitle findby="Xpath" Xpath="//div[@class='main-content']//li//input[@id='Description']" />
+<txtDescription findby="Xpath" Xpath="//div[@class='main-content']//li//textarea[@id='Text']" />
+<txtModelName findby="Xpath" Xpath="//div[@class='main-content']//li//input[@id='Modell']" />
+<txtCostPrice findby="Xpath" Xpath="//div[@class='main-content']//li//input[@id='CostPrice']" />
+<txtWeight findby="Xpath" Xpath="//div[@class='main-content']//li//input[@id='Weight']" />
+<txtBarCode findby="Xpath" Xpath="//div[@class='main-content']//li//input[@id='BarCode']" />
+<txtSupplierProductId findby="Xpath" Xpath="//div[@class='main-content']//li//input[@id='SupplierProductId']" />
+<txtProducerProductId findby="Xpath" Xpath="//div[@class='main-content']//li//input[@id='ProducerProductId']" />
+<txtProducerProductUrl findby="Xpath" Xpath="//div[@class='main-content']//li//input[@id='ProducerProductUrl']" />
+<txtMessageToHermesText findby="Xpath" Xpath="//div[@class='main-content']//li//textarea[@id='MessageToHermesText']" />
+<txtSetValue findby="Xpath" Xpath="//div[@class='form-wizard']//fieldset//input[@id='attributeValue']" />
+<txtYoutubeLink findby="Xpath" Xpath="//div[@class='youtubeLink']//input[@id='YoutubeLink']" />
+<txtFlashLink findby="Xpath" Xpath="//div[@class='youtubeLink']//input[@id='FlashLink']" />
+<txtFlashWidth findby="Xpath" Xpath="//div[@class='youtubeLink']//input[@id='FlashWidth']" />
+<txtFlashHeight findby="Xpath" Xpath="//div[@class='youtubeLink']//input[@id='FlashHeight']" />
+<txtwizardSave findby="Xpath" Xpath="//div[@class='next-page-top']//input[@id='wizardSave']" />
+<txtTitle2 findby="Xpath" Xpath="//div[@class='product'][1]//div[@class='listcontent']//h3" />
+<txtUserName findby="Xpath" Xpath="//div[@class='form']//p//input[@id='UserName']" />
+<txtFirstName2 findby="Xpath" Xpath="//div[@class='form']//p//input[@id='FirstName']" />
+<txtLastName2 findby="Xpath" Xpath="//div[@class='form']//p//input[@id='LastName']" />
+<txtEmail2 findby="Xpath" Xpath="//div[@class='form']//p//input[@id='Email']" />
+<txtMobileNumber2 findby="Xpath" Xpath="//div[@class='form']//p//input[@id='MobileNumber']" />
+<txtProducts findby="Xpath" Xpath="//div[@class='product'][7]//div[@class='listcontent']//h3" />
+<txtServiceUrl findby="Xpath" Xpath="//div[@class='form'][1]//fieldset[1]//p//input[@id='ServiceUrl']" />
+<txtField1Descrption findby="Xpath" Xpath="//div[@class='formX']//p//input[@id='fields_0__Description']" />
+<txtField2Description findby="Xpath" Xpath="//div[@class='formX']//p//input[@id='fields_1__Description']" />
+<txtNewCategory findby="Xpath" Xpath="//div[@class='main-content']//ul[@id='ThirdLevel']//li//input[@id='new0']" />
+<txtSubmitCategory findby="Xpath" Xpath="//div[@class='next-page']//p[@class='right']//input[@id='submitCategories']" />
+<txtupdateMessage findby="Xpath" Xpath="//div[@class='wizard-message-sucess']//div[@class='message' and contains(text(),'Visningskategorier oppdatert')]" />
+<txtSuccessMessage findby="Xpath" Xpath="//div[@class='message-sucess']//h2[contains(text(),'Oppdatering vellykket.')]" />
+<txtSuccessMessage1 findby="Xpath" Xpath="//div[@class='message-sucess']//h2[contains(text(),'Ny katalog er generert.')]" />
+<txtDeliveryCost findby="Xpath" Xpath="//div[@class='list-products']//div[@class='product'][last()]//div[@class='attributes-highlight'][last()]//li" />
+<txtName findby="Xpath" Xpath="//div[@class='main-content']//li[1]//input[@id='Name']" />
+<txtPostCode findby="Xpath" Xpath="//div[@class='main-content']//li[2]//input[@id='PostCode']" />
+<txtDescription2 findby="Xpath" Xpath="//div[@class='main-content']//li[last()]//textarea[@id='Description']" />
+<txtDeliveryPrice findby="Xpath" Xpath="//div[@id='availableShippingmethods']//li[1]//div[@class='selector_item_body']//input[@id='PriceValue_5']" />
+<txtKaranteneNumber findby="Xpath" Xpath="//div[@id='ticker']//table[3]//tr//th[last()]//a" />
+<txtCompanyName findby="Xpath" Xpath="//div[@class='main-content']//input[@id='CompanyName']" />
+<txtCompanyMarketName findby="Xpath" Xpath="//div[@class='main-content']//input[@id='CompanyMarketName']" />
+<txtOrganizationNumber findby="Xpath" Xpath="//div[@class='main-content']//input[@id='OrganizationNumber']" />
+<txtAddressLine1 findby="Xpath" Xpath="//div[@class='main-content']//input[@id='BronnoysundAddress_AddressAddressLine1']" />
+<txtAddressPostalCodeNumber findby="Xpath" Xpath="//div[@class='main-content']//input[@id='BronnoysundAddress_AddressPostalCodeNumber']" />
+<txtAddressPostalCodeName findby="Xpath" Xpath="//div[@class='main-content']//input[@id='BronnoysundAddress_AddressPostalCodeName']" />
+<txtPhoneNumber2 findby="Xpath" Xpath="//div[@class='main-content']//input[@id='BronnoysundAddress_PhoneNumber']" />
+<txtFaxNumber findby="Xpath" Xpath="//div[@class='main-content']//input[@id='BronnoysundAddress_FaxNumber']" />
+<txtMainPhoneNumber findby="Xpath" Xpath="//div[@class='main-content']//input[@id='MainPhoneNumber']" />
+<txtChiefExecutiveOfficer findby="Xpath" Xpath="//div[@class='main-content']//input[@id='ChiefExecutiveOfficer']" />
+<txtBankAccountNumber findby="Xpath" Xpath="//div[@class='main-content']//input[@id='BankAccountNumber']" />
+<txtNavisionCompanyId findby="Xpath" Xpath="//div[@class='main-content']//div[@class='form']//input[@id='NavisionCompanyId']" />
+<txtKhBillingCustomerId findby="Xpath" Xpath="//div[@class='main-content']//div[@class='form']//input[@id='KhBillingCustomerId']" />
+<txtCrmId findby="Xpath" Xpath="//div[@class='main-content']//div[@class='form']//input[@id='CrmId']" />
+<txtTelecomputingCompanyId findby="Xpath" Xpath="//div[@class='main-content']//div[@class='form']//input[@id='TelecomputingCompanyId']" />
+<txtPaymentAccountNumber findby="Xpath" Xpath="//div[@class='main-content']//div[@class='form']//input[@id='PaymentAccountNumber']" />
+<txtPaymentEncryptionKey findby="Xpath" Xpath="//div[@class='main-content']//div[@class='form']//input[@id='PaymentEncryptionKey']" />
+<txtTelenorNettforhandlerDealerId findby="Xpath" Xpath="//div[@class='main-content']//div[@class='form']//input[@id='TelenorNettforhandlerDealerId']" />
+<txtTelenorNettforhandlerDealerIdLocalStore findby="Xpath" Xpath="//div[@class='main-content']//div[@class='form']//input[@id='TelenorNettforhandlerDealerIdLocalStore']" />
+<txtCreditScore findby="Xpath" Xpath="//div[@class='main-content']//div[@class='form']//input[@id='CreditScore']" />
+<txtTurnover findby="Xpath" Xpath="//div[@class='main-content']//div[@class='form']//input[@id='Turnover']" />
+<txtProfitBeforeTax findby="Xpath" Xpath="//div[@class='main-content']//div[@class='form']//input[@id='ProfitBeforeTax']" />
+<txtLiquidityRatio findby="Xpath" Xpath="//div[@class='main-content']//div[@class='form']//input[@id='LiquidityRatio']" />
+<txtEquity findby="Xpath" Xpath="//div[@class='main-content']//div[@class='form']//input[@id='Equity']" />
+<txtResultRatio findby="Xpath" Xpath="//div[@class='main-content']//div[@class='form']//input[@id='ResultRatio']" />
+<txtCreditCheckPerformedBy findby="Xpath" Xpath="//div[@class='main-content']//div[@class='form']//input[@id='CreditCheckPerformedBy']" />
+<txtCreditLimitLimit findby="Xpath" Xpath="//div[@class='main-content']//div[@class='form']//input[@id='CreditLimitLimit']" />
+<txtShopAddressLine1 findby="Xpath" Xpath="//div[@class='main-content']//div[@class='form']//input[@id='ShopAddress_AddressAddressLine1']" />
+<txtShopAddressPostalCodeNumber findby="Xpath" Xpath="//div[@class='main-content']//div[@class='form']//input[@id='ShopAddress_AddressPostalCodeNumber']" />
+<txtShopAddressPostalCodeName findby="Xpath" Xpath="//div[@class='main-content']//div[@class='form']//input[@id='ShopAddress_AddressPostalCodeName']" />
+<txtGeoLocation findby="Xpath" Xpath="//div[@class='main-content']//div[@class='form']//input[@id='GeoLocation']" />
+<txtAbout findby="Xpath" Xpath="//div[@class='main-content']//div[@class='form']//textarea[@id='About']" />
+<txtDistributor findby="Xpath" Xpath="//div[@id='tabs-1']//div[@class='product'][last()]//h3//a" />
+<txtInvoiceNo findby="Xpath" Xpath="//div[@class='displayFieldset']//fieldset[2]//input[1]" />
+<txtIMEINo findby="Xpath" Xpath="//div[@class='displayFieldset']//fieldset[2]//input[2]" />
+<txtProducerURL findby="Xpath" Xpath="//div[@class='main-content']//li//input[@id='ProducerProductURL']" />
+<txtProductTitle findby="Xpath" Xpath="//div[@class='main-content']//div[@class='form']//p// input[@id='Description']" />
+<txtUniqueSelling findby="Xpath" Xpath="//div[@class='main-content']//div[@class='form']//p// input[@id='UniqueSellingPointText']" />
+<txtFactText findby="Xpath" Xpath="//div[@class='main-content']//div[@class='form']//p// textarea[@id='FactText']" />
+<txtName3 findby="Xpath" Xpath="//div[@class='form']//input[@id='Name']" />
+<txtDescription1 findby="Xpath" Xpath="//div[@class='form']//textarea[@id='Description']" />
+<txtUtvalgTitle findby="Xpath" Xpath="//div[@class='list-products']//div[@class='product'][1]//h3//a" />
+<txtEditLastProduct findby="Xpath" Xpath="//div[@class='list-products']//div[@class='product'][last()]//div[@class='form']//form[last()-1]//input" />
+<txtProductText findby="Xpath" Xpath="//div[@class='list-products']//div[@class='product'][last()]//div//h3" />
+<txtPercentage findby="Xpath" Xpath="//div[@class='form']//input[@id='Percentage']" />
+<txtSourceElement findby="Xpath" Xpath="//div[@id='searchResult']//ul//li[1]//div[@class='product']//div[@class='listcontent']" />
+<txtFancyboxElement findby="Xpath" Xpath="//div[@id='fancybox-content']//div" />
+<txtTargetElement findby="Xpath" Xpath="//div[@id='selectionList']//ul" />
+<txtSourceElement2 findby="Xpath" Xpath="//div[@class='floatLeft dragdrop']//ul[@id='availableList']//li[@class='product'][1]" />
+<txtSourceElementLeveringsadresser findby="Xpath" Xpath="//div[@class='floatLeft dragdrop selectionListHeading']//ul[@id='availableList']//li[@class='product'][1]" />
+<txtTargetElement2 findby="Xpath" Xpath="//div[@class='floatRight dragdrop']//div[@id='selectionList']//ul" />
+<txtSourceElement3 findby="Xpath" Xpath="//ul[@id='availableList']//li[1]//div[@class='product'][1]" />
+<txtTargetElement3 findby="Xpath" Xpath="//div[@id='selectionList']//ul" />
+<txtSourceElement4 findby="Xpath" Xpath="//div[@class='left dragdrop']//li[1]" />
+<txtTargetElement4 findby="Xpath" Xpath="//div[@class='right dragdrop']//div[@id='selectionList']" />
+<txtSourceElement5 findby="Xpath" Xpath="//div//ul//li"/>
+<txtTargetElement5 findby="Xpath" Xpath="//div[@id='selectionList']//ul" />
+<txtSourceElement6 findby="Xpath" Xpath="//ul[@id='availableList']//li[@class='product'][1]//div[@class='listcontentLarge']" />
+<txtTargetElement6 findby="Xpath" Xpath="//div[@class='floatRight dragdrop']//div[@id='selectionList']//ul[@id='selectedList']" />
+<txtSourceElement7 findby="Xpath" Xpath="//div[@class='wizard-body']//div[@class='left dragdrop']//div[@id='availableSubscriptions']//ul[1]//li[1]" />
+<txtTargetElement7 findby="Xpath" Xpath="//div[@id='rightdragdrop']//div[@class='dragdrop']//div[@id='selectionList']//ul[1]" />
+<txtOrganizationNo findby="Xpath" Xpath="//div[@class='form']//fieldset//input[@name='orgnr']" />
+<txtInvoiceHeader findby="Xpath" Xpath="//div[@class='form']//fieldset//input[@name='InvoiceHeader']" />	
+<txtInvoiceText findby="Xpath" Xpath="//div[@class='form']//fieldset//textarea[@name='InvoiceText']" />
+<txtPriceValue findby="Xpath" Xpath="//div[@class='selector_item_body']//input[@id='PriceValue_11011']" />
+<txtCreditLimit findby="Xpath" Xpath="//div[@class='form']//input[@id='CreditLimit']" />
+<txtProductSearch2 findby="Xpath" Xpath="//div[@class='filter']//div[@id='show-search']//input[@id='searchString']" />
+<txtProductUSP findby="Xpath" Xpath="//div[@class='form']//input[@id='ProductUsp']" />
+<txtProductDescription findby="Xpath" Xpath="//div[@class='form']//textarea[@id='ProductFacts']" />
+<txtTelenorProductUSP findby="Xpath" Xpath="//div[@class='row rowcontainer']//div[@class='head']//h2" />
+<txtTelenorProductDescription findby="Xpath" Xpath="//div[@class='row rowcontainer']//div[@class='body']//span" />
+<txtDjuiceShippingPrice findby="Xpath" Xpath="//div[@class='footer']//div[2]" />
+<txtStoreSelect findby="Xpath" Xpath="//div[@class='b2b-userinfo_select']//span//input" />
+<txtUtenbind1 findby="Xpath" Xpath="//div[@class='product-overview']//div[@id='step-number2']//div[@class='product-overview-content'][1]//span[@class='defaultBinding']" />
+<txtUtenbind2  findby="Xpath" Xpath="//div[@class='body']//table[@id='subscription-table']//tr[1]//select//option" />
+<txtSubscriberSelection findby="Xpath" Xpath="//div[@class='choosenumber']//span[@class='ufd plain']//input" />
+<txtInvoicePrice findby="Xpath" Xpath="//div[@id='col1']//table[@id='shippingtable']//tr[@class='selected']//td[@class='antiborder2']//h3//span" />
+<txtSupplierName findby="Xpath" Xpath="//div[@class='list-products']//div[@class='product'][last()]//h3" />
+<txtBillingDetails findby="Xpath" Xpath="//div[@class='c1 adressconfirm']//ul//li[1]" />
+<txtDeliveryDetails findby="Xpath" Xpath="//div[@class='c1 adressconfirm']//ul//li[2]" />
+<txtInvoice findby="Xpath" Xpath="//div[@class='c1 infoconfirm']//ul//li[2]//strong//span" />
+<txtSpace findby="Xpath" Xpath="//div[@class='selector']//li[2]//div[@class='selector_item_head'][1]" />
+<txtMobileList findby="Xpath" Xpath="//div[@id='productContainer']//div[@class='product-item']//div[@class='product simple small productBlock']//a//span[@class='displayName']" />
+<txtPaymentDetailsPrice findby="Xpath" Xpath="//div[@id='ordersummary']//table//tbody//tr[@class='price']//td//span" />
+<txtPhoneName findby="Xpath" Xpath="//div[@class='product']//div[@class='listcontent']//h3" />
+<txtSubscriptionList findby="Xpath" Xpath="//div[@id='productContainer']//div[@class='product-item']//div[@class='product simple small productBlock']//div[@class='head']//h2//a//div[@class='subscriptionNameContainer']" />
+<txtSimbaConsentPhone findby="Xpath" Xpath="//div[@id='Body_MainContent_MainContent_PersonaliaControl_PanelUserSections']//div[@id='consentPhoneNumber']//input[@id='consent_phone_number']" />
+<txtCreatedAgent findby="Xpath" Xpath="//div[@class='colgroup']//div[@class='abcdefCol']//div[@class='wizard-title']//h3" />
+<txtBarCodeInput findby="Xpath" Xpath="//div[@class='txtcontent']//table[@class='idkeytable']//tbody[1]//tr[5]//td[2]//input[@class='itemref']" />
+<txtBarCodeResult findby="Xpath" Xpath="//div[@class='txtcontent']//table[@class='idkeytable']//tbody[1]//tr[5]//td[5]//input[@name='result_number']" />
+<txtEditAgentSubscription findby="Xpath" Xpath="//div[@class='wizard']//div[@class='next-page-top']//form//input[@value='Rediger abonnement']" />
+<txtSimbaNoConsentMsg findby="Xpath" Xpath="//div[@class='displayFieldset']//ul[1]" />
+<txtSalesProductCount findby="Xpath" Xpath="//div[@class='productconnection-list']//div[@class='container']//ul//li[2]//span[2]" />
+<txtPreSaleOrderStatus findby="Xpath" Xpath="//div[@id='content']//tbody//tr[7][@class='Error']//td[contains(text(),'Klarte ikke å starte opp det utsatte abonnementet, prøver igjen om 3 timer')]" />
+<txtShopNavisionId findby="Xpath" Xpath="//div[@class='main-content']//div[@class='form']//fieldset//p//input[@id='NavisionCustomerId']" />
+<txtShopAXId findby="Xpath" Xpath="//div[@class='main-content']//div[@class='form']//fieldset//p//input[@id='AxCustomerId']" />
+<txtReceiptFrame findby="Xpath" Xpath="//div[@id='pageBody']//form[@id='CronusForm']" />
+<txtServiceReceiptFrame findby="Xpath" Xpath="//span[@id='LabelFetched']" />
+<txtProductCatalogFirst findby="Xpath" Xpath="//div[@class='list-products']//div[1][@class='product']//div[@class='listcontent']//h3" />
+<txtProductLimitError1 findby="Xpath" Xpath="//div[@id='Body_MainContent_ctl00_ctl00_ErrorPanel']//div[@class='error']//h4" />
+<txtProductLimitError2 findby="Xpath" Xpath="//div[@id='Body_MainContent_ctl00_ctl00_ErrorPanel']//div[@class='error']//p" />
+<txtAccessoryLimitError1 findby="Xpath" Xpath="//div[@id='body']//div[@id='content']/div[@class='row error errorMessages']//h4" />
+<txtAccessoryLimitError2 findby="Xpath" Xpath="//div[@id='body']//div[@id='content']/div[@class='row error errorMessages']//p" />
+<txtSharedUserFornavn findby="Xpath" Xpath="//div[@id='content']//div[2][@class='field-medium']//input[@id='Body_MainContent_firstname']" />
+<txtSharedUserEtternavn findby="Xpath" Xpath="//div[@id='content']//div[3][@class='field-medium']//input[@id='Body_MainContent_lastname']" />
+<txtSharedUserEpost findby="Xpath" Xpath="//div[@id='content']//div[4][@class='field-medium']//input[@id='Body_MainContent_email']" />
+<txtB2BApproverlabel findby="Xpath" Xpath="//div[@class='row']//div[@class='deliveryFrame']//tr[2]//td[1]//span" />
+<txtB2BApproverSelect findby="Xpath" Xpath="//div[@class='deliveryFrame']//span[@class='ufd plain']//input" />
+<txtSynonymLevel2 findby="Xpath" Xpath="//div[@class='container']//div[@class='grd']//div[2]//div[1]//ul//li[@1@]//input" />
+<txtB2BSearchInput findby="Xpath" Xpath="//div[@class='productSearch']//input[@id='sidebarSearchInput']" />
+<txtB2BSearchClick findby="Xpath" Xpath="//div[@class='productSearch']//input[@id='inputsearch-submit']" />
+<txtB2BSearchProdCount findby="Xpath" Xpath="//div[@id='productContainer']//div[@class='product list productBlock']//div[@class='head']//h2//a//span[@class='displayName']" />
+<txtAdminUserCheck  findby="Xpath" Xpath="//div[@class='form']//div[@class='product']//div[@class='listcontentLarge']//strong[contains(text(),'@1@')]" />
+<txtB2BDeliveryAddressSelect findby="Xpath" Xpath="//div[@id='deliveryAddressWrapper']//div[@class='deliveryFrame']//span[@class='ufd plain']//button" />
+<txtB2BDeliveryAddresskontakt findby="Xpath" Xpath="//div[@id='deliveryAddressWrapper']//div[@class='deliveryFrame']//tbody//tr[2]//td[2]//input" />
+<txtB2BDeliveryAddressSelskap findby="Xpath" Xpath="//div[@id='deliveryAddressWrapper']//div[@class='deliveryFrame']//tbody//tr[3]//td[2]//input" />
+<txtB2BDeliveryAddressAdresse findby="Xpath" Xpath="//div[@id='deliveryAddressWrapper']//div[@class='deliveryFrame']//tbody//tr[4]//td[2]//input" />
+<txtB2BDeliveryAddressAdresse2 findby="Xpath" Xpath="//div[@id='deliveryAddressWrapper']//div[@class='deliveryFrame']//tbody//tr[5]//td[2]//input" />
+<txtB2BDeliveryAddressPostnummer findby="Xpath" Xpath="//div[@id='deliveryAddressWrapper']//div[@class='deliveryFrame']//tbody//tr[6]//td[2]//input" />
+<txtB2BDeliveryAddressPoststed findby="Xpath" Xpath="//div[@id='deliveryAddressWrapper']//div[@class='deliveryFrame']//tbody//tr[7]//td[2]//input" />
+<txtDeliveryAddressDropText findby="Xpath" Xpath="//div[@id='ufd-container']//div[2][@class='plain']//div[@class='list-scroll']//ul//li[last()-1]" />
+<txtDeliveryAddressDropText1 findby="Xpath" Xpath="//div[@id='ufd-container']//div[@class='plain']//div[@class='list-scroll']//ul//li[last()-1]" />
+<txtDeliveryAddressSharedUser findby="Xpath" Xpath="//div[@id='ufd-container']//div[1][@class='plain']//div[@class='list-scroll']//ul//li[last()-1]" />
+<txtBillingAddressDropText findby="Xpath" Xpath="//div[@id='ufd-container']//div[3][@class='plain']//div[@class='list-scroll']//ul//li[last()]" />
+<txtBillingAddressSharedUser findby="Xpath" Xpath="//div[@id='ufd-container']//div[2][@class='plain']//div[@class='list-scroll']//ul//li[last()]" />
+<txtHapiOrderSearch findby="Xpath" Xpath="//form[@method='post']//div[@class='floatLeft']//div[1]//input" />
+<txtHapiOrderSearchAX findby="Xpath" Xpath="//form[@method='post']//div[@class='floatLeft']//div[2]//input" />
+<txtHapiOrderStatus findby="Xpath" Xpath="//div[@id='result']//table//tbody//tr[2]//td[contains(text(),'Completed')]" />
+<txtHapiOrderStatusAX findby="Xpath" Xpath="//div[@id='result']//table//tbody//tr[2]//td[contains(text(),'Successful')]" />
+<txtTaskNumber findby="Xpath" Xpath="//div[@id='content']//h3" />
+<txtHapiNavOrderid findby="Xpath" Xpath="//div[@id='resultTable']//tr[2]//td[1]" />
+<txtHapiBillToName findby="Xpath" Xpath="//div[@id='resultTable']//tr[2]//td[9]" />
+<txtHapiShipToName findby="Xpath" Xpath="//div[@id='resultTable']//tr[2]//td[10]" />
+<txtInternstatus findby="Xpath" Xpath="//div[@class='text-preview']//table//tr//td[4]//p[1]" />
+<txtSharedUser findby="Xpath" Xpath="//div[@class='b2b-userinfo']//div[@class='b2b-userinfo_name']//a" />
+<txtUseExistingMobileError findby="Xpath" Xpath="//div[@class='errorMessagesList']//p" />
+<txtUserFirstName findby="Xpath" Xpath="//div[@id='body']//div[@class='clearBoth'][1]//input" />
+<txtUserLastName findby="Xpath" Xpath="//div[@id='body']//div[@class='clearBoth'][2]//input" />
+<txtUserDOB findby="Xpath" Xpath="//div[@id='body']//div[@class='clearBoth'][3]//input" />
+<txtUserTelephoneNo findby="Xpath" Xpath="//div[@id='body']//div[@class='clearBoth'][4]//input" />
+<txtUserEPost findby="Xpath" Xpath="//div[@id='body']//div[@class='clearBoth'][5]//input" />
+<txtSaveUser findby="Xpath" Xpath="//div[@id='body']//input[@id='Body_MainContent_EditUserControl_SaveUser']" />
+<txtUsersAdminRights findby="Xpath" Xpath="//div[@id='body']//div[@class='dropDownMenuContainer floatLeft']//ul//li//input[@value='til Administrator']" />
+<txtUsersBrukerRights findby="Xpath" Xpath="//div[@id='body']//div[@class='dropDownMenuContainer floatLeft']//ul//li//input[@value='til Bruker']" />
+<txtUsersAnsattRights findby="Xpath" Xpath="//div[@id='body']//div[@class='dropDownMenuContainer floatLeft']//ul//li//input[@value='til Ansatt']" />
+<txtUsersFellesBrukerRights findby="Xpath" Xpath="//div[@id='body']//div[@class='dropDownMenuContainer floatLeft']//ul//li//input[@value='til Browse Only']" />
+<txtUsersOrderAuthorize findby="Xpath" Xpath="//div[@id='body']//div[@class='dropDownMenuContainer floatLeft spacingLeft']//ul//li//input[@value='Ordregodkjenner']" />
+<txtUsersOrderAuthorizeLevel2 findby="Xpath" Xpath="//div[@id='body']//div[@class='dropDownMenuContainer floatLeft spacingLeft']//ul//li//input[@value='Andre nivå Ordregodkjenner']" />
+<txtUsersRole findby="Xpath" Xpath="//div[@id='body']//table//tbody//tr[@class='js-user'][@1@]//td[7]" />
+<txtUsersRights findby="Xpath" Xpath="//div[@id='body']//table//tbody//tr[@class='js-user'][@1@]//td[8]" />
+<txtTelenorkontantPurchaseError findby="Xpath" Xpath="//div[@class='row error errorMessages']//div[@class='errorMessagesList']//p" />
+<txtDeresreferanse findby="Xpath" Xpath="//div[@id='YourReferenceWrapper']/div[@class='deliveryFrame']/table[@class='addressTable referenceTable']/tbody/tr/td[2]/input" />
+<txtFakturareferanse findby="Xpath" Xpath="//div[@class='group']/div[@class='deliveryFrame']/table[@class='addressTable referenceTable']/tbody/tr/td[2]/input" />
+<txtKundensavdeling findby="Xpath" Xpath="//div[@id='Div1']/div[@class='deliveryFrame']/table[@class='addressTable referenceTable']/tbody/tr/td[2]/input" />
+<txtInitialer findby="Xpath" Xpath="//div[@id='Div2']/div[@class='deliveryFrame']/table[@class='addressTable referenceTable']/tbody/tr/td[2]/input" />
+<txtProductPackageName findby="Xpath" Xpath="//div[@id='savePackageContainer']//div[@class='clearBoth spacingBelow']//div[@class='twoThirdsWidth floatLeft']//input[@id='Body_MainContent_BasketControl_ctl00_ctl07_ProductPackageName']" />
+<txtProductPackageUsp findby="Xpath" Xpath="//div[@id='savePackageContainer']//div[@class='clearBoth spacingBelow']//div[@class='twoThirdsWidth floatLeft']//textarea[@id='Body_MainContent_BasketControl_ctl00_ctl07_ProductPackageUsp']" />
+<txtProductPackageDescription findby="Xpath" Xpath="//div[@id='savePackageContainer']//div[@class='clearBoth spacingBelow']//div[@class='twoThirdsWidth floatLeft']//textarea[@id='Body_MainContent_BasketControl_ctl00_ctl07_ProductPackageDescription']" />
+<txtPakageError findby="Xpath" Xpath="//div[@id='content']/div[@class='spacingBelow']" />
+<txtCheckShowOnFrontpage findby="Xpath" Xpath="//div[@id='content']//div[@class='clearBoth spacingBelow']//div[@class='twoThirdsWidth floatLeft']//input[@id='Body_MainContent_ctl00_ShowOnFrontpage']" />
+<txtEditProductPackageName findby="Xpath" Xpath="//div[@id='content']//div[@class='clearBoth spacingBelow']//div[@class='twoThirdsWidth floatLeft']//input[@id='Body_MainContent_ctl00_ProductPackageName']" />
+<txtEditProductPackageUsp findby="Xpath" Xpath="//div[@id='content']//div[@class='clearBoth spacingBelow']//div[@class='twoThirdsWidth floatLeft']//textarea[@id='Body_MainContent_ctl00_ProductPackageUsp']" />
+<txtEditProductPackageDescription findby="Xpath" Xpath="//div[@id='content']//div[@class='clearBoth spacingBelow']//div[@class='twoThirdsWidth floatLeft']//textarea[@id='Body_MainContent_ctl00_ProductPackageDescription']" />
+<txtDiscountedPrice1 findby="Xpath" Xpath=" //div[@id='content']//table[@class='gen-table']//tbody//tr//td[4]//input[@id='Body_MainContent_ctl00_PackageProducts_txtDiscountedPrice_0']" />
+<txtDiscountedPrice2 findby="Xpath" Xpath=" //div[@id='content']//table[@class='gen-table']//tbody//tr[2]//td[4]//input[@id='Body_MainContent_ctl00_PackageProducts_txtDiscountedPrice_1']" />
+<txtDiscountedPrice3 findby="Xpath" Xpath=" //div[@id='content']//table[@class='gen-table']//tbody//tr[3]//td[4]//input[@id='Body_MainContent_ctl00_PackageProducts_txtDiscountedPrice_2']" />
+<txtDiscountedPrice4 findby="Xpath" Xpath=" //div[@id='content']//table[@class='gen-table']//tbody//tr[4]//td[4]//input[@id='Body_MainContent_ctl00_PackageProducts_txtDiscountedPrice_3']" />
+<txtOriginalPrice1 findby="Xpath" Xpath="//div[@id='content']//table[@class='gen-table']//tbody//tr//td[3]" />
+<txtOriginalPrice2 findby="Xpath" Xpath="//div[@id='content']//table[@class='gen-table']//tbody//tr[2]//td[3]" />
+<txtOriginalPrice3 findby="Xpath" Xpath="//div[@id='content']//table[@class='gen-table']//tbody//tr[3]//td[3]" />
+<txtOriginalPrice4 findby="Xpath" Xpath="//div[@id='content']//table[@class='gen-table']//tbody//tr[4]//td[3]" />
+<txtUpdateQuantity1 findby="Xpath" Xpath="//div[@id='content']//table[@class='details no-zebra']//td[@class='pricecart']//input[@id='Body_MainContent_BasketControl_ctl00_productTemplate_Quantity_0']" />
+<txtUpdateQuantity2 findby="Xpath" Xpath="//div[@id='content']//table[@class='details no-zebra']//td[@class='pricecart']//input[@id='Body_MainContent_BasketControl_ctl00_productTemplate_Quantity_1']" />
+<txtUpdateQuantity3 findby="Xpath" Xpath="//div[@id='content']//table[@class='details no-zebra']//td[@class='pricecart']//input[@id='Body_MainContent_BasketControl_ctl00_productTemplate_Quantity_2']" />
+<txtUpdateQuantity4 findby="Xpath" Xpath="//div[@id='content']//table[@class='details no-zebra']//td[@class='pricecart']//input[@id='Body_MainContent_BasketControl_ctl00_productTemplate_Quantity_3']" />
+<txtCustomerOrgnumber findby="Xpath" Xpath="//div[@class='quickCreateForm']//input[@id='txtOrgNumber']" />
+<txtHapiPaymentTypeAX findby="Xpath" Xpath="//div[@id='table']//div//ul//li[2]//div//table//tbody//tr[13]//td[2]" />
+<txtDashboardInformation findby="Xpath" Xpath="//div[@id='content']//div[@class='colgroup-frontpage']//div[@class='noticeBoard']//form//div[@class='NBMessage']//textarea[@id='Message']" />
+<txtDashboardSave findby="Xpath" Xpath="//div[@id='content']//div[@class='colgroup-frontpage']//div[@class='noticeBoard']//form//div[@class='action-container']//input[@name='SaveMessage']" />
+</textboxes>
+
+<!-- @author CTS Team -Dec 2013 -->
+<listboxes>
+<lstSelectSubScription findby="Xpath" Xpath="//div[@id='sortinglist']/dl[@class='dropdown']/dt/a/span" />
+<lstSelectSubScriptionType findby="Xpath" Xpath="//div[@id='sortinglist']/dl[@class='dropdown']//li/a[*/text()='@1@']" />
+<lstSelectUtenBinding findby="Xpath" Xpath="//div[@class='productDetails']//table[@id='subscription-table']//tbody//tr[@class='selectablerow ChosenSubscription hiddenSubscription selected']//td//select" />
+<lstSelectUserPreferences findby="Xpath" Xpath="//div[@id='body']//div[@class='dropDownMenuContainer floatLeft']//div[@class='dropdownMenuButton']//span" />
+<lstSelectChangePermissions findby="Xpath" Xpath="//div[@id='body']//div[@class='dropDownMenuContainer floatLeft spacingLeft']//div[@class='dropdownMenuButton']//span" />
+</listboxes>
+
+<!-- @author CTS Team -Dec 2013 -->
+<links>
+<lnkOrderApprover findby="Xpath" Xpath="//div[@id='ufd-container']//div[@class='plain']//div//div[@class='list-scroll']//ul//li[4]" />
+<lnkOtp findby="Xpath" Xpath="//a[contains(text(),'OTP')]" />
+<lnkHapiOrderAX findby="Xpath" Xpath="//div[@id='result']//table//tbody//tr[2]//td[2]//a" />
+<lnkProductPackage findby="Xpath" Xpath="//div[@id='content']//a[@id='showSavePackage']"/>
+<lnkShowSavePackage findby="Xpath" Xpath="//div[@id='content']//a[@id='showSavePackage']"/>
+<lnkWithoutSubscription findby="Xpath" Xpath="//div[@id='productContainer']//div[@class='product-item']//h2//div[@class='subscriptionNameCotainer']/span[@class='currentSubscriptionName']" />
+<lnkMobileColor findby="Xpath" Xpath="//div[@class='product-overview']//div[@class='colorselectorbutton']//a" />
+<lnkTabs findby="Xpath" Xpath="//div[@class='productDetails']//ul[@class='tabs']//li" /> 
+<lnkProductName findby="Xpath" Xpath="//div[@class='group']//table[@id='cart-content']//tbody//tr//td[@class='headcart']//strong//a" />
+<lnkNordilogProductName findby="Xpath" Xpath="//div[@class='group']//tr[@class='productgroup']//td[@class='headcart']//strong//a" />
+<lnkAcessoriesName  findby="Xpath" Xpath="//div[@class='group']//tr[@class='productgroup ']//td[@class='headcart']//strong//a" />
+<lnkOrderNumber  findby="Xpath" Xpath="//div[@id='completedOrdersSearchResult']//div[@class='row']//ul//li[1]//h4//a" />
+<lnkOrderNumberSplitpayment  findby="Xpath" Xpath="//div[@id='completedOrdersSearchResult']//div[@class='row']//ul//li[2]//h4//a" />			
+<lnkOrderSearch  findby="Xpath" Xpath="//div[@id='header']//div[@id='menu']//ul//li[6]//a" />
+<lnkCheckOrderStatus findby="Xpath" Xpath="//div[@id='page']//div[2]//a[3]" />
+<lnkFake findby="Xpath" Xpath="//div[@id='context']//div[@class='rows']//div[@class='row']//input[@type='image']" />
+<lnkBack findby="Xpath" Xpath="//div[@id='page']//a" />
+<lnkCreateAgent findby="Xpath" Xpath="//div[@id='mainmenu']//li[@class='subsection']//a[contains(text(),'Opprett agent')]" />
+<lnkNettbutikk findby="Xpath" Xpath="//div[@class='b2b-header_bottom']//ul[1]//li//a[contains(text(),'Nettbutikk')]" />
+<lnkTest findby="Xpath" Xpath="//div[@class='list-overview panel ']//ul//li[@class='product ui-draggable']//div[@class='listcontentLarge']//h3//a" />
+<lnkCreatePricing findby="Xpath" Xpath="//div[@id='mainmenu']//nav//ul[@id='menu']//li[@class='section'][4]//ul//li[@class='subsection'][2]//a" />
+<lnkProduct findby="Xpath" Xpath="//div[@id='headerwrap']//div[@id='mainmenu']//nav//ul[@id='menu']//li[@class='section selected']//a[@class='sub']" />
+<lnkaccessories findby="Xpath" Xpath="//div[@class='group']//div[@class='basket-accessories_trigger basket-accessories_trigger--closed'][1]//a[@class='basket-accessories_trigger_link']" />
+<lnkRefresh findby="Xpath" Xpath="//div[@class='group']//tr[@class='productgroup']//td[@class='pricecart']//input[@class='quantityRefresh']" />
+<lnkaccessoriesTab findby="Xpath" Xpath="//div[@class='productDetails']//li[@id='tilbehorTab']//a" />
+<lnkShopMore findby="Xpath" Xpath="//div[@class='basketMoreCash']//div[@class='basketContainer']//div[@class='basketMore']//a[*/text()='Handle mer']" />
+<lnkTablets findby="Xpath" Xpath="//div[@id='tabsfacet']//li//a[*/text()='Nettbrett']" />
+<lnkBroadband findby="Xpath" Xpath="//div[@id='tabsfacet']//li//a[*/text()='Mobilt Bredbånd']" />
+<lnkBreadCrumb findby="Xpath" Xpath="//div[@id='breadcrumb']//li[3]" />
+<lnkMobileName findby="Xpath" Xpath="//div[@id='produktModule']//h1//span" />
+<lnkAbonnementTab findby="Xpath" Xpath="//div[@class='productDetails']//ul//li//a[contains(text(),'Abonnement')]" />
+<lnkHomeTabs findby="Xpath" Xpath="//div[@id='tabsfacet']//li//a" />
+<lnkProductSubscription findby="Xpath" Xpath="//div[@class='row rowcontainer subscriberselection']//span//strong" />
+<lnkAddressInformationTab findby="Xpath" Xpath="//div[@id='tabs']//li//a[contains(text(),'Adresseinformasjon')]" />
+<lnkPaymentInformationTab findby="Xpath" Xpath="//div[@id='tabs']//li//a[contains(text(),'Betalingsinformasjon')]" />
+<lnkTaskTab findby="Xpath" Xpath="//div[@id='header']//div[@id='menu']//ul//li[5]//a[contains(text(),'Tasks')]" />
+<lnkStatus findby="Xpath" Xpath="//div[@id='header']//div[@id='menu']//ul//li[2]//a[contains(text(),'Status')]" />
+<lnkTaskStatus findby="Xpath" Xpath="//div[@id='taskOverview']//tbody//tr[@class='Running']//td[contains(text(),'FetchAllSalespoints')]" />
+<lnkButtik findby="Xpath" Xpath="//div[@id='mainmenu']//ul//li[@class='section']//ul//li[@class='subsection']//a[contains(text(),'Butikk')]" />
+<lnkSearch findby="Xpath" Xpath="//div[@class='filter-smaller']//div[@id='show-search']//input[@id='Search']" />
+<lnkAssortment findby="Xpath" Xpath="//div[@class='product'][1]//div[@class='listcontent']//form//input[@name='SeeAssortment']" />
+<lnkAlleProdukter findby="Xpath" Xpath="//div[@id='tabs']//ul//li//a[contains(text(),'Alle produkter')]" />
+<lnksearchbutton findby="Xpath" Xpath="//div[@class='filter']//div[@id='show-search']//input[@id='searhButton']" />
+<lnkbutton findby="Xpath" Xpath="//div[@id='page']//div//input[@id='Body_ReplaceMainContent_Button2']" />
+<lnkOrderList findby="Xpath" Xpath="//div[@id='page']//div//p[3]//a" />
+<lnkAddProduct findby="Xpath" Xpath="//div[@id='mainmenu']//nav//ul//li[@class='subsection']//a[contains(text(),'Nytt lokalt produkt')]" />
+<lnkIncomingProduct findby="Xpath" Xpath="//div[@id='mainmenu']//nav//ul//li[@class='section']//ul//li[@class='subsection']//a[contains(text(),'Innkomne produkter')]" />
+<lnkLightBox findby="Xpath" Xpath="//div[@class='main-content']//li//a[@class='lightbox']" />
+<lnkCNETSearch findby="Xpath" Xpath="//div[@id='failedOrderFilter']//form[@id='SearchForm']//div//fieldset[@class='container']//input[@id='searchButton']" />
+<lnkProductMenu findby="Xpath" Xpath="//div[@id='mainmenu']//ul//li[@class='section']//a[@class='sub' and contains(text(),'Produkt')]" />
+<lnkButikkMenu findby="Xpath" Xpath="//div[@id='mainmenu']//ul//li[@class='section']//a[@class='sub' and contains(text(),'Butikk')]" />
+<lnkButikkSubMenu findby="Xpath" Xpath="//div[@id='mainmenu']//li[@class='subsection']//a[contains(text(),'Butikk')]" />
+<lnkButikkSubMenu2 findby="Xpath" Xpath="//div[@id='mainmenu']//li[@class='subsection']//a[contains(text(),'Hurtigopprett AX/B2B-butikk')]" />
+<lnkNext findby="Xpath" Xpath="//div[@class='next-page']//input[@name='next']" />
+<lnkUserMenu findby="Xpath" Xpath="//div[@id='mainmenu']//li[@class='section']//a[@class='sub' and contains(text(),'Bruker')]" />
+<lnkUserSubMenu findby="Xpath" Xpath="//div[@id='mainmenu']//li[@class='subsection']//a[contains(text(),'Opprett bruker')]" />
+<lnkAdministrator findby="Xpath" Xpath="//div[@class='form']//div//table[@class='roles']//tbody//tr//td//input[@value='administrator']" />
+<lnkCampaginAttribute findby="Xpath" Xpath="//div[@class='product']//div[@class='listcontent']//form//input[@name='EditCampaignAttributes']" />
+<lnkBrowse findby="Xpath" Xpath="//div[@class='img-menu']//div[@class='thumbnail-upload']//table//input[@id='file']" />
+<lnkProperties findby="Xpath" Xpath="//div[@class='wizard-steps']//ul//li[2]" />
+<lnkCustomerReference  findby="Xpath" Xpath="//div[@class='wizard-steps']//ul//li//p//a[contains(text(),'Kundespesifikke referansefelt')]" />
+<lnkRoller findby="Xpath" Xpath="//div[@class='wizard-steps']//ul//li//p//a[contains(text(),'Roller')]" />
+<lnkCampaign findby="Xpath" Xpath="//div[@class='main-content']//ul//li[4]//a[contains(text(),'Kampanje')]" />
+<lnkCustomer findby="Xpath" Xpath="//div[@id='mainmenu']//ul//li[@class='section']//a[@class='sub' and contains(text(),'Kunder')]" />
+<lnkCustomerSubMenu findby="Xpath" Xpath="//div[@id='mainmenu']//li[@class='subsection']//a[contains(text(),'Kunder')]" />	
+<lnkEditCustomer findby="Xpath" Xpath="//div[@class='product'][1]//div[@class='form']//form[1]//input" />
+<lnkCustomerSpecific findby="Xpath" Xpath="//div[@class='wizard-steps']//li//p//a[contains(text(),'Kundespesifikke referansefelt')]" />
+<lnkAdminMenu findby="Xpath" Xpath="//div[@id='mainmenu']//ul//li[@class='section']//a[@class='sub' and contains(text(),'Admin')]" />
+<lnkAdminSubMenu findby="Xpath" Xpath="//div[@id='mainmenu']//li[@class='subsection']//a[contains(text(),'Visningskategorier')]" />
+<lnkProductCatalog findby="Xpath" Xpath="//div[@id='mainmenu']//li[@class='subsection']//a[contains(text(),'Produktkatalog')]" />
+<lnkAdminSubMenu2 findby="Xpath" Xpath="//div[@id='mainmenu']//li[@class='subsection']//a[contains(text(),'Overfør til butikker manuelt')]" />
+<lnkLevel3Item  findby="Xpath" Xpath="//div[@class='useType functions']//li[last()]//a[contains(text(),'@1@')]" />
+<lnkPageMenu  findby="Xpath" Xpath="//div[@class='pagemenu']//ul//li[last()-1]" />
+<lnkPageCount  findby="Xpath" Xpath="//div[@class='pagemenu']//ul//li" />
+<lnkPageNumber  findby="Xpath" Xpath="//div[@class='pagemenu']//ul//li[@1@]" />
+<lnkDeliveryMethod  findby="Xpath" Xpath="//div[@class='wizard-steps']//li//a[contains(text(),'Leveringsmetode')]" />
+<lnkSupplierMenu  findby="Xpath" Xpath="//div[@id='mainmenu']//ul//li[@class='section']//a[@class='sub' and  contains(text(),'Leverandør')]" />
+<lnkSupplierSubMenu  findby="Xpath" Xpath="//div[@id='mainmenu']//li[@class='subsection']//a[contains(text(),'Lag ny')]" />
+<lnkAgentMenu  findby="Xpath" Xpath="//div[@id='mainmenu']//ul//li[@class='section']//a[@class='sub' and  contains(text(),'Agent')]" />
+<lnkAgentSubMenu  findby="Xpath" Xpath="//div[@id='mainmenu']//li[@class='subsection']//a[contains(text(),'Agent')]" />
+<lnkCheckIMEStatus  findby="Xpath" Xpath="//div[@id='page']//a[2]" />
+<lnkIMEStatus  findby="Xpath" Xpath="//div[@id='page']//table//tbody//tr[last()]//td[last()]" />
+<lnkProductCat  findby="Xpath" Xpath="//div[@class='colgroup']//ul//li//a[contains(text(),'Produkt')]" />
+<lnkProdukttekster  findby="Xpath" Xpath="//div[@class='wizard-steps']//li[4]//a[contains(text(),'Produkttekster')]" />
+<lnkAbonnementstyper  findby="Xpath" Xpath="//div[@class='wizard-steps']//li[last()-1]//p" />
+<lnkUtvalgMenu  findby="Xpath" Xpath="//div[@id='mainmenu']//ul//li[@class='section']//a[@class='sub' and  contains(text(),'Utvalg')]" />
+<lnkUtvalgCat  findby="Xpath" Xpath="//div[@class='colgroup']//ul//li//a[contains(text(),'Utvalg')]" />
+<lnkUtvalgSubMenu1  findby="Xpath" Xpath="//div[@id='mainmenu']//li[@class='subsection']//a[contains(text(),'Utvalg')]" />
+<lnkUtvalgSubMenu2  findby="Xpath" Xpath="//div[@id='mainmenu']//li[@class='subsection']//a[contains(text(),'Opprett utvalg')]" />
+<lnkPricing  findby="Xpath" Xpath="//div[@class='colgroup']//ul//li//a[contains(text(),'Prising')]" />
+<lnkPricingMenu  findby="Xpath" Xpath="//div[@id='mainmenu']//ul//li[@class='section']//a[@class='sub' and  contains(text(),'Prising')]" />
+<lnkPricingSubMenu  findby="Xpath" Xpath="//div[@id='mainmenu']//li[@class='subsection']//a[contains(text(),'Opprett priskalkyle')]" />
+<lnkAgent  findby="Xpath" Xpath="//div[@class='colgroup']//ul//li//a[contains(text(),'Agent')]" />
+<lnkAddIndividualItems  findby="Xpath" Xpath="//div[@class='wizard-steps']//li[3]" />
+<lnkForHandlerMenu  findby="Xpath" Xpath="//div[@id='mainmenu']//ul//li[@class='section']//a[@class='sub' and  contains(text(),'Forhandler')]" />
+<lnkForHandlerSubMenu  findby="Xpath" Xpath="//div[@id='mainmenu']//ul//li[@class='subsection']//a[contains(text(),'Forhandler')]" />
+<lnkStoreStep1  findby="Xpath" Xpath="//div[@class='create-steps']//ul//li[1]//a[contains(text(),'Ikke gjennomført')]" />
+<lnkFindCustomer  findby="Xpath" Xpath="//div[@class='main-content']//div[@class='form']//a[contains(text(),'Finn kunde')]" />
+<lnkStoreStep3  findby="Xpath" Xpath="//div[@class='create-steps']//ul//li[3]//a[contains(text(),'Ikke gjennomført')]" />
+<lnkStoreStep4  findby="Xpath" Xpath="//div[@class='create-steps']//ul//li[4]//a[contains(text(),'Ikke gjennomført')]" />
+<lnkStoreStep5  findby="Xpath" Xpath="//div[@class='create-steps']//ul//li[5]//a[contains(text(),'Ikke gjennomført')]" />
+<lnkButikk  findby="Xpath" Xpath="//div[@class='colgroup']//a[contains(text(),'Butikk')]" />
+<lnkStoreName  findby="Xpath" Xpath="//div[@class='list-products']//div[@class='product'][1]//h3//a" />
+<lnkViewCategories  findby="Xpath" Xpath="//div[@class='wizard-steps']//ul//li//a[contains(text(),'Visningskategorier')]" />
+<lnkMobiltBredbånd  findby="Xpath" Xpath="//div[@id='tabsfacet']//li[2]" />
+<lnkTextProductPreferences  findby="Xpath" Xpath="//div[@class='listcontent']//a[contains(text(),'Tekster og produktinnstillinger for butikk')]" /> 
+<lnkB2bShop  findby="Xpath" Xpath="//div[@class='wizard-message-info']//a[contains(text(),'Sunnhordland Kraftlag AS')]" />
+<lnkLogicaStore findby="Xpath" Xpath="//div[@class='list-scroll']//ul//li[contains(text(),'Sunnhordland Kraftlag AS')]" />
+<lnkStore findby="Xpath" Xpath="//div[@class='list-scroll']//ul//li[contains(text(),'13-Gruppen AS')]" />
+<lnkSelectStoreSplitpayment findby="Xpath" Xpath="//div[@class='list-scroll']//ul//li[contains(text(),'Anticimex A/S')]" />
+<lnkSelectStoreSplitpaymentOrderApproval findby="Xpath" Xpath="//div[@class='list-scroll']//ul//li[contains(text(),'Cowi AS')]" />
+<lnkSubscriber  findby="Xpath" Xpath="//div[@id='ufd-container']//div[2][@class='plain']//div[@class='list-scroll'][1]//ul//li[last()]" />
+<lnkbuttonRelease  findby="Xpath" Xpath="//div[@id='headerwrap']//div[@class='ident']//a//img" />
+<lnkSelectAllChkBox  findby="Xpath" Xpath="//div[@class='selector']//li[1]//div[@class='selector_item_body']//div[@class='select-tags'][2]//div[@class='select-tags_actions']//a[@title='Velg alle']" />
+<lnkLaunchSimba  findby="Xpath" Xpath="//form[@id='form1']//div//a[contains(text(),'Simba')]" />
+<lnkUtvalg  findby="Xpath" Xpath="//div[@class='content']//div[@class='colgroup']//div[@class='abcdefCol']//ul[@class='path']//li[2]//a[@href='/Selection/ShowList']" />
+<lnkCreateNewUtvalg  findby="Xpath" Xpath="//div[@class='action-field']//div[@class='action-content']//h5//strong//a" />
+<lnkProductVariantUtvalg  findby="Xpath" Xpath="//div[@class='main-content']//ul//li[4]//span[2]//a" />
+<lnkHandleMer  findby="Xpath" Xpath="//div[@id='content']//div[@class='related']//ul//li//a[contains(text(),'Handle mer')]" />
+<lnkAgentTitle  findby="Xpath" Xpath="//div[@class='list-products']//div[@class='product']//div[@class='listcontentLarge']//h3//a[contains(text(),'@1@')]" />
+<lnkAgentSubscriptionChk  findby="Xpath" Xpath="//div[@class='dragdrop']//div[@id='selectionList']//div[@class='product']//div[@class='listcontentLarge']//h3//a[1]" />
+<lnkSalesProductLink  findby="Xpath" Xpath="//div[@class='product']//div[@class='listcontent']//span[contains(text(),'Se utsalgsprodukter')]" />
+<lnkSelectSalesProduct  findby="Xpath" Xpath="//div[@class='productconnection-list']//div[@class='container']//h5[2]" />
+<lnkCheckOrderData findby="Xpath" Xpath="//div[@id='page']//div[2]//a[2]" />
+<lnkSharedUserLogin findby="Xpath" Xpath="//div[@class='main-content']//div[2][@class='form']//fieldset//p[@data-visibleifvalueis='True']//span//a[@id='SharedUserLoginUrl']" />
+<lnkCreateButikkAdmin findby="Xpath" Xpath="//div[@class='form']//p//a[contains(text(),'Lag ny forhandler')]" />
+<lnkCart  findby="Xpath" Xpath="//div[@class='basketContainer']//div//p//strong//a//span[contains(text(),'Vis handlekurv')]" />
+<lnkShopVismer findby="Xpath" Xpath="//div[@class='product'][1]//div[@class='listcontent']//div[@class='form showChildrenOnClick']//a[contains(text(),'Vis mer')]" />
+<lnkShopCancelWizard findby="Xpath" Xpath="//div[@class='wizard']//div[@class='next-page']//p[2]//a[contains(text(),'Avbryt registrering')]" />
+<lnkSubscriberSharedUser findby="Xpath" Xpath="//div[@id='ufd-container']//div[@class='plain']//div[@class='list-scroll'][1]//ul//li[last()]" />
+<lnkAnsatte findby="Xpath" Xpath="//div[@class='b2b-header']//div[@class='b2b-header_bottom']//ul//li//a[contains(text(),'Ansatte')]" />
+<lnkApproveorder findby="Xpath" Xpath="//div[@class='b2b-header']//div[@class='b2b-header_bottom']//ul//li//a[@href='/approveorders']" />
+<lnkCreateUser findby="Xpath" Xpath="//div[@id='body']//div//a[@title='Legg til ny']"/>
+<lnkListUsersName findby="Xpath" Xpath="//div[@id='body']//table//tbody//tr[@class='js-user']//td[@class='js-user-name']" />
+<lnkListOrderNo findby="Xpath" Xpath="//div[@id='body']//table[@class='gen-table ordered-table js-orders-table']//tbody//tr//td//input[@id='Body_MainContent_ctl00_ApproveOwnOrdersTable_OrderRepeater_CheckedOrder_0']" />
+<lnkListOrderNo1 findby="Xpath" Xpath="//div[@id='body']//table[@class='gen-table ordered-table js-orders-table']//tbody//tr//td[2]//a[@id='Body_MainContent_ctl00_ApproveOwnOrdersTable_OrderRepeater_ViewOrderLink_0']" />
+<lnkMobileTab findby="Xpath" Xpath="//div[@id='content']//div[@id='tabsfacet']//ul//li//a[@href='/Mobil']" />
+<lnkMobileBrands findby="Xpath" Xpath="//div[@class='container']//div[@class='grd']//div[2]//div[1]//ul//li//label" />
+<lnkProductPackage findby="Xpath" Xpath="//div[@class='b2b-header']//div[@class='b2b-header_bottom']//ul//li//a[contains(text(),'Produktpakker')]" />
+<lnkHomePage findby="Xpath" Xpath="//div[@id='content']//div[@id='tabsfacet']//ul//li//a[@href='/Forside']" />
+<lnkMbizMenu findby="Xpath" Xpath="//div[@id='header']//a//img[@alt='mBiz']" />
+</links>
+
+<!-- @author CTS Team -Dec 2013 -->
+<buttons>
+<btnRejectorder findby="Xpath" Xpath="//input[@value='Avvis merkede ordre']" />
+<btnApproveorder findby="Xpath" Xpath="//input[@id='Body_MainContent_ctl00_btnApprove']" />
+<btnOrderApprover findby="Xpath" Xpath="//button[@type='button']" />
+<btnOTPText findby="Xpath" Xpath="//div[@id='content']/table/tbody/tr/td" />
+<btnSearchOTPUser findby="Xpath" Xpath="//div[@id='content']//input[@id='Body_ReplaceMainContent_MainContent_SearchButton']" />
+<btnKatalogeksport findby="Xpath" Xpath="//div[@class='wizard']//div[@class='next-page-top']//form//input[@value='Katalogeksport']" />
+<btnGeneratekatalog findby="Xpath" Xpath="//div[@class='wizard']//div[@class='next-page-top']//form//input[@value='Generer katalog']" />
+<btnSeeButtik findby="Xpath" Xpath="//div[@class='product'][1]//div[@class='listcontent']//input[@name='SeeSalespoint']" />
+<btnCreater findby="Xpath" Xpath="//div[@class='quickCreateForm']//input[@id='btnCreate']" />
+<btnFetchUsers findby="Xpath" Xpath="//div[@class='quickCreateForm']//input[@id='btnFetchUsers']" />
+<btnUpdateDiscountedPrice1 findby="Xpath" Xpath="//div[@id='content']//table[@class='gen-table']//tbody//tr//td[4]//input[@id='Body_MainContent_ctl00_PackageProducts_UpdateDiscountedPrice_0']" />
+<btnUpdateDiscountedPrice2 findby="Xpath" Xpath="//div[@id='content']//table[@class='gen-table']//tbody//tr[2]//td[4]//input[@id='Body_MainContent_ctl00_PackageProducts_UpdateDiscountedPrice_1']" />
+<btnUpdateDiscountedPrice3 findby="Xpath" Xpath="//div[@id='content']//table[@class='gen-table']//tbody//tr[3]//td[4]//input[@id='Body_MainContent_ctl00_PackageProducts_UpdateDiscountedPrice_2']" />
+<btnUpdateDiscountedPrice4 findby="Xpath" Xpath="//div[@id='content']//table[@class='gen-table']//tbody//tr[4]//td[4]//input[@id='Body_MainContent_ctl00_PackageProducts_UpdateDiscountedPrice_3']" />
+<btnSaveEditPackage findby="Xpath" Xpath="//div[@id='content']//div[@class='clearBoth spacingBelow containsSaveButton  hidden ']//input[@id='Body_MainContent_ctl00_SaveButton']"/>
+<btnSaveAsPackage findby="Xpath" Xpath="//div[@id='savePackageContainer']//div[@class='clearBoth spacingBelow']//input[@id='Body_MainContent_BasketControl_ctl00_ctl07_SaveAsPackage']"/>
+<btnSelectProduct findby="Xpath" Xpath="//div[@id='productContainer']//div[@class='product-item'][@1@]//a//span[contains(text(),'Velg')]"/>
+<btnAddToBasket findby="Xpath" Xpath="//div[@class='product-overview']//div[@class='button shop-btn']//a"/>
+<btnSkip findby="Xpath" Xpath="//div[@class='button action']//a[@id='Body_MainContent_productList_LinkButton1']//span"/>
+<btnAddToCart findby="Xpath" Xpath="//div[@class='button action']//a[@id='Body_MainContent_productList_LinkButton2']//span"/>
+<btnCheckOut findby="Xpath" Xpath="//div[@class='basketContainer']//div[@class='button action right basketCash']//a"/>
+<btnDeliveryPayment findby="Xpath" Xpath="//div[@class='basketContainer']//div[@class='button action right basketCash']//a[@id='LinkButtonNext']"/> 
+<btnDeliveryPayment2 findby="Xpath" Xpath="//div[@class='basketContainer']//div[@class='button action right basketCash']//a[@id='linkButtonNextProxy']//span[@id='Body_MainContent_LabelNext']"/>
+<btnRadio1 findby="Xpath" Xpath="//div[@id='col1']//table[@id='shippingtable']//p//input[@checked='checked']"/>
+<btnRadio2 findby="Xpath" Xpath="//div[@class='body choice c1']//table[@id='paymenttable']//p//input[@name='paymentmethod']"/>
+<btnCompletePayment findby="Xpath" Xpath="//div[@id='payment']//div[@class='buttons']//div[@class='button submit']//input[@type='submit']"/>
+<btnContinue findby="Xpath" Xpath="//div//input[@id='OkContinue']"/>		
+<btnStatus findby="Xpath" Xpath="//div[@id='tabs-1']//div[@class='orderList']//fieldset[@class='orderLines'][1]/table//tbody[1]//tr[1]//td[@class='short'][4]//img"/>
+<btnSearch findby="Xpath" Xpath="//div[@id='page']//div//input[@id='Body_ReplaceMainContent_btnShowOrder']"/>
+<btnSearch2 findby="Xpath" Xpath="//div[@class='filter-smaller']//div[@id='show-search']//input[@id='Search']"/>
+<btnSelectCorrectProduct findby="Xpath" Xpath="//div[@id='productContainer']//div[@class='product-item'][@1@]//div[@class='product simple small productBlock']//a//span[contains(text(),'Velg')]"/>
+<btnSave findby="Xpath" Xpath="//div[@class='button action right floatRight basketCash']//button"/>
+<btnSelectAcessories findby="Xpath" Xpath="//div[@class='product simple medium'][1]//div[@class='footer']//div[@class='button action']//a"/>
+<btnFindOrders findby="Xpath" Xpath="//div[@class='actionfield']//div[@class='form']//fieldset[@class='container']//fieldset[@class='floatLeft']//input[@name='filterproducts-btnSearch']"/>
+<btnClose findby="Xpath" Xpath="//div[@id='fancybox-outer']//a[@id='fancybox-close']"/>
+<btnProceed findby="Xpath" Xpath="//div[@class='colgroup']//div[@class='wizard']//div[@class='next-page']//input[@name='next']"/>
+<btnProceed2 findby="Xpath" Xpath="//div[@class='colgroup']//div[@class='wizard']//div[@class='next-page-top']//input[@name='next']"/>
+<btnSaveChanges findby="Xpath" Xpath="//div[@class='wizard']//div[@class='next-page']//input[@id='wizardSave']"/>
+<btnUpdateStore findby="Xpath" Xpath="//div[@class='product']//div[@class='listcontent']//form//input[@name='UpdateSalespoint']"/>
+<btnEditStore2 findby="Xpath" Xpath="//div[@class='next-page-top']//form//input[@name='Rediger']"/>
+<btnEditStore findby="Xpath" Xpath="//div[@class='form']//form//input[@value='Rediger butikk']"/>
+<btnEditSynonym findby="Xpath" Xpath="//div[@class='form']//form//input[@value='Rediger synonymer for produktsøk']"/>
+<btnEditCustomer findby="Xpath" Xpath="//div[@class='wizard']//div[@class='next-page-top']//input[@name='Rediger']"/>
+<btnLevel3 findby="Xpath" Xpath="//div[@class='main-content']//ul[@id='ThirdLevel']//li//button[@id='after3']"/>
+<btnEditMobile findby="Xpath" Xpath="//div[@class='form']//input[@name='edit']"/>
+<btnViewCategories findby="Xpath" Xpath="//div[@class='list-products']//div[@class='product']//div[@class='form']//form[12]//input"/>
+<btnCompletePush findby="Xpath" Xpath="//div[@class='content']//input[@class='standardbutton']"/>
+<btnEditSupplier findby="Xpath" Xpath="//div[@class='list-products']//div[@class='product'][last()]//div[@class='form']//input[@class='standardbutton']"/>
+<btnSeeAgent findby="Xpath" Xpath="//div[@class='list-products']//div[@class='product'][1]//div[@class='form']//form//input[@value='Se agent']"/>
+<btnForHandler findby="Xpath" Xpath="//div[@class='wizard']//div[@class='next-page-top']//form//input[@value='Opprett forhandler']"/>
+<btnEditProduct findby="Xpath" Xpath="//div[@class='list-products']//div[@class='product'][1]//div[@class='form']//form//input[@value='Rediger produkt']"/>
+<btnEditUtvalg findby="Xpath" Xpath="//div[@class='list-products']//div[@class='product'][1]//div[@class='form']//form//input[@value='Rediger utvalg']"/>
+<btnLeveringMeToOrder findby="Xpath" Xpath="//div[@class='wizard']//div[@class='next-page-top']//form//input[@value='Leveringsmetoder']"/>
+<btnSeeForHandler findby="Xpath" Xpath="//div[@class='list-products']//div[@class='product'][1]//div[@class='form']//form[1]//input[@value='Se forhandler']"/>
+<btnCreateStore findby="Xpath" Xpath="//div[@class='wizard']//div[@class='next-page-top']//form//input[@value='Opprett butikk']"/>
+<btnOk findby="Xpath" Xpath="//div[@id='searchResult']//p//input[@value='Velg']"/>
+<btnPopUpWindowSearch findby="Xpath" Xpath="//div[@class='form']//fieldset//input[@id='searchButton']"/>
+<btnTransferProducts findby="Xpath" Xpath="//div[@class='content']//form//input[@value='Overfør alle produkter, abo og suppliers til frontend']"/>
+<btnTransferProductsOnly findby="Xpath" Xpath="//div[@class='content']//form//input[@value='Overfør alle produkter til frontend']"/>
+<btnProductOverride findby="Xpath" Xpath="//div[@class='form']//form//input[@value='Produktoverstyring']"/>
+<btnUpdater findby="Xpath" Xpath="//div[@class='main-content']//input[@value='Oppdater']"/>
+<btnUpdaterButikk findby="Xpath" Xpath="//input[@value='Oppdater butikk']"/>
+<btnAccesoryTab findby="Xpath" Xpath="//div[@id='tabsfacet']//ul//li//h4[contains(text(),'Tilbehør')]"/>
+<btnUtvalgSearch findby="Xpath" Xpath="//div[@id='show-search']//input[@id='searhButton']"/>
+<btnImageUpload findby="Xpath" Xpath="//div[@class='img-menu']//div[@class='thumbnail-upload']//input[@name='uploadImage']"/>
+<btnExistingProducts findby="Xpath" Xpath="//div[@class='mini-basket_body']//div[@class='mini-basket_items']//div[@class='mini-basket_items_i']//div[@class='mini-basket_items_price']//input[@class='mini-basket_items_remove']"/>
+<btnRemoveProducts findby="Xpath" Xpath="//div[@class='mini-basket_body']//div[@class='mini-basket_items']//div[@class='mini-basket_items_i'][@1@]//div[@class='mini-basket_items_price']//input[@class='mini-basket_items_remove']"/>
+<btnApproveIncomingProduct findby="Xpath" Xpath="//div[@class='listcontent']//div[3][@class='form']//input[2][@name='startapproval']"/>
+<btnApproveExistingProduct findby="Xpath" Xpath="//div[@class='listcontent']//div[2][@class='form']//input[2][@name='startapproval']"/>
+<btnApproveIncomingProductClickNxt findby="Xpath" Xpath="//div[@class='abcdefCol']//div[@class='wizard']//div[@class='next-page-top']//input[@value='Gå videre']"/>
+<btnApproveIncomingProductWizardSave findby="Xpath" Xpath="//div[@class='abcdefCol']//div[@class='wizard']//div[@class='next-page-top']//input[@id='wizardSave']"/>
+<btnKatlogexportSave findby="Xpath" Xpath="//div[@class='abcdefCol']//div[@class='wizard']//div[@class='next-page-top']//input[@id='wizardSave']"/>
+<btnEditSalesProduct findby="Xpath" Xpath="//div[@class='wizard']//div[@class='next-page-top']//form[@method='get']//input[@value='Rediger utsalgsprodukt']"/>
+<btnBarCodeCalculate findby="Xpath" Xpath="//div[@class='txtcontent']//table[@class='idkeytable']//tr[5]//td[3]//input[@value='Calculate']"/>
+<btnAXIntegrationButikk findby="Xpath" Xpath="//div[@class='product']//div[@class='listcontent']//div[@class='form showChildrenOnClick']//div//form[19]//input"/>
+<btnAXIntegration findby="Xpath" Xpath="//div[@class='content']//form//input[1]"/>
+<btnReturnOrder findby="Xpath" Xpath="//div[@class='displayFieldset']//fieldset[3]//p[1]//input[1]"/>
+<btnSelectLevel2HTC findby="Xpath" Xpath="//div[@class='group brand']//ul[@id='listbrand']//li//label[contains(text(),'HTC')]"/>
+<btnSimbaReceipt findby="Xpath" Xpath="//input[@value='Vis kvittering']"/>
+<btnSimbaServiceOrderInfo findby="Xpath" Xpath="//input[@id='ButtonFetch']"/>
+<btnContinueCheckout findby="Xpath" Xpath="//div[@class='basketCash']//div[@class='button action right']//a"/>
+<btnB2bApproverSelect findby="Xpath" Xpath="//div[@id='ufd-container']//div[@class='plain']//div[@class='list-scroll'][1]//ul//li[last()]"/>
+<btnB2bNyLogin findby="Xpath" Xpath="//div[@class='main-content']//div[2][@class='form']//fieldset//p[5]//span[2]//input"/>
+<btnSave2 findby="Xpath" Xpath="//div[@class='form']//input[@value='Lagre']"/>
+<btnB2bDeliveryAddressSelect findby="Xpath" Xpath="//div[@id='ufd-container']//div[2]//div[@class='list-scroll']//ul//li[last()]"/>
+<btnfaktureringsadresse findby="Xpath" Xpath="//div[@id='billingAddressWrapper']//div[@class='deliveryFrame']//span[@class='ufd plain']//input[1]"/>
+<btnleveringsadresse findby="Xpath" Xpath="//div[@id='deliveryAddressWrapper']//div[@class='deliveryFrame']//span[@class='ufd plain']//input"/>
+<btnleveringsadresse0 findby="Xpath" Xpath="//div[@id='addressPicker']//span[@class='ufd plain']//button"/>
+<btnleveringsadresse1 findby="Xpath" Xpath="//div[@id='ufd-container']//div[2]//div[@class='list-scroll']//ul//li[last()]"/>
+<btnSelectAcessoryCart findby="Xpath" Xpath="//div[@class='group']//div[@class='basket-accessories basket-accessories--opened']//ul[@class='basket-accessories_list']//li[@class='basket-accessory'][1]//div[3]//div[1]//a//span" />
+<btnForhandlerStatus findby="Xpath" Xpath="//div[@class='main-content']//div[@class='form']//p[1]//input[@value='True']"/>
+<btnleveringsadresserERP findby="Xpath" Xpath="//div[@class='main-content']//div[2]//fieldset[3]//p//input[1][@id='UseCrmDeliveryAddresses']"/>
+<btnHapiHapi findby="Xpath" Xpath="//div[@class='container']//div[@class='btn-group']//button[contains(text(),'Hapi')]"/>
+<btnHapiAx findby="Xpath" Xpath="//div[@class='container']//div[@class='btn-group']//button[contains(text(),'AX')]"/>
+<btnNavisionHapi findby="Xpath" Xpath="//div[@class='container']//div[4]//button[contains(text(),'Navision')]"/>
+<btnHapiOrderRequests findby="Xpath" Xpath="//div[@class='container']//div[@class='btn-group']//ul//li[3]//a[contains(text(),'OrderRequests')]"/>
+<btnHapiOrders findby="Xpath" Xpath="//div[@class='container']//div[@class='btn-group']//ul//li//a[contains(text(),'Orders')]"/>
+<btnHapiNavB2COrders findby="Xpath" Xpath="//div[@class='container']//div[4]//ul//li//a[contains(text(),'B2C orders')]"/>
+<btnHapiOrderSearch findby="Xpath" Xpath="//form[@method='post']//div[@class='floatLeft']//div//button"/>
+<btnHapiOrderSearchAX findby="Xpath" Xpath="//form[@method='post']//div[@class='floatLeft']//div[2]//button"/>
+<btnHapiNavOrderSearch findby="Xpath" Xpath="//form[@method='post']//div[1][@class='floatLeft']//button[@type='submit']"/>
+<btnCancelOrder findby="Xpath" Xpath="//div[@class='text-preview']//table//tr//td[4]//p[1]//input"/>
+<btnSameMobNoCancel findby="Xpath" Xpath="//div[@id='fancybox-content']//form[@id='CronusForm']//div[@class='group navlightbox']//li//a[@id='Cancel']" />
+<btnSameMobNoProceed findby="Xpath" Xpath="//div[@id='fancybox-content']//form[@id='CronusForm']//div[@class='group navlightbox']//li//p//a" />
+<btnSaveEnabledProductPackage findby="Xpath" Xpath="//div[@id='content']/div[@class='hidden containsSaveButton']//input[@name='ctl00$ctl00$Body$MainContent$ctl00$ctl00']" />
+<btnUpdateQuantity1 findby="Xpath" Xpath="//div[@id='content']//table[@class='details no-zebra']//td[@class='pricecart']//input[@id='Body_MainContent_BasketControl_ctl00_productTemplate_UpdateQuantity_0']" />
+<btnUpdateQuantity2 findby="Xpath" Xpath="//div[@id='content']//table[@class='details no-zebra']//td[@class='pricecart']//input[@id='Body_MainContent_BasketControl_ctl00_productTemplate_UpdateQuantity_1']" />
+<btnUpdateQuantity3 findby="Xpath" Xpath="//div[@id='content']//table[@class='details no-zebra']//td[@class='pricecart']//input[@id='Body_MainContent_BasketControl_ctl00_productTemplate_UpdateQuantity_2']" />
+<btnUpdateQuantity4 findby="Xpath" Xpath="//div[@id='content']//table[@class='details no-zebra']//td[@class='pricecart']//input[@id='Body_MainContent_BasketControl_ctl00_productTemplate_UpdateQuantity_3']" />
+
+</buttons>
+
+<!-- @author CTS Team -Dec 2013 -->
+<images>
+<imgMobile findby="Xpath" Xpath="//div[@id='productContainer']//div[@class='product-item'][@1@]//div[@class='product simple small productBlock']//div[@class='image imageGrid bombanchor']//a//img" />
+<imgPDPMobile findby="Xpath" Xpath="//div[@class='product-images advanced-product-gallery']//div[@id='ccs-gallery']//div[@class='ccs-ds-zoomGallery-main-bottom ccs-ds-zoomGallery-class-main ']//img" />
+<imgMyCartMobile findby="Xpath" Xpath="//div[@class='group']//tr[@class='productgroup']//td[@class='imagecart']//div[@class='image']//a//img" />
+<imgConfirmOrderMobile findby="Xpath" Xpath="//div[@class='row step3']//tr[@class='productgroup']//td[@class='imagecart']//div[@class='image']//img" />
+<imgBomb findby="Xpath" Xpath="//div[@class='product-images']//div[@class='mainproduct']//span[@class='campaign']//img" />
+<imgProductImage findby="Xpath" Xpath="//div[@class='product']//img" />
+<imgCampaginImage findby="Xpath" Xpath="//div[@id='lightbox']//div[@class='image clearfix padding-box']//span//img[@alt='Kampanjebilde']" />
+<imgMobile2 findby="Xpath" Xpath="//div[@id='productContainer']//div[@class='product-item'][2]//div[@class='product simple small productBlock']//div[@class='image imageGrid bombanchor']//a//img[1]" />
+<imgTargetImageDisplay findby="Xpath" Xpath="//div[@id='selectionList']//ul//li//div[@class='product']" />
+<imgSourceUtvalImage findby="Xpath" Xpath="//div[@id='searchResult']//ul[@id='availableList']//li[1]//div[@class='listcontent']" />
+<imgTargetUtvalImage findby="Xpath" Xpath="//div[@id='selectionList']//ul[@id='selectedList']" />
+<imgAjaxLoad findby="Xpath" Xpath="//div[@id='completedOrderFilter']//form//div[@class='form']//fieldset[@class='container']//img[@style='display: none;']" />
+<imgFailedAjaxLoad findby="Xpath" Xpath="//div[@id='failedOrderFilter']//form//div[@class='form']//fieldset[@class='container']//img[@style='display: none;']" />
+<imgAjaxLoader findby="Xpath" Xpath="//div[@id='page']//div[@id='rightcolumn']//div[@id='bizTalkStatus']//span" />
+<imgJqueryLoad findby="Xpath" Xpath="//div[@id='fancybox-loading'  and @style='display: none;']" />
+<imgIconLoader findby="Xpath" Xpath="//div[@class='filter']//div[@class='hidden searchIndicator' and @style='display: none;']" />
+<imgIconLoad findby="Xpath" Xpath="//div[@class='main-content']//div[@class='form']//p//span[@id='loader' and @style='display: none;']" />
+<imgMobilesList findby="Xpath" Xpath="//div[@id='searchResult']//ul[@id='availableList']//li[1]//img" />
+<imgUtvalgIconLoader findby="Xpath" Xpath="//div[@class='filter']//div[@class='simplyFloatLeft hidden searchIndicator' and @ style='display: none;']" />
+<imgBombStoreVaidate findby="Xpath" Xpath="//div[@id='productrow']//div[@id='productContainer']//div[@class='product-item']//div[@class='product simple small productBlock']//div[2]//img[2][@id='Body_MainContent_productList_productListRepeater_ctl01_0_campaignImageGrid_0']" />
+<imgAjaxLoadHapi findby="Xpath" Xpath="//form[@method='post']//div[2]//img[@alt='Searching']" />
+</images>
+
+<!-- @author CTS Team -Dec 2013 -->
+<checkboxes>
+<chkShowOnFrontpage findby="Xpath" Xpath="//div[@id='content']//table//tbody//tr//span[@class='notifyOnChange']//input[@id='Body_MainContent_ctl00_Packages_ShowOnFrontpage_0']" />	
+<chkdeletepakage findby="Xpath" Xpath="//div[@id='content']//table//tbody//tr//span[@class='notifyOnChange notifyDelete']//input[@id='Body_MainContent_ctl00_Packages_ToBeDeleted_0']" />		
+<chkTermsConditions findby="Xpath" Xpath="//div[@class='choice']//table//input[@id='Body_MainContent_MainContent_ConfirmOrderControl_AcceptTerms']" />		
+<chkKeepSameNumber findby="Xpath" Xpath="//div[@class='group']//div[@class='choosenumber']//table//tr[1]//td[@class='modeSelector']//input[@class='use_own_number use_new_or_old_number']" />
+<chkShipping findby="Xpath" Xpath="//div[@id='col1']//table[@id='shippingtable']//input[@value='2PILOT']" />
+<chkBilling findby="Xpath" Xpath="//div[@class='body choice c1']//table[@id='paymenttable']//input[@name='paymentmethod']" />
+<chkNewNumber findby="Xpath" Xpath="//div[@class='group']//div[@class='choosenumber']//table//tr[2]//td[@class='modeSelector']//input[@class='use_new_number use_new_or_old_number']" />
+<chkSubscription findby="Xpath" Xpath="//div[@class='productDetails']//table[@id='subscription-table']//tbody//tr[@class='@1@']//th//input[@checked='checked']" />
+<chkNordialogSubscription findby="Xpath" Xpath="//div[@class='productDetails']//table[@id='subscription-table']//tbody//tr[@class='@1@']//td//input" />
+<chkWithoutSubscription findby="Xpath" Xpath="//div[@class='productDetails']//table[@id='subscription-table']//tbody//tr[@class='selectablerow ChosenSubscription hiddenSubscription selected']//th//input[@checked='checked']" />
+<chkCampagin findby="Xpath" Xpath="//div[@class='product'][1]//div[@class='form campaign']//li//label[@class='Kampanje']" />
+<chkLevel3 findby="Xpath" Xpath="//div[@class='main-content']//ul[@id='thirdLevel']//li[last()]//input[1]" />
+<chkStoreLevel3 findby="Xpath" Xpath="//div[@class='selector']//li[1]//div[@class='selector_item_body']//div[@class='select-tags'][2]//ul//li[last()]//input[2]" />
+<chkServicePack findby="Xpath" Xpath="//div[@id='availableShippingmethods']//li[1]//div[@class='selector_item_head']//input[@class='selector_item_selected']" />
+<chkVoice findby="Xpath" Xpath="//div[@class='main-content']//ul//li[contains(text(),'Bedrift (B)')]//input[1]" />
+<chkIPhoneVoice findby="Xpath" Xpath="//div[@id='subscription-types']//ul[2]//li[2]//input[1]" />
+<chkInvoice findby="Xpath" Xpath="//div[@class='body choice c1']//table[@id='paymenttable']//td[@class='antiborder1']//p//input[@name='paymentmethod']" />
+<chkAllowDeliveryAddress findby="Xpath" Xpath="//div[@class='main-content']//input[@id='AllowCustomDeliveryAddress']" />
+<chkItemSelector findby="Xpath" Xpath="//div[@id='availableShippingmethods']//ul//li[@class='selector_item selector_item--closed']//div[@class='selector_item_head']//input[1]" />
+<chkSingleItemSelector findby="Xpath" Xpath="//div[@id='availableShippingmethods']//ul//li[@class='selector_item selector_item--closed'][1]//div[@class='selector_item_head']//input[1]" />
+<chkBillingAddress findby="Xpath" Xpath="//div[@class='form']//input[@id='ChooseBillingAddress']" />
+<chkPaymentMode findby="Xpath" Xpath="//div[@class='wizard-body']//div[@class='main-content']//div[@class='form']//p//input[@id='PaymentMethodTypeCreditCard']" />
+<chkLevel1 findby="Xpath" Xpath="//div[@class='main-content']//ul[@id='topLevel']//input[@checked='checked']" />
+<chkLevel1MobiltBreradBand findby="Xpath" Xpath="//div[@class='main-content']//ul[@id='topLevel']//li[3]//input[@class='topLevel']" />
+<chkDescriptionselected1 findby="Xpath" Xpath="//div[@class='formX']//p[1]//input[@checked='checked'][1]" />
+<chkDescription1 findby="Xpath" Xpath="//div[@class='formX']//p[1]//input[@type='checkbox'][1]" />
+<chkDescriptionselected2 findby="Xpath" Xpath="//div[@class='formX']//p[2]//input[@checked='checked'][1]" />
+<chkDescription2 findby="Xpath" Xpath="//div[@class='formX']//p[2]//input[@type='checkbox'][1]" />
+<chkLevels findby="Xpath" Xpath="//div[@class='selector']//li[1]//div[@class='selector_item_head'][1]//input" />
+<chkCampaign findby="Xpath" Xpath="//div[@class='product'][@1@]//div[@class='listcontent']//div[@class='form campaign']//li[3]//input[@type='radio']" />
+<chkApproveProductLevel1 findby="Xpath" Xpath="//div[@class='wizard']//div[@class='wizard-body']//div[@class='left']//ul[@id='topLevel']//li[2]//input[@class='topLevel']" />
+<chkApproveProductLevel2 findby="Xpath" Xpath="//div[@class='wizard']//div[@class='wizard-body']//div[@class='left']//ul[2][@id='secondLevel']//li[9]//input[@class='secondLevel']" />
+<chkPresaleProduct findby="Xpath" Xpath="//div[@class='main-content']//ul//li[18]//span[2]//input[@id='PresaleProduct' and @value='True']" />
+<chkAddSubscriptionB2B findby="Xpath" Xpath="//div[1][@id='additionalSubscriptionServices']//table[@class='checkout-table no-zebra']//tr[2]//input" />
+<chkBBAddSubscriptionB2B findby="Xpath" Xpath="//div[2][@id='additionalSubscriptionServices']//table[@class='checkout-table no-zebra']//tbody//tr[3]//input" />
+<chkAllLeveringsadresserERP findby="Xpath" Xpath="//div[@class='container']//div[@style='margin-left:20px']//input[1]" />
+<chkAllFakturaadresserERP findby="Xpath" Xpath="//div[@class='container']//div[@style='margin-left:20px']//input[1]" />
+<chkStoreStatus findby="Xpath" Xpath="//div[1][@class='form']//p[2]//input[@value='True']" />
+<chkAvailableSubscriptions findby="Xpath" Xpath="//div[@class='main-content']//div[@id='subscription-types']//div//p[3]//input" />
+<chkAlladresserERP findby="Xpath" Xpath="//div[@class='container']//input[@type='checkbox']" />
+<chkB2BUsers findby="Xpath" Xpath="//div[@id='body']//table//tbody//tr[@class='js-user'][@1@]//td[1]" />
+<chkB2BUsers1 findby="Xpath" Xpath="//div[@id='body']//div[@class='tablegen-table ordered-table js-orders-table']//tbody//tr[@1@]//td[1]" />
+<chkAccessories1 findby="Xpath" Xpath="//div//input[@id='Body_MainContent_productList_accessoriesRepeater_cbSelected_0']" />
+<chkAccessories2 findby="Xpath" Xpath="//div//input[@id='Body_MainContent_productList_accessoriesRepeater_cbSelected_1']" />
+<chkAccessories3 findby="Xpath" Xpath="//div//input[@id='Body_MainContent_productList_accessoriesRepeater_cbSelected_2']" />
+<chkKatalogeksport findby="Xpath" Xpath="//div[@class='colgroup']//div[@class='wizard']//div[@class='main-content']//input[@id='CatalogExport_Enabled']" />
+</checkboxes>
+
+<!-- @author CTS Team -Dec 2013 -->
+<comboboxes>
+<cmbExpiryMonth  findby="Id" Id="ctl00_BodyContentPlaceHolder_PaymentControl_ddExpireMonth" name="" Xpath="" />
+<cmbExpiryYear findby="Id" Id="ctl00_BodyContentPlaceHolder_PaymentControl_ddExpireYear" name="" Xpath="" />
+<cmdListBox  findby="Xpath" Xpath="//div[@id='sortinglist']//dl[@id='dropdownbinding']" />
+<cmdHomePageListBox1 findby="Xpath" Xpath="//div[@id='sortinglist']//dl[@id='Body_MainContent_productList_abmsort']" />
+<cmdHomePageListBox2 findby="Xpath" Xpath="//div[@id='sortinglist']//dl[@id='price-sort']" />
+</comboboxes>
+
+</uimappings>
+

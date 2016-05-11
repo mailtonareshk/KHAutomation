@@ -1,0 +1,542 @@
+<!DOCTYPE html> 
+<html> 
+	 <head> 
+		 <meta charset='UTF-8'> 
+		 <title>Kjedehuset - Automation Execution Results Summary</title> 
+
+		 <style type='text/css'> 
+			 body { 
+				 background-color: #000000; 
+				 font-family: Verdana, Geneva, sans-serif; 
+				 text-align: center; 
+			 } 
+
+			 small { 
+				 font-size: 0.7em; 
+			 } 
+
+			 table { 
+				 border: 1px solid #4D7C7B; 
+				 border-collapse: collapse; 
+				 border-spacing: 0px; 
+				 width: 1000px; 
+				 margin-left: auto; 
+				 margin-right: auto; 
+			 } 
+
+			 tr.heading { 
+				 background-color: #4D7C7B; 
+				 color: #FFFF95; 
+				 font-size: 0.9em; 
+				 font-weight: bold; 
+			 } 
+
+			 tr.subheading { 
+				 background-color: #FFFF95; 
+				 color: #4D7C7B; 
+				 font-weight: bold; 
+				 font-size: 0.9em; 
+				 text-align: justify; 
+			 } 
+
+			 tr.section { 
+				 background-color: #89B6B5; 
+				 color: #333300; 
+				 cursor: pointer; 
+				 font-weight: bold; 
+				 font-size: 0.9em; 
+				 text-align: justify; 
+			 } 
+
+			 tr.subsection { 
+				 cursor: pointer; 
+			 } 
+
+			 tr.content { 
+				 background-color: #FAFAC5; 
+				 color: #000000; 
+				 font-size: 0.9em; 
+				 display: table-row; 
+			 } 
+
+			 td, th { 
+				 padding: 4px; 
+				 text-align: inherit\0/; 
+			 } 
+
+			 td.justified { 
+				 text-align: justify; 
+			 } 
+
+			 td.pass { 
+				 font-weight: bold; 
+				 color: green; 
+			 } 
+
+			 td.fail { 
+				 font-weight: bold; 
+				 color: red; 
+			 } 
+
+			 td.done, td.screenshot { 
+				 font-weight: bold; 
+				 color: black; 
+			 } 
+
+			 td.debug { 
+				 font-weight: bold; 
+				 color: blue; 
+			 } 
+
+			 td.warning { 
+				 font-weight: bold; 
+				 color: orange; 
+			 } 
+		 </style> 
+
+		 <script> 
+			 function toggleMenu(objID) { 
+				 if (!document.getElementById) return; 
+				 var ob = document.getElementById(objID).style; 
+				 if(ob.display === 'none') { 
+					 try { 
+						 ob.display='table-row-group'; 
+					 } catch(ex) { 
+						 ob.display='block'; 
+					 } 
+				 } 
+				 else { 
+					 ob.display='none'; 
+				 } 
+			 } 
+			 function toggleSubMenu(objId) { 
+				 for(i=1; i<10000; i++) { 
+					 var ob = document.getElementById(objId.concat(i)); 
+					 if(ob === null) { 
+						 break; 
+					 } 
+					 if(ob.style.display === 'none') { 
+						 try { 
+							 ob.style.display='table-row'; 
+						 } catch(ex) { 
+							 ob.style.display='block'; 
+						 } 
+					 } 
+					 else { 
+						 ob.style.display='none'; 
+					 } 
+				 } 
+			 } 
+		 </script> 
+	 </head> 
+
+	 <body> 
+		 <table id='header'> 
+			 <colgroup> 
+				 <col style='width: 25%' /> 
+				 <col style='width: 25%' /> 
+				 <col style='width: 25%' /> 
+				 <col style='width: 25%' /> 
+			 </colgroup> 
+
+			 <thead> 
+				 <tr class='heading'> 
+					 <th colspan='4' style='font-family:Copperplate Gothic Bold; font-size:1.4em;'> 
+						 Kjedehuset -  Automation Execution Result Summary 
+					 </th> 
+				 </tr> 
+				 <tr class='subheading'> 
+					 <th>&nbsp;Date&nbsp;&&nbsp;Time</th> 
+					 <th>&nbsp;:&nbsp;19-Sep-2014&nbsp;01:40:48&nbsp;PM</th> 
+					 <th>&nbsp;OnError</th> 
+					 <th>&nbsp;:&nbsp;NextTestCase</th> 
+				 </tr> 
+				 <tr class='subheading'> 
+					 <th>&nbsp;Run&nbsp;Configuration</th> 
+					 <th>&nbsp;:&nbsp;Regression</th> 
+					 <th>&nbsp;No.&nbsp;of&nbsp;threads</th> 
+					 <th>&nbsp;:&nbsp;1</th> 
+				 </tr> 
+			 </thead> 
+		 </table> 
+
+		 <table id='main'> 
+			 <colgroup> 
+				 <col style='width: 10%' /> 
+				 <col style='width: 10%' /> 
+				 <col style='width: 50%' /> 
+				 <col style='width: 20%' /> 
+				 <col style='width: 10%' /> 
+			 </colgroup> 
+
+			 <thead> 
+				 <tr class='heading'> 
+					 <th>Test_Scenario</th> 
+					 <th>Test_Case</th> 
+					 <th>Test_Description</th> 
+					 <th>Execution_Time</th> 
+					 <th>Test_Status</th> 
+				 </tr> 
+			 </thead> 
+
+				 <tr class='content' > 
+					 <td class='justified'>Scenario5</td> 
+					 <td class='justified'><a href='Scenario5_TC1.html' target='about_blank'>TC1</a></td> 
+					 <td class='justified'>Test for B2B- Purchase Mobile with Subscription</td> 
+					 <td>0 minute(s), 27 seconds</td> 
+					 <td class='fail'>Failed</td> 
+				 </tr> 
+				 <tr class='content' > 
+					 <td class='justified'>Scenario5</td> 
+					 <td class='justified'><a href='Scenario5_TC2.html' target='about_blank'>TC2</a></td> 
+					 <td class='justified'>Test for B2B- Ihelp Orders To Appear In WebAdmin</td> 
+					 <td>0 minute(s), 13 seconds</td> 
+					 <td class='pass'>Passed</td> 
+				 </tr> 
+				 <tr class='content' > 
+					 <td class='justified'>Scenario5</td> 
+					 <td class='justified'><a href='Scenario5_TC3.html' target='about_blank'>TC3</a></td> 
+					 <td class='justified'>Test for B2B- To Check Orders Displayed in  Webadmin DashBoard</td> 
+					 <td>0 minute(s), 15 seconds</td> 
+					 <td class='fail'>Failed</td> 
+				 </tr> 
+				 <tr class='content' > 
+					 <td class='justified'>Scenario5</td> 
+					 <td class='justified'><a href='Scenario5_TC4.html' target='about_blank'>TC4</a></td> 
+					 <td class='justified'>Test for B2B- Process Orders In Ihelp</td> 
+					 <td>0 minute(s), 26 seconds</td> 
+					 <td class='fail'>Failed</td> 
+				 </tr> 
+				 <tr class='content' > 
+					 <td class='justified'>Scenario5</td> 
+					 <td class='justified'><a href='Scenario5_TC5.html' target='about_blank'>TC5</a></td> 
+					 <td class='justified'>Test for B2B- Check Orders Status In Webadmin</td> 
+					 <td>0 minute(s), 30 seconds</td> 
+					 <td class='fail'>Failed</td> 
+				 </tr> 
+				 <tr class='content' > 
+					 <td class='justified'>Scenario6</td> 
+					 <td class='justified'><a href='Scenario6_TC1.html' target='about_blank'>TC1</a></td> 
+					 <td class='justified'>Test for B2B- Purchase Mobile without Subscription</td> 
+					 <td>0 minute(s), 25 seconds</td> 
+					 <td class='fail'>Failed</td> 
+				 </tr> 
+				 <tr class='content' > 
+					 <td class='justified'>Scenario6</td> 
+					 <td class='justified'><a href='Scenario6_TC2.html' target='about_blank'>TC2</a></td> 
+					 <td class='justified'>Test for B2B- Ihelp Orders To Appear In WebAdmin</td> 
+					 <td>0 minute(s), 20 seconds</td> 
+					 <td class='pass'>Passed</td> 
+				 </tr> 
+				 <tr class='content' > 
+					 <td class='justified'>Scenario6</td> 
+					 <td class='justified'><a href='Scenario6_TC3.html' target='about_blank'>TC3</a></td> 
+					 <td class='justified'>Test for B2B- To Check Orders Displayed in  Webadmin DashBoard</td> 
+					 <td>0 minute(s), 19 seconds</td> 
+					 <td class='fail'>Failed</td> 
+				 </tr> 
+				 <tr class='content' > 
+					 <td class='justified'>Scenario6</td> 
+					 <td class='justified'><a href='Scenario6_TC4.html' target='about_blank'>TC4</a></td> 
+					 <td class='justified'>Test for B2B- Process Orders In Ihelp</td> 
+					 <td>0 minute(s), 29 seconds</td> 
+					 <td class='fail'>Failed</td> 
+				 </tr> 
+				 <tr class='content' > 
+					 <td class='justified'>Scenario6</td> 
+					 <td class='justified'><a href='Scenario6_TC5.html' target='about_blank'>TC5</a></td> 
+					 <td class='justified'>Test for B2B- Check Orders Status In Webadmin</td> 
+					 <td>0 minute(s), 29 seconds</td> 
+					 <td class='fail'>Failed</td> 
+				 </tr> 
+				 <tr class='content' > 
+					 <td class='justified'>Scenario7</td> 
+					 <td class='justified'><a href='Scenario7_TC1.html' target='about_blank'>TC1</a></td> 
+					 <td class='justified'>Test for B2B- Purchase Accessories</td> 
+					 <td>0 minute(s), 24 seconds</td> 
+					 <td class='fail'>Failed</td> 
+				 </tr> 
+				 <tr class='content' > 
+					 <td class='justified'>Scenario7</td> 
+					 <td class='justified'><a href='Scenario7_TC2.html' target='about_blank'>TC2</a></td> 
+					 <td class='justified'>Test for B2B- Ihelp Orders To Appear In WebAdmin</td> 
+					 <td>0 minute(s), 19 seconds</td> 
+					 <td class='pass'>Passed</td> 
+				 </tr> 
+				 <tr class='content' > 
+					 <td class='justified'>Scenario7</td> 
+					 <td class='justified'><a href='Scenario7_TC3.html' target='about_blank'>TC3</a></td> 
+					 <td class='justified'>Test for B2B- To Check Orders Displayed in  Webadmin DashBoard</td> 
+					 <td>0 minute(s), 18 seconds</td> 
+					 <td class='fail'>Failed</td> 
+				 </tr> 
+				 <tr class='content' > 
+					 <td class='justified'>Scenario7</td> 
+					 <td class='justified'><a href='Scenario7_TC4.html' target='about_blank'>TC4</a></td> 
+					 <td class='justified'>Test for B2B- Process Orders In Ihelp</td> 
+					 <td>0 minute(s), 28 seconds</td> 
+					 <td class='fail'>Failed</td> 
+				 </tr> 
+				 <tr class='content' > 
+					 <td class='justified'>Scenario7</td> 
+					 <td class='justified'><a href='Scenario7_TC5.html' target='about_blank'>TC5</a></td> 
+					 <td class='justified'>Test for B2B- Check Orders Status In Webadmin</td> 
+					 <td>0 minute(s), 30 seconds</td> 
+					 <td class='fail'>Failed</td> 
+				 </tr> 
+				 <tr class='content' > 
+					 <td class='justified'>Scenario8</td> 
+					 <td class='justified'><a href='Scenario8_TC1.html' target='about_blank'>TC1</a></td> 
+					 <td class='justified'>Test for B2B- Purchase Mobile Without Subscription and Accessory</td> 
+					 <td>0 minute(s), 24 seconds</td> 
+					 <td class='fail'>Failed</td> 
+				 </tr> 
+				 <tr class='content' > 
+					 <td class='justified'>Scenario8</td> 
+					 <td class='justified'><a href='Scenario8_TC2.html' target='about_blank'>TC2</a></td> 
+					 <td class='justified'>Test for B2B- Ihelp Orders To Appear In WebAdmin</td> 
+					 <td>0 minute(s), 15 seconds</td> 
+					 <td class='pass'>Passed</td> 
+				 </tr> 
+				 <tr class='content' > 
+					 <td class='justified'>Scenario8</td> 
+					 <td class='justified'><a href='Scenario8_TC3.html' target='about_blank'>TC3</a></td> 
+					 <td class='justified'>Test for B2B- To Check Orders Displayed in  Webadmin DashBoard</td> 
+					 <td>0 minute(s), 15 seconds</td> 
+					 <td class='fail'>Failed</td> 
+				 </tr> 
+				 <tr class='content' > 
+					 <td class='justified'>Scenario8</td> 
+					 <td class='justified'><a href='Scenario8_TC4.html' target='about_blank'>TC4</a></td> 
+					 <td class='justified'>Test for B2B- Process Orders In Ihelp</td> 
+					 <td>0 minute(s), 31 seconds</td> 
+					 <td class='fail'>Failed</td> 
+				 </tr> 
+				 <tr class='content' > 
+					 <td class='justified'>Scenario8</td> 
+					 <td class='justified'><a href='Scenario8_TC5.html' target='about_blank'>TC5</a></td> 
+					 <td class='justified'>Test for B2B- Check Orders Status In Webadmin</td> 
+					 <td>0 minute(s), 30 seconds</td> 
+					 <td class='fail'>Failed</td> 
+				 </tr> 
+				 <tr class='content' > 
+					 <td class='justified'>Scenario9</td> 
+					 <td class='justified'><a href='Scenario9_TC1.html' target='about_blank'>TC1</a></td> 
+					 <td class='justified'>Test for B2B- Purchase Mobile With Subscription and Accessory</td> 
+					 <td>0 minute(s), 25 seconds</td> 
+					 <td class='fail'>Failed</td> 
+				 </tr> 
+				 <tr class='content' > 
+					 <td class='justified'>Scenario9</td> 
+					 <td class='justified'><a href='Scenario9_TC2.html' target='about_blank'>TC2</a></td> 
+					 <td class='justified'>Test for B2B- Ihelp Orders To Appear In WebAdmin</td> 
+					 <td>0 minute(s), 12 seconds</td> 
+					 <td class='pass'>Passed</td> 
+				 </tr> 
+				 <tr class='content' > 
+					 <td class='justified'>Scenario9</td> 
+					 <td class='justified'><a href='Scenario9_TC3.html' target='about_blank'>TC3</a></td> 
+					 <td class='justified'>Test for B2B- To Check Orders Displayed in  Webadmin DashBoard</td> 
+					 <td>0 minute(s), 14 seconds</td> 
+					 <td class='fail'>Failed</td> 
+				 </tr> 
+				 <tr class='content' > 
+					 <td class='justified'>Scenario9</td> 
+					 <td class='justified'><a href='Scenario9_TC4.html' target='about_blank'>TC4</a></td> 
+					 <td class='justified'>Test for B2B- Process Orders In Ihelp</td> 
+					 <td>0 minute(s), 27 seconds</td> 
+					 <td class='fail'>Failed</td> 
+				 </tr> 
+				 <tr class='content' > 
+					 <td class='justified'>Scenario9</td> 
+					 <td class='justified'><a href='Scenario9_TC5.html' target='about_blank'>TC5</a></td> 
+					 <td class='justified'>Test for B2B- Check Orders Status In Webadmin</td> 
+					 <td>0 minute(s), 30 seconds</td> 
+					 <td class='fail'>Failed</td> 
+				 </tr> 
+				 <tr class='content' > 
+					 <td class='justified'>Scenario15</td> 
+					 <td class='justified'><a href='Scenario15_TC1.html' target='about_blank'>TC1</a></td> 
+					 <td class='justified'>Hjelpapp - External Orders</td> 
+					 <td>0 minute(s), 28 seconds</td> 
+					 <td class='pass'>Passed</td> 
+				 </tr> 
+				 <tr class='content' > 
+					 <td class='justified'>Scenario16</td> 
+					 <td class='justified'><a href='Scenario16_TC1.html' target='about_blank'>TC1</a></td> 
+					 <td class='justified'>Hjelpapp - Task Status</td> 
+					 <td>2 minute(s), 14 seconds</td> 
+					 <td class='fail'>Failed</td> 
+				 </tr> 
+				 <tr class='content' > 
+					 <td class='justified'>Scenario17</td> 
+					 <td class='justified'><a href='Scenario17_TC1.html' target='about_blank'>TC1</a></td> 
+					 <td class='justified'>mBiz - CNET Search</td> 
+					 <td>0 minute(s), 58 seconds</td> 
+					 <td class='pass'>Passed</td> 
+				 </tr> 
+				 <tr class='content' > 
+					 <td class='justified'>Scenario18</td> 
+					 <td class='justified'><a href='Scenario18_TC1.html' target='about_blank'>TC1</a></td> 
+					 <td class='justified'>mBiz - Add New Local Product & Approve</td> 
+					 <td>0 minute(s), 44 seconds</td> 
+					 <td class='pass'>Passed</td> 
+				 </tr> 
+				 <tr class='content' > 
+					 <td class='justified'>Scenario19</td> 
+					 <td class='justified'><a href='Scenario19_TC1.html' target='about_blank'>TC1</a></td> 
+					 <td class='justified'>mBiz - Wizard Check - User</td> 
+					 <td>0 minute(s), 30 seconds</td> 
+					 <td class='pass'>Passed</td> 
+				 </tr> 
+				 <tr class='content' > 
+					 <td class='justified'>Scenario21</td> 
+					 <td class='justified'><a href='Scenario21_TC1.html' target='about_blank'>TC1</a></td> 
+					 <td class='justified'>mBiz - Wizard Check - Customers</td> 
+					 <td>0 minute(s), 50 seconds</td> 
+					 <td class='fail'>Failed</td> 
+				 </tr> 
+				 <tr class='content' > 
+					 <td class='justified'>Scenario22</td> 
+					 <td class='justified'><a href='Scenario22_TC1.html' target='about_blank'>TC1</a></td> 
+					 <td class='justified'>mBiz - Adding Categories</td> 
+					 <td>0 minute(s), 48 seconds</td> 
+					 <td class='fail'>Failed</td> 
+				 </tr> 
+				 <tr class='content' > 
+					 <td class='justified'>Scenario22</td> 
+					 <td class='justified'><a href='Scenario22_TC2.html' target='about_blank'>TC2</a></td> 
+					 <td class='justified'>Telenor - Store Validation</td> 
+					 <td>0 minute(s), 36 seconds</td> 
+					 <td class='fail'>Failed</td> 
+				 </tr> 
+				 <tr class='content' > 
+					 <td class='justified'>Scenario23</td> 
+					 <td class='justified'><a href='Scenario23_TC1.html' target='about_blank'>TC1</a></td> 
+					 <td class='justified'>mBiz - Wizard Check - Supplier</td> 
+					 <td>0 minute(s), 34 seconds</td> 
+					 <td class='fail'>Failed</td> 
+				 </tr> 
+				 <tr class='content' > 
+					 <td class='justified'>Scenario24</td> 
+					 <td class='justified'><a href='Scenario24_TC1.html' target='about_blank'>TC1</a></td> 
+					 <td class='justified'>iHelp - Check quarantine orders</td> 
+					 <td>0 minute(s), 17 seconds</td> 
+					 <td class='fail'>Failed</td> 
+				 </tr> 
+				 <tr class='content' > 
+					 <td class='justified'>Scenario25</td> 
+					 <td class='justified'><a href='Scenario25_TC1.html' target='about_blank'>TC1</a></td> 
+					 <td class='justified'>mBiz - Create New Forhandler</td> 
+					 <td>0 minute(s), 46 seconds</td> 
+					 <td class='pass'>Passed</td> 
+				 </tr> 
+				 <tr class='content' > 
+					 <td class='justified'>Scenario27</td> 
+					 <td class='justified'><a href='Scenario27_TC1.html' target='about_blank'>TC1</a></td> 
+					 <td class='justified'>mBiz - Wizard Check - Product Catalog</td> 
+					 <td>0 minute(s), 40 seconds</td> 
+					 <td class='pass'>Passed</td> 
+				 </tr> 
+				 <tr class='content' > 
+					 <td class='justified'>Scenario28</td> 
+					 <td class='justified'><a href='Scenario28_TC1.html' target='about_blank'>TC1</a></td> 
+					 <td class='justified'>mBiz - Wizard Check - Utvalg</td> 
+					 <td>1 minute(s), 14 seconds</td> 
+					 <td class='pass'>Passed</td> 
+				 </tr> 
+				 <tr class='content' > 
+					 <td class='justified'>Scenario30</td> 
+					 <td class='justified'><a href='Scenario30_TC1.html' target='about_blank'>TC1</a></td> 
+					 <td class='justified'>mBiz - Wizard Check - Agent</td> 
+					 <td>0 minute(s), 52 seconds</td> 
+					 <td class='fail'>Failed</td> 
+				 </tr> 
+				 <tr class='content' > 
+					 <td class='justified'>Scenario32</td> 
+					 <td class='justified'><a href='Scenario32_TC1.html' target='about_blank'>TC1</a></td> 
+					 <td class='justified'>mBiz - Create New Store</td> 
+					 <td>0 minute(s), 45 seconds</td> 
+					 <td class='fail'>Failed</td> 
+				 </tr> 
+				 <tr class='content' > 
+					 <td class='justified'>Scenario33</td> 
+					 <td class='justified'><a href='Scenario33_TC1.html' target='about_blank'>TC1</a></td> 
+					 <td class='justified'>mBiz - Product Catalog Push</td> 
+					 <td>0 minute(s), 47 seconds</td> 
+					 <td class='fail'>Failed</td> 
+				 </tr> 
+				 <tr class='content' > 
+					 <td class='justified'>Scenario34</td> 
+					 <td class='justified'><a href='Scenario34_TC2.html' target='about_blank'>TC2</a></td> 
+					 <td class='justified'>Test for validating USP in front end shop</td> 
+					 <td>0 minute(s), 12 seconds</td> 
+					 <td class='pass'>Passed</td> 
+				 </tr> 
+				 <tr class='content' > 
+					 <td class='justified'>Scenario37</td> 
+					 <td class='justified'><a href='Scenario37_TC1.html' target='about_blank'>TC1</a></td> 
+					 <td class='justified'>mBiz - Approve Incoming Product</td> 
+					 <td>0 minute(s), 13 seconds</td> 
+					 <td class='fail'>Failed</td> 
+				 </tr> 
+				 <tr class='content' > 
+					 <td class='justified'>Scenario39</td> 
+					 <td class='justified'><a href='Scenario39_TC1.html' target='about_blank'>TC1</a></td> 
+					 <td class='justified'>Test for B2B - Purchase Mobile with Subscription - Shared Login</td> 
+					 <td>0 minute(s), 47 seconds</td> 
+					 <td class='fail'>Failed</td> 
+				 </tr> 
+				 <tr class='content' > 
+					 <td class='justified'>Scenario40</td> 
+					 <td class='justified'><a href='Scenario40_TC1.html' target='about_blank'>TC1</a></td> 
+					 <td class='justified'>Test for B2B - Synonym Search Functionality</td> 
+					 <td>0 minute(s), 51 seconds</td> 
+					 <td class='pass'>Passed</td> 
+				 </tr> 
+				 <tr class='content' > 
+					 <td class='justified'>Scenario40</td> 
+					 <td class='justified'><a href='Scenario40_TC2.html' target='about_blank'>TC2</a></td> 
+					 <td class='justified'>Test for B2B - Check Search Result in webshop</td> 
+					 <td>0 minute(s), 26 seconds</td> 
+					 <td class='pass'>Passed</td> 
+				 </tr> 
+				 <tr class='content' > 
+					 <td class='justified'>Scenario44</td> 
+					 <td class='justified'><a href='Scenario44_TC1.html' target='about_blank'>TC1</a></td> 
+					 <td class='justified'>B2B Nordialog- Create User and SetUp Admin role and Order Approval</td> 
+					 <td>0 minute(s), 24 seconds</td> 
+					 <td class='fail'>Failed</td> 
+				 </tr> 
+				 <tr class='content' > 
+					 <td class='justified'>Scenario45</td> 
+					 <td class='justified'><a href='Scenario45_TC1.html' target='about_blank'>TC1</a></td> 
+					 <td class='justified'>mBiz - Wizard Check - Pricing</td> 
+					 <td>1 minute(s), 0 seconds</td> 
+					 <td class='pass'>Passed</td> 
+				 </tr> 
+			 </tbody> 
+		 </table> 
+
+		 <table id='footer'> 
+			 <colgroup> 
+				 <col style='width: 25%' /> 
+				 <col style='width: 25%' /> 
+				 <col style='width: 25%' /> 
+				 <col style='width: 25%' /> 
+			 </colgroup> 
+
+			 <tfoot> 
+				 <tr class='heading'> 
+					 <th colspan='4'>Total Duration: 30 minute(s), 8 seconds</th> 
+				 </tr> 
+				 <tr class='subheading'> 
+					 <td class='pass'>&nbsp;Tests passed</td> 
+					 <td class='pass'>&nbsp;: 16</td> 
+					 <td class='fail'>&nbsp;Tests failed</td> 
+					 <td class='fail'>&nbsp;: 32</td> 
+				 </tr> 
+			 </tfoot> 
+		 </table> 
+	 </body> 
+</html>

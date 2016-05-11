@@ -1,0 +1,433 @@
+<!DOCTYPE html> 
+<html> 
+	 <head> 
+		 <meta charset='UTF-8'> 
+		 <title>Kjedehuset - Scenario20_TC1 Automation Execution Results</title> 
+
+		 <style type='text/css'> 
+			 body { 
+				 background-color: #000000; 
+				 font-family: Verdana, Geneva, sans-serif; 
+				 text-align: center; 
+			 } 
+
+			 small { 
+				 font-size: 0.7em; 
+			 } 
+
+			 table { 
+				 border: 1px solid #4D7C7B; 
+				 border-collapse: collapse; 
+				 border-spacing: 0px; 
+				 width: 1000px; 
+				 margin-left: auto; 
+				 margin-right: auto; 
+			 } 
+
+			 tr.heading { 
+				 background-color: #4D7C7B; 
+				 color: #FFFF95; 
+				 font-size: 0.9em; 
+				 font-weight: bold; 
+			 } 
+
+			 tr.subheading { 
+				 background-color: #FFFF95; 
+				 color: #4D7C7B; 
+				 font-weight: bold; 
+				 font-size: 0.9em; 
+				 text-align: justify; 
+			 } 
+
+			 tr.section { 
+				 background-color: #89B6B5; 
+				 color: #333300; 
+				 cursor: pointer; 
+				 font-weight: bold; 
+				 font-size: 0.9em; 
+				 text-align: justify; 
+			 } 
+
+			 tr.subsection { 
+				 cursor: pointer; 
+			 } 
+
+			 tr.content { 
+				 background-color: #FAFAC5; 
+				 color: #000000; 
+				 font-size: 0.9em; 
+				 display: table-row; 
+			 } 
+
+			 td, th { 
+				 padding: 4px; 
+				 text-align: inherit\0/; 
+			 } 
+
+			 td.justified { 
+				 text-align: justify; 
+			 } 
+
+			 td.pass { 
+				 font-weight: bold; 
+				 color: green; 
+			 } 
+
+			 td.fail { 
+				 font-weight: bold; 
+				 color: red; 
+			 } 
+
+			 td.done, td.screenshot { 
+				 font-weight: bold; 
+				 color: black; 
+			 } 
+
+			 td.debug { 
+				 font-weight: bold; 
+				 color: blue; 
+			 } 
+
+			 td.warning { 
+				 font-weight: bold; 
+				 color: orange; 
+			 } 
+		 </style> 
+
+		 <script> 
+			 function toggleMenu(objID) { 
+				 if (!document.getElementById) return; 
+				 var ob = document.getElementById(objID).style; 
+				 if(ob.display === 'none') { 
+					 try { 
+						 ob.display='table-row-group'; 
+					 } catch(ex) { 
+						 ob.display='block'; 
+					 } 
+				 } 
+				 else { 
+					 ob.display='none'; 
+				 } 
+			 } 
+			 function toggleSubMenu(objId) { 
+				 for(i=1; i<10000; i++) { 
+					 var ob = document.getElementById(objId.concat(i)); 
+					 if(ob === null) { 
+						 break; 
+					 } 
+					 if(ob.style.display === 'none') { 
+						 try { 
+							 ob.style.display='table-row'; 
+						 } catch(ex) { 
+							 ob.style.display='block'; 
+						 } 
+					 } 
+					 else { 
+						 ob.style.display='none'; 
+					 } 
+				 } 
+			 } 
+		 </script> 
+	 </head> 
+
+	 <body> 
+		 <table id='header'> 
+			 <colgroup> 
+				 <col style='width: 25%' /> 
+				 <col style='width: 25%' /> 
+				 <col style='width: 25%' /> 
+				 <col style='width: 25%' /> 
+			 </colgroup> 
+
+			 <thead> 
+				 <tr class='heading'> 
+					 <th colspan='4' style='font-family:Copperplate Gothic Bold; font-size:1.4em;'> 
+						 Kjedehuset - Scenario20_TC1 Automation Execution Results 
+					 </th> 
+				 </tr> 
+				 <tr class='subheading'> 
+					 <th>&nbsp;Date&nbsp;&&nbsp;Time</th> 
+					 <th>&nbsp;:&nbsp;22-Mar-2016&nbsp;09:05:49&nbsp;PM</th> 
+					 <th>&nbsp;Iteration&nbsp;Mode</th> 
+					 <th>&nbsp;:&nbsp;RunOneIterationOnly</th> 
+				 </tr> 
+				 <tr class='subheading'> 
+					 <th>&nbsp;Start&nbsp;Iteration</th> 
+					 <th>&nbsp;:&nbsp;1</th> 
+					 <th>&nbsp;End&nbsp;Iteration</th> 
+					 <th>&nbsp;:&nbsp;1</th> 
+				 </tr> 
+				 <tr class='subheading'> 
+					 <th>&nbsp;Browser</th> 
+					 <th>&nbsp;:&nbsp;Firefox</th> 
+					 <th>&nbsp;Executed&nbsp;on</th> 
+					 <th>&nbsp;:&nbsp;Local&nbsp;Machine</th> 
+				 </tr> 
+			 </thead> 
+		 </table> 
+
+		 <table id='main'> 
+			 <colgroup> 
+				 <col style='width: 8%' /> 
+				 <col style='width: 12%' /> 
+				 <col style='width: 62%' /> 
+				 <col style='width: 8%' /> 
+				 <col style='width: 10%' /> 
+			 </colgroup> 
+
+			 <thead> 
+				 <tr class='heading'> 
+					 <th>Step_No</th> 
+					 <th>Step_Name</th> 
+					 <th>Description</th> 
+					 <th>Status</th> 
+					 <th>Step_Time</th> 
+				 </tr> 
+			 </thead> 
+
+			 <tbody> 
+				 <tr class='section'> 
+					 <td colspan='5' onclick="toggleMenu('Iteration1')">+ Iteration: 1</td> 
+				 </tr> 
+			 </tbody> 
+			 <tbody id='Iteration1' style='display:table-row-group'> 
+				 <tr class='subheading subsection'> 
+					 <td colspan='5' onclick="toggleSubMenu('Iteration1InvokeApplication')">&nbsp;+ InvokeApplication</td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1InvokeApplication1'> 
+					 <td>1</td> 
+					 <td class='justified'>Invoke Application</td> 
+					 <td class='justified'>Invoke the application under test @ https://mbizadminpreprod.kjedehuset.no</td> 
+					 <td class='done'>DONE</td> 
+					 <td><small>22-Mar-2016 09:05:53 PM</small></td> 
+				 </tr> 
+				 <tr class='subheading subsection'> 
+					 <td colspan='5' onclick="toggleSubMenu('Iteration1Login')">&nbsp;+ Login</td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1Login1'> 
+					 <td>2</td> 
+					 <td class='justified'>Value should be entered in <b>User Name</b> text box.</td> 
+					 <td class='justified'><b>herman</b> value entered in text box.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>22-Mar-2016 09:05:53 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1Login2'> 
+					 <td>3</td> 
+					 <td class='justified'>Should click <b>Login</b> button.</td> 
+					 <td class='justified'><b>Login</b> button clicked.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>22-Mar-2016 09:05:55 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1Login3'> 
+					 <td>4</td> 
+					 <td class='justified'>Value should be entered in <b>Password</b> text box.</td> 
+					 <td class='justified'><b>bennu123</b> value entered in text box.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>22-Mar-2016 09:05:56 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1Login4'> 
+					 <td>5</td> 
+					 <td class='justified'>Should click <b>Login</b> button.</td> 
+					 <td class='justified'><b>Login</b> button clicked.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>22-Mar-2016 09:06:01 PM</small></td> 
+				 </tr> 
+				 <tr class='subheading subsection'> 
+					 <td colspan='5' onclick="toggleSubMenu('Iteration1UpdateStoreCampaignAttribute')">&nbsp;+ UpdateStoreCampaignAttribute</td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1UpdateStoreCampaignAttribute1'> 
+					 <td>6</td> 
+					 <td class='justified'>Error in clicking the link:links_lnkButikkMenu</td> 
+					 <td class='justified'></td> 
+					 <td class='warning'>WARNING</td> 
+					 <td><small>22-Mar-2016 09:06:12 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1UpdateStoreCampaignAttribute2'> 
+					 <td>7</td> 
+					 <td class='justified'>Value should be entered in <b>Buttik</b> text box.</td> 
+					 <td class='justified'><b>Telenor Nettbutikk Privat</b> value entered in text box.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>22-Mar-2016 09:06:12 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1UpdateStoreCampaignAttribute3'> 
+					 <td>8</td> 
+					 <td class='justified'>Should click <b>Search</b> link.</td> 
+					 <td class='justified'><b>Search</b> link clicked.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>22-Mar-2016 09:06:18 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1UpdateStoreCampaignAttribute4'> 
+					 <td>9</td> 
+					 <td class='justified'>Should click <b>Vismer</b> link.</td> 
+					 <td class='justified'><b>Vismer</b> link clicked.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>22-Mar-2016 09:06:18 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1UpdateStoreCampaignAttribute5'> 
+					 <td>10</td> 
+					 <td class='justified'>Should click <b>Edit Store</b> button.</td> 
+					 <td class='justified'><b>Edit Store</b> button clicked.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>22-Mar-2016 09:06:24 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1UpdateStoreCampaignAttribute6'> 
+					 <td>11</td> 
+					 <td class='justified'>Value should be entered in <b>Service URL</b> text box.</td> 
+					 <td class='justified'><b>www.gmail.com</b> value entered in text box.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>22-Mar-2016 09:06:25 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1UpdateStoreCampaignAttribute7'> 
+					 <td>12</td> 
+					 <td class='justified'>Should click <b>Proceed</b> button.</td> 
+					 <td class='justified'><b>Proceed</b> button clicked.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>22-Mar-2016 09:06:28 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1UpdateStoreCampaignAttribute8'> 
+					 <td>13</td> 
+					 <td class='justified'>Should click <b>Proceed</b> button.</td> 
+					 <td class='justified'><b>Proceed</b> button clicked.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>22-Mar-2016 09:06:31 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1UpdateStoreCampaignAttribute9'> 
+					 <td>14</td> 
+					 <td class='justified'>Should click <b>Proceed</b> button.</td> 
+					 <td class='justified'><b>Proceed</b> button clicked.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>22-Mar-2016 09:06:33 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1UpdateStoreCampaignAttribute10'> 
+					 <td>15</td> 
+					 <td class='justified'>Should click <b>Proceed</b> button.</td> 
+					 <td class='justified'><b>Proceed</b> button clicked.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>22-Mar-2016 09:06:37 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1UpdateStoreCampaignAttribute11'> 
+					 <td>16</td> 
+					 <td class='justified'>Should click <b>Proceed</b> button.</td> 
+					 <td class='justified'><b>Proceed</b> button clicked.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>22-Mar-2016 09:06:40 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1UpdateStoreCampaignAttribute12'> 
+					 <td>17</td> 
+					 <td class='justified'>Should click <b>Proceed</b> button.</td> 
+					 <td class='justified'><b>Proceed</b> button clicked.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>22-Mar-2016 09:06:42 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1UpdateStoreCampaignAttribute13'> 
+					 <td>18</td> 
+					 <td class='justified'>Should click <b>CreateButtikAdmin</b> link.</td> 
+					 <td class='justified'><b>CreateButtikAdmin</b> link clicked.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>22-Mar-2016 09:06:43 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1UpdateStoreCampaignAttribute14'> 
+					 <td>19</td> 
+					 <td class='justified'>Value should be entered in <b>First Name</b> text box.</td> 
+					 <td class='justified'><b>TestFN4061</b> value entered in text box.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>22-Mar-2016 09:06:44 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1UpdateStoreCampaignAttribute15'> 
+					 <td>20</td> 
+					 <td class='justified'>Value should be entered in <b>Last Name</b> text box.</td> 
+					 <td class='justified'><b>TestLN</b> value entered in text box.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>22-Mar-2016 09:06:44 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1UpdateStoreCampaignAttribute16'> 
+					 <td>21</td> 
+					 <td class='justified'>Value should be entered in <b>Mobile Number</b> text box.</td> 
+					 <td class='justified'><b>21276826</b> value entered in text box.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>22-Mar-2016 09:06:45 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1UpdateStoreCampaignAttribute17'> 
+					 <td>22</td> 
+					 <td class='justified'>Value should be entered in <b>Email</b> text box.</td> 
+					 <td class='justified'><b>Test@kh.no</b> value entered in text box.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>22-Mar-2016 09:06:45 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1UpdateStoreCampaignAttribute18'> 
+					 <td>23</td> 
+					 <td class='justified'>Should click <b>Save</b> button.</td> 
+					 <td class='justified'><b>Save</b> button clicked.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>22-Mar-2016 09:06:45 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1UpdateStoreCampaignAttribute19'> 
+					 <td>24</td> 
+					 <td class='justified'>Should click <b>Save</b> button.</td> 
+					 <td class='justified'><b>Save</b> button clicked.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>22-Mar-2016 09:07:09 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1UpdateStoreCampaignAttribute20'> 
+					 <td>25</td> 
+					 <td class='justified'>Should click <b>Edit Store</b> button.</td> 
+					 <td class='justified'><b>Edit Store</b> button clicked.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>22-Mar-2016 09:07:10 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1UpdateStoreCampaignAttribute21'> 
+					 <td>26</td> 
+					 <td class='justified'>Should click <b>Properties</b> link.</td> 
+					 <td class='justified'><b>Properties</b> link clicked.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>22-Mar-2016 09:07:11 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1UpdateStoreCampaignAttribute22'> 
+					 <td>27</td> 
+					 <td class='justified'>Should click <b>Roller</b> link.</td> 
+					 <td class='justified'><b>Roller</b> link clicked.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>22-Mar-2016 09:07:13 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1UpdateStoreCampaignAttribute23'> 
+					 <td>28</td> 
+					 <td class='justified'>Store Updation</td> 
+					 <td class='justified'>Successfully updated the store</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>22-Mar-2016 09:07:13 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1UpdateStoreCampaignAttribute24'> 
+					 <td>29</td> 
+					 <td class='justified'>Value should be entered in <b>Buttik</b> text box.</td> 
+					 <td class='justified'><b>Telenor Nettbutikk Privat</b> value entered in text box.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>22-Mar-2016 09:07:18 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1UpdateStoreCampaignAttribute25'> 
+					 <td>30</td> 
+					 <td class='justified'>Should click <b>Search</b> link.</td> 
+					 <td class='justified'><b>Search</b> link clicked.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>22-Mar-2016 09:07:22 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1UpdateStoreCampaignAttribute26'> 
+					 <td>31</td> 
+					 <td class='justified'>Should click <b>Vismer</b> link.</td> 
+					 <td class='justified'><b>Vismer</b> link clicked.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>22-Mar-2016 09:07:23 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1UpdateStoreCampaignAttribute27'> 
+					 <td>32</td> 
+					 <td class='justified'>Should click <b>CampaginAttribute</b> link.</td> 
+					 <td class='justified'><b>CampaginAttribute</b> link clicked.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>22-Mar-2016 09:07:36 PM</small></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1UpdateStoreCampaignAttribute28'> 
+					 <td>33</td> 
+					 <td class='justified'>Should click <b>Campagin</b> link.</td> 
+					 <td class='justified'><b>Campagin</b> link clicked.</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>22-Mar-2016 09:07:36 PM</small></td> 
+				 </tr> 
